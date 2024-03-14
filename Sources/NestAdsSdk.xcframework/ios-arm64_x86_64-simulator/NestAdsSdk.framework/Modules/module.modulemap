@@ -1,0 +1,11 @@
+framework module NestAdsSdk {
+  umbrella header "NestAdsSdk.h"
+  export *
+
+  module * { export * }
+}
+
+module NestAdsSdk.Swift {
+  header "NestAdsSdk-Swift.h"
+  requires objc
+}
