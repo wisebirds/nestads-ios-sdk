@@ -695,13 +695,13 @@ extension Foundation.Data {
   public func gzipped(level: NestAdsSdk.CompressionLevel = .defaultCompression) throws -> Foundation.Data
   public func gunzipped() throws -> Foundation.Data
 }
-public protocol ExpandedVideoDelegate : AnyObject {
+public protocol VideoDelegate : AnyObject {
   func readyToPlay()
   func playerProgress(progress: Swift.Double)
   func didFinishPlayItem()
 }
-@_hasMissingDesignatedInitializers public class NestAdsExpandableAd : NestAdsSdk.NestAdsAd {
-  public var expandedVideoDelegate: (any NestAdsSdk.ExpandedVideoDelegate)?
+@_hasMissingDesignatedInitializers public class NestAdsNativeAd : NestAdsSdk.NestAdsAd {
+  public var videoDelegate: (any NestAdsSdk.VideoDelegate)?
   public var skipOffset: Swift.Double?
   public var isMute: Swift.Bool
   public var linkURL: Foundation.URL?
@@ -720,7 +720,7 @@ public protocol ExpandedVideoDelegate : AnyObject {
   public func videoImpression()
   @objc deinit
 }
-extension NestAdsSdk.NestAdsExpandableAd : NestAdsSdk.VastTrackerDelegate {
+extension NestAdsSdk.NestAdsNativeAd : NestAdsSdk.VastTrackerDelegate {
   public func adFirstQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
   public func adMidpoint(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
   public func adThirdQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
