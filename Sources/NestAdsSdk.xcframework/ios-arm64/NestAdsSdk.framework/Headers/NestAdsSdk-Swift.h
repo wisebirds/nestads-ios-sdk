@@ -296,111 +296,63 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_attribute(external_source_symbol)
 # pragma push_macro("any")
 # undef any
-# pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="NestAdsSdk",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
+# pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="NestAdsSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
 
 #if defined(__OBJC__)
 
-SWIFT_CLASS("_TtC10NestAdsSdk16NestAdsAdManager")
-@interface NestAdsAdManager : NSObject
+SWIFT_CLASS("_TtC10NestAdsSDK14NestAdsAdError")
+@interface NestAdsAdError : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-@class NSString;
+SWIFT_CLASS("_TtC10NestAdsSDK15NestAdsAdLoader")
+@interface NestAdsAdLoader : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP10NestAdsSDK23NestAdsAdLoaderDelegate_")
+@protocol NestAdsAdLoaderDelegate
+- (void)adLoader:(NestAdsAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NestAdsAdError * _Nonnull)error;
+@optional
+- (void)adLoaderDidFinishLoading:(NestAdsAdLoader * _Nonnull)adLoader;
+@end
+
 @class NSCoder;
 
-SWIFT_CLASS("_TtC10NestAdsSdk13NestAdsAdView")
-@interface NestAdsAdView : UIView
-- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// 광고 뷰에서 발생하는 광고 응답, 클릭 등의 이벤트에 따른 사용자 지정 동작을 구현할 수 있습니다.
-SWIFT_PROTOCOL("_TtP10NestAdsSdk21NestAdsAdViewDelegate_")
-@protocol NestAdsAdViewDelegate
-/// 광고가 성공적으로 로드 되었을 때 호출됩니다.
-/// \param adView 광고가 로드된 광고 뷰 객체
-///
-- (void)adViewDidLoad:(NestAdsAdView * _Nonnull)adView;
-/// 광고 로드에 실패한 경우 호출됩니다.
-/// \param adView 광고 로드에 실패한 광고 뷰 객체
-///
-/// \param error 광고 로드 실패의 원인이 된 에러 객체
-///
-- (void)adView:(NestAdsAdView * _Nonnull)adView didFailToLoadWithError:(NSError * _Nonnull)error;
-/// 광고에서 사용자 클릭이 발생하였을 때 호출됩니다.
-/// \param adView 클릭 이벤트가 발생한 광고 뷰 객체
-///
-- (void)adViewDidClick:(NestAdsAdView * _Nonnull)adView;
-@optional
-/// 영상 광고가 로드후 영상 사이즈정보와 함께 호출 됩니다.
-/// \param adView 클릭 이벤트가 발생한 광고 뷰 객체
-///
-/// \param videoSize 영상 광고 사이즈
-///
-- (void)adView:(NestAdsAdView * _Nonnull)adView videoSize:(CGSize)videoSize;
-- (void)adViewExpanded:(NestAdsAdView * _Nonnull)adView;
-- (void)adViewShrunked:(NestAdsAdView * _Nonnull)adView;
-@end
-
-
-SWIFT_CLASS("_TtC10NestAdsSdk19NestAdsBannerAdView")
-@interface NestAdsBannerAdView : NestAdsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-@end
-
-
-SWIFT_CLASS("_TtC10NestAdsSdk19NestAdsBannerListAd")
-@interface NestAdsBannerListAd : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10NestAdsSdk23NestAdsCardBannerAdView")
-@interface NestAdsCardBannerAdView : NestAdsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-@end
-
-@class UIScrollView;
-
-@interface NestAdsCardBannerAdView (SWIFT_EXTENSION(NestAdsSdk)) <UIScrollViewDelegate>
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-@end
-
-
-SWIFT_CLASS("_TtC10NestAdsSdk23NestAdsExpandableAdView")
-@interface NestAdsExpandableAdView : NestAdsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-@end
-
-
-
-
-SWIFT_CLASS("_TtC10NestAdsSdk18NestAdsVideoAdView")
-@interface NestAdsVideoAdView : NestAdsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-@end
-
-
-
-
-SWIFT_CLASS("_TtC10NestAdsSdk22NestAdsVideoPlayerView")
-@interface NestAdsVideoPlayerView : UIView
+SWIFT_CLASS("_TtC10NestAdsSDK16NestAdsMediaView")
+@interface NestAdsMediaView : UIView
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
+
+SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
+@interface NestAdsVideoController : NSObject
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
+@protocol NestAdsVideoControllerDelegate
+@optional
+- (void)videoControllerDidPlayVideo;
+- (void)videoControllerDidPauseVideo;
+- (void)videoControllerDidEndVideoPlayback;
+- (void)videoControllerDidMuteVideo:(NestAdsVideoController * _Nonnull)videoController;
+- (void)videoControllerDidUnmuteVideo:(NestAdsVideoController * _Nonnull)videoController;
+- (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
+@end
 
 
 

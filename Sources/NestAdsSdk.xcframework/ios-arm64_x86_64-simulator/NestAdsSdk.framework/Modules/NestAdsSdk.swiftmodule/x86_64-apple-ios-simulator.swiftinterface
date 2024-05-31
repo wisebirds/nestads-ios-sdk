@@ -1,14 +1,13 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NestAdsSdk
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NestAdsSDK
 import AVFoundation
 import AVKit
 import AdSupport
 import CoreTelephony
 import CryptoSwift
 import Foundation
-import MediaPlayer
-@_exported import NestAdsSdk
+@_exported import NestAdsSDK
 import Network
 import Swift
 import UIKit
@@ -18,147 +17,10 @@ import _SwiftConcurrencyShims
 import os.log
 import os
 import zlib
-public struct VastAdCategory : Swift.Codable {
-  public let authority: Foundation.URL?
-  public var category: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastAdCategory : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastAdCategory, b: NestAdsSdk.VastAdCategory) -> Swift.Bool
-}
-public struct VastClientOptions {
-  public let wrapperLimit: Swift.Int
-  public let singleWrapperTimeLimit: Foundation.TimeInterval
-  public let timeLimit: Foundation.TimeInterval
-  public let cachedVMAPModel: NestAdsSdk.VMAPModel?
-  public init(wrapperLimit: Swift.Int = 5, singleWrapperTimeLimit: Foundation.TimeInterval = 5, timeLimit: Foundation.TimeInterval = 10, cachedVMAPModel: NestAdsSdk.VMAPModel? = nil)
-}
-public class VastClient {
-  public static var trackingLogOutput: ((Swift.String, [Foundation.URL]) -> Swift.Void)?
-  public init(options: NestAdsSdk.VastClientOptions = VastClientOptions())
-  public func parseVast(withContentsOf url: Foundation.URL, completion: @escaping (NestAdsSdk.VastModel?, (any Swift.Error)?) -> Swift.Void)
-  public func parseVMAP(withContentsOf url: Foundation.URL) throws -> NestAdsSdk.VMAPModel
+@_hasMissingDesignatedInitializers open class NestAdsAdStringMeta {
+  open var value: Swift.String?
+  open var landingURL: Swift.String?
   @objc deinit
-}
-public struct VastMediaFiles : Swift.Codable {
-  public var mediaFiles: [NestAdsSdk.VastMediaFile]
-  public var interactiveCreativeFiles: [NestAdsSdk.VastInteractiveCreativeFile]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastMediaFiles : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastMediaFiles, b: NestAdsSdk.VastMediaFiles) -> Swift.Bool
-}
-extension Swift.String {
-  public var toSeconds: Swift.Double? {
-    get
-  }
-}
-public struct VastImpression : Swift.Codable {
-  public let id: Swift.String?
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastImpression {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastImpression : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastImpression, b: NestAdsSdk.VastImpression) -> Swift.Bool
-}
-public struct VastModel : Swift.Codable {
-  public let version: Swift.String
-  public var ads: [NestAdsSdk.VastAd]
-  public var errors: [Foundation.URL]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastModel {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastModel : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastModel, b: NestAdsSdk.VastModel) -> Swift.Bool
-}
-public struct VastWrapper : Swift.Codable {
-  public let followAdditionalWrappers: Swift.Bool?
-  public let allowMultipleAds: Swift.Bool?
-  public let fallbackOnNoAd: Swift.Bool?
-  public var adTagUri: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastWrapper : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastWrapper, b: NestAdsSdk.VastWrapper) -> Swift.Bool
-}
-public struct VastMediaFile : Swift.Codable {
-  public let delivery: Swift.String
-  public let type: Swift.String
-  public let width: Swift.String
-  public let height: Swift.String
-  public let codec: Swift.String?
-  public let id: Swift.String?
-  public let bitrate: Swift.Int?
-  public let minBitrate: Swift.Int?
-  public let maxBitrate: Swift.Int?
-  public let scalable: Swift.Bool?
-  public let maintainAspectRatio: Swift.Bool?
-  public let apiFramework: Swift.String?
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastMediaFile {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastMediaFile : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastMediaFile, b: NestAdsSdk.VastMediaFile) -> Swift.Bool
-}
-public struct VastExtension : Swift.Codable {
-  public let type: Swift.String
-  public var creativeParameters: [NestAdsSdk.VastCreativeParameter]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastExtension {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastExtension : Swift.Equatable {
-  public static func == (lhs: NestAdsSdk.VastExtension, rhs: NestAdsSdk.VastExtension) -> Swift.Bool
-}
-public struct VastInteractiveCreativeFile : Swift.Codable {
-  public let type: Swift.String?
-  public let apiFramework: Swift.String?
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastInteractiveCreativeFile : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastInteractiveCreativeFile, b: NestAdsSdk.VastInteractiveCreativeFile) -> Swift.Bool
-}
-public struct VastResource : Swift.Codable {
-  public let apiFramework: Swift.String?
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastResource : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastResource, b: NestAdsSdk.VastResource) -> Swift.Bool
-}
-public enum VastError : Swift.Error {
-  case invalidXMLDocument
-  case invalidVASTDocument
-  case unableToParseDocument
-  case unableToCreateXMLParser
-  case wrapperLimitReached
-  case singleRequestTimeLimitReached
-  case wrapperTimeLimitReached
-  case internalError
-  public static func == (a: NestAdsSdk.VastError, b: NestAdsSdk.VastError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 extension CoreMedia.CMTime : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -167,19 +29,52 @@ extension CoreMedia.CMTime : Swift.CustomStringConvertible {
   public func toDisplayString() -> Swift.String
   public func toCMTimeInteger() -> Swift.Int
 }
-public struct VastCreativeParameter : Swift.Codable {
-  public var creativeId: Swift.String
-  public var name: Swift.String
-  public var type: Swift.String
-  public var content: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NestAdsMediaView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var mediaContent: NestAdsSDK.NestAdsMediaContent? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override public static var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
-extension NestAdsSdk.VastCreativeParameter {
-  public init(attrDict: [Swift.String : Swift.String])
+public protocol NestAdsCustomNativeAdDelegate : AnyObject {
+  func customNativdAdDidRecordImpression(_ nativeAd: NestAdsSDK.NestAdsCustomNativeAd)
+  func customNativeAdDidRecordClick(_ nativeAd: NestAdsSDK.NestAdsCustomNativeAd)
+  func customNativeAdWillPresentScreen(_ nativeAd: NestAdsSDK.NestAdsCustomNativeAd)
+  func customNativeAdWillDismissScreen(_ nativeAd: NestAdsSDK.NestAdsCustomNativeAd)
+  func customNativeAdDidDismissScreen(_ nativeAd: NestAdsSDK.NestAdsCustomNativeAd)
 }
-extension NestAdsSdk.VastCreativeParameter : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastCreativeParameter, b: NestAdsSdk.VastCreativeParameter) -> Swift.Bool
+public typealias NestAdsCustomClickHandler = (Swift.String) -> Swift.Void
+@_hasMissingDesignatedInitializers open class NestAdsCustomNativeAd {
+  weak open var delegate: (any NestAdsSDK.NestAdsCustomNativeAdDelegate)?
+  open var placementCode: Swift.String {
+    get
+    set
+  }
+  open var availableMediaSpecIDs: [Swift.String] {
+    get
+    set
+  }
+  open var creativeSpecID: Swift.String {
+    get
+    set
+  }
+  open var mediaContent: NestAdsSDK.NestAdsMediaContent {
+    get
+    set
+  }
+  open var customClickHandler: NestAdsSDK.NestAdsCustomClickHandler?
+  @objc deinit
+  open func image(withMediaSpecID mediaSpecID: Swift.String) -> NestAdsSDK.NestAdsAdImage?
+  open func string(withMediaSpecID mediaSpecID: Swift.String) -> Swift.String?
+  open func landingURL(withMediaSpecID mediaSpecID: Swift.String) -> Swift.String?
+  open func stringWithMeta(withMediaSpecID mediaSpecID: Swift.String) -> NestAdsSDK.NestAdsAdStringMeta?
+  open func recordImpression()
+  open func performClick(withMediaSpecID mediaSpecID: Swift.String)
 }
 extension UIKit.UIColor {
   convenience public init(red: Swift.Int, green: Swift.Int, blue: Swift.Int)
@@ -187,487 +82,66 @@ extension UIKit.UIColor {
   convenience public init?(hexaRGB: Swift.String, alpha: CoreFoundation.CGFloat = 1)
   convenience public init?(hexaRGBA: Swift.String)
 }
-public enum TrackingError : Swift.Error {
-  case MissingAdBreak
-  case unableToUpdateProgressTrackingComplete
-  case unableToUpdateProgress(msg: Swift.String)
-  case unableToProvideCreativeClickThroughUrls
-  case internalError(msg: Swift.String)
-  case unableToSkipAdAtThisTime
-  case noAdFound(withId: Swift.String)
-}
-public struct VMAPModel : Swift.Codable {
-  public let version: Swift.String
-  public var adBreaks: [NestAdsSdk.VMAPAdBreak]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VMAPModel {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-public enum AdType : Swift.String, Swift.Codable {
-  case inline
-  case wrapper
-  case unknown
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VastAd : Swift.Codable {
-  public var type: NestAdsSdk.AdType
-  public let id: Swift.String
-  public let sequence: Swift.Int?
-  public let conditionalAd: Swift.Bool?
-  public var adSystem: NestAdsSdk.VastAdSystem?
-  public var impressions: [NestAdsSdk.VastImpression]
-  public var adVerifications: [NestAdsSdk.VastVerification]
-  public var viewableImpression: NestAdsSdk.VastViewableImpression?
-  public var pricing: NestAdsSdk.VastPricing?
-  public var errors: [Foundation.URL]
-  public var creatives: [NestAdsSdk.VastCreative]
-  public var extensions: [NestAdsSdk.VastExtension]
-  public var adTitle: Swift.String?
-  public var adCategories: [NestAdsSdk.VastAdCategory]
-  public var description: Swift.String?
-  public var advertiser: Swift.String?
-  public var surveys: [NestAdsSdk.VastSurvey]
-  public var wrapper: NestAdsSdk.VastWrapper?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastAd {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastAd : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastAd, b: NestAdsSdk.VastAd) -> Swift.Bool
-}
-public struct VastStaticResource : Swift.Codable {
-  public let creativeType: Swift.String
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastStaticResource : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastStaticResource, b: NestAdsSdk.VastStaticResource) -> Swift.Bool
-}
-public struct VastAdParameters : Swift.Codable {
-  public let xmlEncoded: Swift.String?
-  public var content: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastAdParameters : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastAdParameters, b: NestAdsSdk.VastAdParameters) -> Swift.Bool
-}
-public enum PricingModel : Swift.String, Swift.Codable {
-  case cpc
-  case cpm
-  case cpe
-  case cpv
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VastPricing : Swift.Codable {
-  public let model: NestAdsSdk.PricingModel
-  public let currency: Swift.String
-  public var pricing: Swift.Double?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastPricing : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastPricing, b: NestAdsSdk.VastPricing) -> Swift.Bool
-}
-@objc @_inheritsConvenienceInitializers public class NestAdsBannerListAd : ObjectiveC.NSObject {
-  public var rootViewController: UIKit.UIViewController?
-  public var placementCode: Swift.String
-  public var list: [Swift.Int]?
-  public func loadAd(completionHandler: @escaping ([Swift.Int]?) -> Swift.Void)
-  public func loadBannerAdView(bannerView: NestAdsSdk.NestAdsBannerAdView, index: Swift.Int)
-  @objc override dynamic public init()
+open class NestAdsAdLoaderOptions {
+  public init()
   @objc deinit
 }
-public enum ClickType : Swift.String, Swift.Codable {
-  case clickThrough
-  case clickTracking
-  case customClick
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VastVideoClick : Swift.Codable {
-  public let id: Swift.String?
-  public let type: NestAdsSdk.ClickType
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastVideoClick {
-  public init(type: NestAdsSdk.ClickType, attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastVideoClick : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastVideoClick, b: NestAdsSdk.VastVideoClick) -> Swift.Bool
-}
-public struct VMAPExtension {
-}
-public enum NestAdsBannerAdViewType {
-  case basic
-  case horizontal
-  case vertical
-  case square
-  case noAds
-  case timeout
-  public static func == (a: NestAdsSdk.NestAdsBannerAdViewType, b: NestAdsSdk.NestAdsBannerAdViewType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NestAdsBannerAdView : NestAdsSdk.NestAdsAdView {
-  @_Concurrency.MainActor(unsafe) public var adBackgroundColor: UIKit.UIColor?
-  @_Concurrency.MainActor(unsafe) public var type: NestAdsSdk.NestAdsBannerAdViewType
-  @_Concurrency.MainActor(unsafe) public var imageSize: CoreFoundation.CGSize?
-  @_Concurrency.MainActor(unsafe) public init(type: NestAdsSdk.NestAdsBannerAdViewType)
-  @_Concurrency.MainActor(unsafe) public init(placementCode: Swift.String)
-  @_Concurrency.MainActor(unsafe) override public func loadAd()
+@_inheritsConvenienceInitializers open class NestAdsVideoOptions : NestAdsSDK.NestAdsAdLoaderOptions {
+  open var startMuted: Swift.Bool
+  open var customControlsRequested: Swift.Bool
+  open var playCondition: Swift.String
+  override public init()
   @objc deinit
 }
-public struct VastCompanionClickTracking {
-  public let id: Swift.String?
+@objc public protocol NestAdsAdLoaderDelegate {
+  @objc func adLoader(_ adLoader: NestAdsSDK.NestAdsAdLoader, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
+  @objc optional func adLoaderDidFinishLoading(_ adLoader: NestAdsSDK.NestAdsAdLoader)
 }
-public struct VastCompanionCreative : Swift.Codable {
-  public let width: Swift.Int
-  public let height: Swift.Int
-  public let id: Swift.String?
-  public let assetWidth: Swift.Int?
-  public let assetHeight: Swift.Int?
-  public let expandedWidth: Swift.Int?
-  public let expandedHeight: Swift.Int?
-  public let apiFramework: Swift.String?
-  public let adSlotId: Swift.String?
-  public let pxRatio: Swift.Double?
-  public var staticResource: [NestAdsSdk.VastStaticResource]
-  public var iFrameResource: [Foundation.URL]
-  public var htmlResource: [Foundation.URL]
-  public var altText: Swift.String?
-  public var companionClickThrough: Foundation.URL?
-  public var companionClickTracking: [Foundation.URL]
-  public var trackingEvents: [NestAdsSdk.VastTrackingEvent]
-  public var adParameters: NestAdsSdk.VastAdParameters?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoaderDelegate {
+  func customNativeCreativeSpecIDs(for adLoader: NestAdsSDK.NestAdsAdLoader) -> [Swift.String]
+  func adLoader(_ adLoader: NestAdsSDK.NestAdsAdLoader, didReceive customNativeAd: NestAdsSDK.NestAdsCustomNativeAd)
 }
-extension NestAdsSdk.VastCompanionCreative {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastCompanionCreative : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastCompanionCreative, b: NestAdsSdk.VastCompanionCreative) -> Swift.Bool
-}
-public struct VastSurvey : Swift.Codable {
-  public let type: Swift.String?
-  public var survey: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastSurvey : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastSurvey, b: NestAdsSdk.VastSurvey) -> Swift.Bool
-}
-public struct VastNonLinearAdsCreative : Swift.Codable {
-  public var trackingEvents: [NestAdsSdk.VastTrackingEvent]
-  public var nonLinear: [NestAdsSdk.VastNonLinear]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastNonLinearAdsCreative : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastNonLinearAdsCreative, b: NestAdsSdk.VastNonLinearAdsCreative) -> Swift.Bool
-}
-public struct VastNonLinear : Swift.Codable {
-  public var height: Swift.String
-  public var id: Swift.String
-  public var width: Swift.String
-  public var staticResource: NestAdsSdk.VastStaticResource?
-  public var nonLinearClickTracking: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastNonLinear {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastNonLinear : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastNonLinear, b: NestAdsSdk.VastNonLinear) -> Swift.Bool
-}
-public enum VastErrorCodes : Swift.Int {
-  case xmlParsingError
-  case vastSchemaValidationError
-  case vastVersionOfResponseNotSupported
-  case traffickingError
-  case videoPlayerExpectingDifferentLinearity
-  case videoPlayerExpectingDifferentDuration
-  case videoPlayerExpectingDifferentSize
-  case adCategoryNotProvided
-  case generalWrapperError
-  case timeoutOfVastURI
-  case wrapperLimitReached
-  case noAdsVastResponse
-  case inlineResponseFailedToDisplayInTime
-  case generalLinearError
-  case fileNotFound
-  case timeoutOfMediaFile
-  case mediaFileNotSupported
-  case problemDisplayingMediaFile
-  case conditionalAdRejected
-  case interactiveUnitInNodeNotExecuted
-  case verificationUnitInNodeNotExecuted
-  case generalNonLinearAdsError
-  case creativeDimensionTooLarge
-  case unableToFetchResource
-  case nonLinearResourceNotSupported
-  case generalCompanionAdsError
-  case noAvailableSpace
-  case unableToDisplayCompanion
-  case unableToFetchCompanionResource
-  case companionResourceNotSupported
-  case undefinedError
-  case generalVPAIDError
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+@objc open class NestAdsAdLoader : ObjectiveC.NSObject {
+  open var placementCode: Swift.String {
     get
+    set
   }
-}
-public enum CompanionsRequirement : Swift.String, Swift.Codable {
-  case all
-  case any
-  case none
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  open var isLoading: Swift.Bool {
     get
+    set
   }
-}
-public struct VastCompanionAds : Swift.Codable {
-  public let required: NestAdsSdk.CompanionsRequirement
-  public var companions: [NestAdsSdk.VastCompanionCreative]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastCompanionAds {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastCompanionAds : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastCompanionAds, b: NestAdsSdk.VastCompanionAds) -> Swift.Bool
-}
-public enum VMAPAdSourceTemplate : Swift.String, Swift.Codable {
-  case vast
-  case vast1
-  case vast2
-  case vast3
-  case vast4
-  case unknown
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VMAPAdSource : Swift.Codable {
-  public let allowMultipleAds: Swift.Bool
-  public let followRedirects: Swift.Bool
-  public let id: Swift.String
-  public var vastAdData: NestAdsSdk.VastModel?
-  public var adTagURI: Foundation.URL?
-  public var customAdData: Swift.String?
-  public var templateType: NestAdsSdk.VMAPAdSourceTemplate?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VMAPAdSource {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-public enum TrackingEventType : Swift.String, Swift.Codable {
-  case firstQuartile
-  case midpoint
-  case thirdQuartile
-  case complete
-  case creativeView
-  case start
-  case mute
-  case unmute
-  case pause
-  case rewind
-  case resume
-  case fullscreen
-  case exitFullscreen
-  case playerExpand
-  case playerCollapse
-  case acceptInvitationLinear
-  case closeLinear
-  case skip
-  case progress
-  case collapse
-  case expand
-  case acceptInvitation
-  case close
-  case unknown
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VastTrackingEvent : Swift.Codable {
-  public let type: NestAdsSdk.TrackingEventType
-  public let offset: Swift.Double?
-  public var url: Foundation.URL?
-  public var tracked: Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastTrackingEvent {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastTrackingEvent : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastTrackingEvent, b: NestAdsSdk.VastTrackingEvent) -> Swift.Bool
-}
-public protocol VastTrackerDelegate : AnyObject {
-  func adFirstQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  func adMidpoint(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  func adThirdQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-}
-public struct TrackerModel {
-}
-public class VastTracker {
-  weak public var delegate: (any NestAdsSdk.VastTrackerDelegate)?
-  final public let vastModel: NestAdsSdk.VastModel
-  final public let totalAds: Swift.Int
-  final public let startTime: Swift.Double
-  public init(vastModel: NestAdsSdk.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: (any NestAdsSdk.VastTrackerDelegate)? = nil, trackProgressCumulatively: Swift.Bool = true)
+  weak open var delegate: (any NestAdsSDK.NestAdsAdLoaderDelegate)?
+  public init(placementCode: Swift.String, rootViewController: UIKit.UIViewController?, adTypes: [NestAdsSDK.NestAdsAdLoaderAdType], options: [NestAdsSDK.NestAdsAdLoaderOptions]? = nil)
+  open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
   @objc deinit
 }
-extension NestAdsSdk.VastTracker {
-  public func updateProgress(time: Swift.Double) throws
-  public func trackAdBreakStart(for adBreak: NestAdsSdk.VMAPAdBreak)
-  public func trackAdBreakEnd(for adBreak: NestAdsSdk.VMAPAdBreak)
-  public func trackAdBreakEvents(for adBreak: NestAdsSdk.VMAPAdBreak, withURLs urls: [Foundation.URL])
-  public func trackAdStart(withId id: Swift.String) throws
-  public func trackImpressions(withId id: Swift.String) throws
-  public func trackAdComplete() throws
-  public func trackSkippedAds(with ids: [Swift.String])
-  public func played() throws
-  public func paused() throws
-  public func fullscreen(_ val: Swift.Bool) throws
-  public func rewind() throws
-  public func muted(_ val: Swift.Bool) throws
-  public func acceptedLinearInvitation() throws
-  public func closed() throws
-  public func clicked() throws -> Foundation.URL?
-  public func clickedWithCustomAction() throws -> [Foundation.URL]
-  public func error(withReason code: NestAdsSdk.VastErrorCodes?) throws
-  public func trackViewability(type: NestAdsSdk.VastViewableImpressionType) throws
+@objc @_hasMissingDesignatedInitializers open class NestAdsAdError : ObjectiveC.NSObject, Swift.Error {
+  open var code: Swift.Int
+  open var message: Swift.String
+  @objc deinit
 }
-public struct VastCreative : Swift.Codable {
-  public let id: Swift.String?
-  public let adId: Swift.String?
-  public let sequence: Swift.Int?
-  public let apiFramework: Swift.String?
-  public var universalAdId: NestAdsSdk.VastUniversalAdId?
-  public var creativeExtensions: [NestAdsSdk.VastCreativeExtension]
-  public var linear: NestAdsSdk.VastLinearCreative?
-  public var nonLinearAds: NestAdsSdk.VastNonLinearAdsCreative?
-  public var companionAds: NestAdsSdk.VastCompanionAds?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastCreative {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastCreative : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastCreative, b: NestAdsSdk.VastCreative) -> Swift.Bool
-}
-public enum VMAPError : Swift.Error {
-  case invalidXMLDocument
-  case invalidVMAPDocument
-  case unableToParseDocument
-  case unableToCreateXMLParser
-  case internalError
-  public static func == (a: NestAdsSdk.VMAPError, b: NestAdsSdk.VMAPError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+@_hasMissingDesignatedInitializers open class NestAds {
+  open class func sharedInstance() -> NestAdsSDK.NestAds
+  open var versionNumber: NestAdsSDK.NestAdsVersionNumber {
     get
   }
-}
-@objc public protocol NestAdsAdViewDelegate {
-  @objc func adViewDidLoad(_ adView: NestAdsSdk.NestAdsAdView)
-  @objc func adView(_ adView: NestAdsSdk.NestAdsAdView, didFailToLoadWithError error: any Swift.Error)
-  @objc func adViewDidClick(_ adView: NestAdsSdk.NestAdsAdView)
-  @objc optional func adView(_ adView: NestAdsSdk.NestAdsAdView, videoSize: CoreFoundation.CGSize)
-  @objc optional func adViewExpanded(_ adView: NestAdsSdk.NestAdsAdView)
-  @objc optional func adViewShrunked(_ adView: NestAdsSdk.NestAdsAdView)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NestAdsAdView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var delegate: (any NestAdsSdk.NestAdsAdViewDelegate)?
-  @_Concurrency.MainActor(unsafe) public var rootViewController: UIKit.UIViewController?
-  @_Concurrency.MainActor(unsafe) public var placementCode: Swift.String?
-  @_Concurrency.MainActor(unsafe) public func loadAd()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  open func start()
   @objc deinit
 }
-public protocol VastTrackerNonLinearDelegate : AnyObject {
-  func adBreakStart(vastTracker: NestAdsSdk.VastTrackerNonLinear)
-  func adBreakComplete(vastTracker: NestAdsSdk.VastTrackerNonLinear)
+public struct NestAdsVersionNumber {
+  public var majorVersion: Swift.Int
+  public var minorVersion: Swift.Int
+  public var patchVersion: Swift.Int
+  public init()
+  public init(majorVersion: Swift.Int, minorVersion: Swift.Int, patchVersion: Swift.Int)
 }
-public class VastTrackerNonLinear {
-  weak public var delegate: (any NestAdsSdk.VastTrackerNonLinearDelegate)?
-  final public let id: Swift.String
-  final public let vastModel: NestAdsSdk.VastModel
-  final public let totalAds: Swift.Int
-  final public let startTime: Swift.Double
-  @available(*, message: "do not use VastTracker for storing this model, it is not being used")
-  public var vmapModel: NestAdsSdk.VMAPModel?
-  public init(id: Swift.String, vastModel: NestAdsSdk.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: (any NestAdsSdk.VastTrackerNonLinearDelegate)? = nil, trackProgressCumulatively: Swift.Bool = true)
-  @available(*, message: "Use init(id:,vastModel:) instead")
-  convenience public init(id: Swift.String, vmapModel: NestAdsSdk.VMAPModel, breakId: Swift.String, startTime: Swift.Double, supportAdBuffets: Swift.Bool = false, delegate: (any NestAdsSdk.VastTrackerNonLinearDelegate)? = nil) throws
-  public func updateProgress(time: Swift.Double) throws
-  public func adBreakCompleted() throws
-  @objc deinit
-}
-public protocol NestAdsAdDelegate : AnyObject {
-  func adDidLoad(_ response: [Swift.String : Swift.AnyObject]?, playerView: NestAdsSdk.NestAdsVideoPlayerView?)
-  func adLoadedFail(error: NestAdsSdk.NestAdsErrorModel)
-}
-@_hasMissingDesignatedInitializers public class NestAdsAd {
-  public var delegate: (any NestAdsSdk.NestAdsAdDelegate)?
-  public var placementCode: Swift.String?
-  public func loadAd()
-  @objc deinit
-}
-public struct VastCreativeExtension : Swift.Codable {
-  public let mimeType: Swift.String?
-  public var content: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastCreativeExtension {
-  public init?(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastCreativeExtension : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastCreativeExtension, b: NestAdsSdk.VastCreativeExtension) -> Swift.Bool
-}
-public func loadVastFile(_ data: Foundation.Data) -> NestAdsSdk.VastModel
+public func NestAdsGetStringFromVersionNumber(_ version: NestAdsSDK.NestAdsVersionNumber) -> Swift.String
 public struct CompressionLevel : Swift.RawRepresentable {
   public let rawValue: Swift.Int32
-  public static let noCompression: NestAdsSdk.CompressionLevel
-  public static let bestSpeed: NestAdsSdk.CompressionLevel
-  public static let bestCompression: NestAdsSdk.CompressionLevel
-  public static let defaultCompression: NestAdsSdk.CompressionLevel
+  public static let noCompression: NestAdsSDK.CompressionLevel
+  public static let bestSpeed: NestAdsSDK.CompressionLevel
+  public static let bestCompression: NestAdsSDK.CompressionLevel
+  public static let defaultCompression: NestAdsSDK.CompressionLevel
   public init(rawValue: Swift.Int32)
   public init(_ rawValue: Swift.Int32)
   public typealias RawValue = Swift.Int32
@@ -680,9 +154,9 @@ public struct GzipError : Swift.Error {
     case buffer
     case version
     case unknown(code: Swift.Int)
-    public static func == (a: NestAdsSdk.GzipError.Kind, b: NestAdsSdk.GzipError.Kind) -> Swift.Bool
+    public static func == (a: NestAdsSDK.GzipError.Kind, b: NestAdsSDK.GzipError.Kind) -> Swift.Bool
   }
-  public let kind: NestAdsSdk.GzipError.Kind
+  public let kind: NestAdsSDK.GzipError.Kind
   public let message: Swift.String
   public var localizedDescription: Swift.String {
     get
@@ -692,462 +166,92 @@ extension Foundation.Data {
   public var isGzipped: Swift.Bool {
     get
   }
-  public func gzipped(level: NestAdsSdk.CompressionLevel = .defaultCompression) throws -> Foundation.Data
+  public func gzipped(level: NestAdsSDK.CompressionLevel = .defaultCompression) throws -> Foundation.Data
   public func gunzipped() throws -> Foundation.Data
 }
-public protocol VideoDelegate : AnyObject {
-  func readyToPlay()
-  func playerProgress(progress: Swift.Double)
-  func didFinishPlayItem()
-}
-@_hasMissingDesignatedInitializers public class NestAdsNativeAd : NestAdsSdk.NestAdsAd {
-  public var videoDelegate: (any NestAdsSdk.VideoDelegate)?
-  public var skipOffset: Swift.Double?
-  public var isMute: Swift.Bool
-  public var linkURL: Foundation.URL?
-  public var videoWidth: Swift.String
-  public var videoHeight: Swift.String
-  public init(placementCode: Swift.String, isMute: Swift.Bool = true)
-  override public func loadAd()
-  public func play()
-  public func replay()
-  public func pause()
-  public func close()
-  public func stop()
-  public func mute(isOn: Swift.Bool)
-  public func skip()
-  public func videoClick()
-  public func videoImpression()
-  @objc deinit
-}
-extension NestAdsSdk.NestAdsNativeAd : NestAdsSdk.VastTrackerDelegate {
-  public func adFirstQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  public func adMidpoint(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  public func adThirdQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-}
-public struct VastAdSystem : Swift.Codable {
-  public let version: Swift.String?
-  public var system: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastAdSystem : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastAdSystem, b: NestAdsSdk.VastAdSystem) -> Swift.Bool
-}
-public enum GenderType : Swift.String {
-  case MALE
-  case FEMALE
-  case UNKNOWN
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct NestAdsUserField {
-  public var appVersion: Swift.String?
-  public var custom1: Swift.String?
-  public var custom2: Swift.String?
-  public var custom3: Swift.String?
-  public var country: Swift.String?
-  public var language: Swift.String?
-  public var gender: NestAdsSdk.GenderType?
-  public var age: Swift.String?
-  public var loginId: Swift.String?
-  public init()
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NestAdsAdManager : ObjectiveC.NSObject {
-  public static let shared: NestAdsSdk.NestAdsAdManager
-  public var userField: NestAdsSdk.NestAdsUserField?
-  public func applicationDidBecomeActive(_ application: UIKit.UIApplication)
-  @objc deinit
-}
-public enum NestAdsVideoAdViewType {
-  case single
-  case multiple
-  public static func == (a: NestAdsSdk.NestAdsVideoAdViewType, b: NestAdsSdk.NestAdsVideoAdViewType) -> Swift.Bool
+public let NestAdsCustomNativeAdVideoMediaSpecID: Swift.String
+public let NestAdsGenderUnknown: Swift.Int
+public let NestAdsGenderMale: Swift.Int
+public let NestAdsGenderFemale: Swift.Int
+public let NestAdsPlayConditionCustom: Swift.String
+public struct NestAdsAdLoaderAdType : Swift.Hashable, Swift.Equatable, @unchecked Swift.Sendable {
+  public static let native: NestAdsSDK.NestAdsAdLoaderAdType
+  public static let customNative: NestAdsSDK.NestAdsAdLoaderAdType
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: NestAdsSDK.NestAdsAdLoaderAdType, b: NestAdsSDK.NestAdsAdLoaderAdType) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
 }
-public enum NestAdsVideoAdViewPlayType {
-  case auto
-  case manual
-  public static func == (a: NestAdsSdk.NestAdsVideoAdViewPlayType, b: NestAdsSdk.NestAdsVideoAdViewPlayType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+@objc public protocol NestAdsVideoControllerDelegate {
+  @objc optional func videoControllerDidPlayVideo()
+  @objc optional func videoControllerDidPauseVideo()
+  @objc optional func videoControllerDidEndVideoPlayback()
+  @objc optional func videoControllerDidMuteVideo(_ videoController: NestAdsSDK.NestAdsVideoController)
+  @objc optional func videoControllerDidUnmuteVideo(_ videoController: NestAdsSDK.NestAdsVideoController)
+  @objc optional func videoControllerDidUpdateVideoProgress(current: Foundation.TimeInterval)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NestAdsVideoAdView : NestAdsSdk.NestAdsAdView {
-  @_Concurrency.MainActor(unsafe) public var isMute: Swift.Bool
-  @_Concurrency.MainActor(unsafe) public var type: NestAdsSdk.NestAdsVideoAdViewType
-  @_Concurrency.MainActor(unsafe) public var playType: NestAdsSdk.NestAdsVideoAdViewPlayType
-  @_Concurrency.MainActor(unsafe) public init(placementCode: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func setFrame(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) override public func loadAd()
-  @_Concurrency.MainActor(unsafe) public func clean()
-  @_Concurrency.MainActor(unsafe) public func getVideoRect() -> CoreFoundation.CGRect?
+@objc @_inheritsConvenienceInitializers open class NestAdsVideoController : ObjectiveC.NSObject {
+  weak open var delegate: (any NestAdsSDK.NestAdsVideoControllerDelegate)?
+  open var isMuted: Swift.Bool {
+    get
+    set
+  }
+  @objc deinit
+  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  open func setMute(_ mute: Swift.Bool)
+  open func play()
+  open func replay()
+  open func pause()
+  open func stop()
+  open func customControlsEnabled() -> Swift.Bool
+  @objc override dynamic public init()
+}
+open class NestAdsAdRequest {
+  open var gender: Swift.Int?
+  open var publisherProvidedID: Swift.String?
+  open var age: Swift.Int?
+  open var country: Swift.String?
+  open var language: Swift.String?
+  open var httpTimeout: Swift.Double
+  open var customTargeting: [Swift.String : Swift.String]?
+  open var appVersion: Swift.String?
+  public init(gender: Swift.Int? = 0, publisherProvidedID: Swift.String? = nil, age: Swift.Int? = -1, country: Swift.String? = nil, language: Swift.String? = nil, httpTimeout: Foundation.TimeInterval? = 1.0, customTargeting: [Swift.String : Swift.String]? = nil, appVersion: Swift.String? = nil)
   @objc deinit
 }
-extension NestAdsSdk.NestAdsVideoAdView : NestAdsSdk.VastTrackerDelegate {
-  @_Concurrency.MainActor(unsafe) public func adFirstQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  @_Concurrency.MainActor(unsafe) public func adMidpoint(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  @_Concurrency.MainActor(unsafe) public func adThirdQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-}
-extension NestAdsSdk.NestAdsVideoAdView {
-  @_Concurrency.MainActor(unsafe) public func didPlayItem()
-  @_Concurrency.MainActor(unsafe) public func playControllerViewMuteButtonAction(isMute: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func playControllerViewStopButtonAction()
-  @_Concurrency.MainActor(unsafe) public func playControllerViewMoreButtonAction()
-  @_Concurrency.MainActor(unsafe) public func playControllerViewSkipButtonAction()
-  @_Concurrency.MainActor(unsafe) public func didFinishPlayItem()
-  @_Concurrency.MainActor(unsafe) public func readyToPlay()
-  @_Concurrency.MainActor(unsafe) public func getPlayerRect(rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func playerProgress(progress: Swift.Double)
-}
-public struct VastIcon : Swift.Codable {
-  public let program: Swift.String
-  public let width: Swift.Int
-  public let height: Swift.Int
-  public let xPosition: Swift.String
-  public let yPosition: Swift.String
-  public let duration: Swift.Double
-  public let offset: Swift.Double
-  public let apiFramework: Swift.String
-  public let pxratio: Swift.Double
-  public var iconViewTracking: [Foundation.URL]
-  public var iconClicks: NestAdsSdk.IconClicks?
-  public var staticResource: [NestAdsSdk.VastStaticResource]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastIcon {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastIcon : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastIcon, b: NestAdsSdk.VastIcon) -> Swift.Bool
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NestAdsExpandableAdView : NestAdsSdk.NestAdsAdView {
-  @_Concurrency.MainActor(unsafe) public var adBackgroundColor: UIKit.UIColor?
-  @_Concurrency.MainActor(unsafe) public var imageSize: CoreFoundation.CGSize?
-  @_Concurrency.MainActor(unsafe) public var containerSize: CoreFoundation.CGSize?
-  @_Concurrency.MainActor(unsafe) public var isMute: Swift.Bool
-  @_Concurrency.MainActor(unsafe) public var playType: NestAdsSdk.NestAdsVideoAdViewPlayType
-  @_Concurrency.MainActor(unsafe) public init(placementCode: Swift.String)
-  @_Concurrency.MainActor(unsafe) override public func loadAd()
-  @_Concurrency.MainActor(unsafe) public func setFrame(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func clean()
-  @_Concurrency.MainActor(unsafe) public func getVideoRect() -> CoreFoundation.CGRect?
+@_hasMissingDesignatedInitializers open class NestAdsMediaContent {
+  open var hasVideoContent: Swift.Bool {
+    get
+    set
+  }
+  open var videoController: NestAdsSDK.NestAdsVideoController {
+    get
+    set
+  }
+  open var width: Swift.Int {
+    get
+    set
+  }
+  open var height: Swift.Int {
+    get
+    set
+  }
+  open var aspectRatio: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  open var skipOffset: Foundation.TimeInterval?
+  open var duration: Foundation.TimeInterval {
+    get
+    set
+  }
   @objc deinit
 }
-extension NestAdsSdk.NestAdsExpandableAdView : NestAdsSdk.VastTrackerDelegate {
-  @_Concurrency.MainActor(unsafe) public func adFirstQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  @_Concurrency.MainActor(unsafe) public func adMidpoint(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-  @_Concurrency.MainActor(unsafe) public func adThirdQuartile(vastTracker: NestAdsSdk.VastTracker, ad: NestAdsSdk.VastAd)
-}
-extension NestAdsSdk.NestAdsExpandableAdView {
-  @_Concurrency.MainActor(unsafe) public func didPlayItem()
-  @_Concurrency.MainActor(unsafe) public func playControllerViewMuteButtonAction(isMute: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func playControllerViewStopButtonAction()
-  @_Concurrency.MainActor(unsafe) public func playControllerViewMoreButtonAction()
-  @_Concurrency.MainActor(unsafe) public func playControllerViewSkipButtonAction()
-  @_Concurrency.MainActor(unsafe) public func playControllerViewCloseButtonAction()
-  @_Concurrency.MainActor(unsafe) public func didFinishPlayItem()
-  @_Concurrency.MainActor(unsafe) public func readyToPlay()
-  @_Concurrency.MainActor(unsafe) public func getPlayerRect(rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func playerProgress(progress: Swift.Double)
-}
-public enum VMAPTrackingEventType : Swift.String, Swift.Codable {
-  case breakStart
-  case breakEnd
-  case error
-  case unknown
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VMAPTrackingEvent : Swift.Codable {
-  public let event: NestAdsSdk.VMAPTrackingEventType
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VMAPTrackingEvent {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-public struct VastIconClickTracking : Swift.Codable {
-  public let id: Swift.String?
-  public var url: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastIconClickTracking : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastIconClickTracking, b: NestAdsSdk.VastIconClickTracking) -> Swift.Bool
-}
-public struct VastLinearCreative : Swift.Codable {
-  public let skipOffset: Swift.String?
-  public var duration: Swift.Double?
-  public var adParameters: NestAdsSdk.VastAdParameters?
-  public var videoClicks: [NestAdsSdk.VastVideoClick]
-  public var trackingEvents: [NestAdsSdk.VastTrackingEvent]
-  public var files: NestAdsSdk.VastMediaFiles
-  public var icons: [NestAdsSdk.VastIcon]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastLinearCreative {
-  public init(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastLinearCreative : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastLinearCreative, b: NestAdsSdk.VastLinearCreative) -> Swift.Bool
-}
-public enum VMAPErrorCodes : Swift.Int {
-  case undefined
-  case vmapSchemaError
-  case vmapResponesVersionNotSupported
-  case vmapParsingError
-  case adBreakTypeNotSupported
-  case generalAdResponseDocumentError
-  case adResponseTemplateTypeNotSupported
-  case adResponseDocumentExtractionOrParsingError
-  case adResponseDocumentRetrievalTimeout
-  case adResponseDocumentRetrievalError
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum VastViewableImpressionType : Swift.String {
-  case viewable
-  case notViewable
-  case viewUndetermined
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VastViewableImpression : Swift.Codable {
-  public let id: Swift.String
-  public var url: Foundation.URL?
-  public var viewable: [Foundation.URL]
-  public var notViewable: [Foundation.URL]
-  public var viewUndetermined: [Foundation.URL]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastViewableImpression : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastViewableImpression, b: NestAdsSdk.VastViewableImpression) -> Swift.Bool
-}
-public struct VastUniversalAdId : Swift.Codable {
-  public let idRegistry: Swift.String
-  public let idValue: Swift.String
-  public var uniqueCreativeId: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastUniversalAdId {
-  public init?(attrDict: [Swift.String : Swift.String])
-}
-extension NestAdsSdk.VastUniversalAdId : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastUniversalAdId, b: NestAdsSdk.VastUniversalAdId) -> Swift.Bool
-}
-public struct VastVerification : Swift.Codable {
-  public let vendor: Foundation.URL?
-  public var viewableImpression: NestAdsSdk.VastViewableImpression?
-  public var javaScriptResource: [NestAdsSdk.VastResource]
-  public var flashResources: [NestAdsSdk.VastResource]
-  public var verificationParameters: NestAdsSdk.VastAdVerificationParameters?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastVerification : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastVerification, b: NestAdsSdk.VastVerification) -> Swift.Bool
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NestAdsVideoPlayerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override public static var layerClass: Swift.AnyClass {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@_hasMissingDesignatedInitializers open class NestAdsAdImage {
+  open var image: UIKit.UIImage?
+  open var imageURL: Foundation.URL?
+  open var width: Swift.Int?
+  open var height: Swift.Int?
+  open var landingURL: Swift.String?
   @objc deinit
 }
-public enum NestAdsCardBannerAdViewScrollType {
-  case auto
-  case manual
-  public static func == (a: NestAdsSdk.NestAdsCardBannerAdViewScrollType, b: NestAdsSdk.NestAdsCardBannerAdViewScrollType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NestAdsCardBannerAdView : NestAdsSdk.NestAdsAdView {
-  @_Concurrency.MainActor(unsafe) public var scrollType: NestAdsSdk.NestAdsCardBannerAdViewScrollType
-  @_Concurrency.MainActor(unsafe) public var timerSecond: Swift.Double
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) public init(placementCode: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func didDisappear()
-  @_Concurrency.MainActor(unsafe) override public func loadAd()
-}
-extension NestAdsSdk.NestAdsCardBannerAdView : UIKit.UIScrollViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-}
-public struct VastAdVerificationParameters : Swift.Codable {
-  public var data: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VastAdVerificationParameters : Swift.Equatable {
-  public static func == (a: NestAdsSdk.VastAdVerificationParameters, b: NestAdsSdk.VastAdVerificationParameters) -> Swift.Bool
-}
-public enum VMAPAdBreakType : Swift.String, Swift.Codable {
-  case linear
-  case nonlinear
-  case display
-  case unknown
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct VMAPAdBreak : Swift.Codable {
-  public var breakId: Swift.String?
-  public var repeatAfter: Swift.String?
-  public let breakType: NestAdsSdk.VMAPAdBreakType
-  public let timeOffset: Swift.String
-  public var adSource: NestAdsSdk.VMAPAdSource?
-  public var trackingEvents: [NestAdsSdk.VMAPTrackingEvent]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.VMAPAdBreak {
-  public init(attrDict: [Swift.String : Swift.String])
-  public func trackEvent(withType type: NestAdsSdk.VMAPTrackingEventType)
-  public func trackEvents(withUrls urls: [Foundation.URL])
-}
-public struct NestAdsResponseModel : Swift.Codable {
-  public var type: Swift.String?
-  public var creatives: [NestAdsSdk.Creative]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Creative : Swift.Codable {
-  public var impressionUrls: [Swift.String]?
-  public var images: [NestAdsSdk.Image]?
-  public var text: NestAdsSdk.Text?
-  public var profileImage: NestAdsSdk.ProfileImage?
-  public var profileName: Swift.String?
-  public var ctaButton: NestAdsSdk.CtaButton?
-  public var hintAsset: NestAdsSdk.HintAsset?
-  public var adbadge: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Image : Swift.Codable {
-  public var impressionUrls: [Swift.String]?
-  public var clickUrls: [Swift.String]?
-  public var landingUrl: Swift.String?
-  public var resourceUrl: Swift.String?
-  public var backgroundColor: Swift.String?
-  public var width: Swift.Int?
-  public var height: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Text : Swift.Codable {
-  public var value: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct ProfileImage : Swift.Codable {
-  public var resourceUrl: Swift.String?
-  public var width: Swift.Int?
-  public var height: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CtaButton : Swift.Codable {
-  public var landingUrlType: Swift.String?
-  public var landingUrl: Swift.String?
-  public var clickUrls: [Swift.String]?
-  public var value: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct HintAsset : Swift.Codable {
-  public var resourceUrl: Swift.String?
-  public var clickUrls: [Swift.String]?
-  public var width: Swift.Int?
-  public var height: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct NestAdsErrorModel : Swift.Codable {
-  public var code: Swift.Int
-  public var message: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct IconClicks : Swift.Codable {
-  public var iconClickThrough: Foundation.URL?
-  public var iconClickTracking: [NestAdsSdk.VastIconClickTracking]
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension NestAdsSdk.IconClicks : Swift.Equatable {
-  public static func == (a: NestAdsSdk.IconClicks, b: NestAdsSdk.IconClicks) -> Swift.Bool
-}
-extension NestAdsSdk.VastError : Swift.Equatable {}
-extension NestAdsSdk.VastError : Swift.Hashable {}
-extension NestAdsSdk.AdType : Swift.Equatable {}
-extension NestAdsSdk.AdType : Swift.Hashable {}
-extension NestAdsSdk.AdType : Swift.RawRepresentable {}
-extension NestAdsSdk.PricingModel : Swift.Equatable {}
-extension NestAdsSdk.PricingModel : Swift.Hashable {}
-extension NestAdsSdk.PricingModel : Swift.RawRepresentable {}
-extension NestAdsSdk.ClickType : Swift.Equatable {}
-extension NestAdsSdk.ClickType : Swift.Hashable {}
-extension NestAdsSdk.ClickType : Swift.RawRepresentable {}
-extension NestAdsSdk.NestAdsBannerAdViewType : Swift.Equatable {}
-extension NestAdsSdk.NestAdsBannerAdViewType : Swift.Hashable {}
-extension NestAdsSdk.VastErrorCodes : Swift.Equatable {}
-extension NestAdsSdk.VastErrorCodes : Swift.Hashable {}
-extension NestAdsSdk.VastErrorCodes : Swift.RawRepresentable {}
-extension NestAdsSdk.CompanionsRequirement : Swift.Equatable {}
-extension NestAdsSdk.CompanionsRequirement : Swift.Hashable {}
-extension NestAdsSdk.CompanionsRequirement : Swift.RawRepresentable {}
-extension NestAdsSdk.VMAPAdSourceTemplate : Swift.Equatable {}
-extension NestAdsSdk.VMAPAdSourceTemplate : Swift.Hashable {}
-extension NestAdsSdk.VMAPAdSourceTemplate : Swift.RawRepresentable {}
-extension NestAdsSdk.TrackingEventType : Swift.Equatable {}
-extension NestAdsSdk.TrackingEventType : Swift.Hashable {}
-extension NestAdsSdk.TrackingEventType : Swift.RawRepresentable {}
-extension NestAdsSdk.VMAPError : Swift.Equatable {}
-extension NestAdsSdk.VMAPError : Swift.Hashable {}
-extension NestAdsSdk.GenderType : Swift.Equatable {}
-extension NestAdsSdk.GenderType : Swift.Hashable {}
-extension NestAdsSdk.GenderType : Swift.RawRepresentable {}
-extension NestAdsSdk.NestAdsVideoAdViewType : Swift.Equatable {}
-extension NestAdsSdk.NestAdsVideoAdViewType : Swift.Hashable {}
-extension NestAdsSdk.NestAdsVideoAdViewPlayType : Swift.Equatable {}
-extension NestAdsSdk.NestAdsVideoAdViewPlayType : Swift.Hashable {}
-extension NestAdsSdk.VMAPTrackingEventType : Swift.Equatable {}
-extension NestAdsSdk.VMAPTrackingEventType : Swift.Hashable {}
-extension NestAdsSdk.VMAPTrackingEventType : Swift.RawRepresentable {}
-extension NestAdsSdk.VMAPErrorCodes : Swift.Equatable {}
-extension NestAdsSdk.VMAPErrorCodes : Swift.Hashable {}
-extension NestAdsSdk.VMAPErrorCodes : Swift.RawRepresentable {}
-extension NestAdsSdk.VastViewableImpressionType : Swift.Equatable {}
-extension NestAdsSdk.VastViewableImpressionType : Swift.Hashable {}
-extension NestAdsSdk.VastViewableImpressionType : Swift.RawRepresentable {}
-extension NestAdsSdk.NestAdsCardBannerAdViewScrollType : Swift.Equatable {}
-extension NestAdsSdk.NestAdsCardBannerAdViewScrollType : Swift.Hashable {}
-extension NestAdsSdk.VMAPAdBreakType : Swift.Equatable {}
-extension NestAdsSdk.VMAPAdBreakType : Swift.Hashable {}
-extension NestAdsSdk.VMAPAdBreakType : Swift.RawRepresentable {}
