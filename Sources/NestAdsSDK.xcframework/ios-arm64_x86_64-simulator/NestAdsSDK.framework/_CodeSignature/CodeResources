@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5ON47d7+aKeygMevg6xsRQLnFos=
+		Z0+jMHO/3V1VhofT5HHwD3kveDw=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WUJ6XIVYKA5/PyfPof3dkx7I3l4=
+		2kQ2ov1s2qvuGQg9SAF3oj56lT4=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		edHx/S6qm61wEQoQ693pXiGa2+g=
+		gZtQoyDDk+H7TLS68uP9ITvm+zQ=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CQ6eMwYHgzDtkK+piTjai5/afsk=
+		Zbtnak7YLS/9jayfM4SUFB8q8SY=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WUJ6XIVYKA5/PyfPof3dkx7I3l4=
+		2kQ2ov1s2qvuGQg9SAF3oj56lT4=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jIskO4a0PyKMygLcKA4SuMrItxU=
+		iB6CmMU2/5uF0C36TzC7rGNNG2Y=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LnV33Ub5gOuJC8654C2gMmcB0eQ=
+		IvLF5SYLZw7tzMkeJa5Bm2MS72c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KrmzIhaCQw8vvR6jFiqIB1HBqr/990DRyp9RUT1CrBI=
+			ujfTwObqUDjGpM/XsYLuBvhneGJYU7Z3gbHzIRkMG8Y=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -142,7 +142,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UbV5jS+CrSCHn8ustwVlf5VjJndcSjvycpuBpLF5fgQ=
+			ilbo2XlYX+kzrm2sbfVdX6YoYYSLU0CPpJk2f1ebvSs=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -156,14 +156,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n5EcA2jlbN39H8oOrfJiiiFOEmepYbvKQG6WKS805+c=
+			NkOD4cfaZBKZu6BcOiJWqnHETDR1+VYVUKIxWHkIIW8=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KrmzIhaCQw8vvR6jFiqIB1HBqr/990DRyp9RUT1CrBI=
+			ujfTwObqUDjGpM/XsYLuBvhneGJYU7Z3gbHzIRkMG8Y=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			47daJ2ARlhtmvJI+IWItJNqbienVMrca0z8MENZeurU=
+			DRN13/98PcaF7F8Rs97cP1V28z9E18tzB5c6GM+XRLw=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -191,7 +191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVqQvUPXwOscaFFu+mS5bLlsNfQH23Kv+zyRoUWeE74=
+			A9oOwYLg2cbvaEW59dwFVEnCkV63vWe4Y1GYZn6+qKw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
