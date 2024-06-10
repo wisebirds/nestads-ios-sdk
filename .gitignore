@@ -1,4 +1,3 @@
 *.podspec
-*.resolved
 
 .swiftpm
