@@ -13,8 +13,8 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.8.1"),
-    .package(url: "https://github.com/realm/realm-swift.git", from: "10.49.3"),
+    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.8.2"),
+    .package(url: "https://github.com/realm/realm-swift.git", exact: "10.49.3"),
   ],
   targets: [
     .target(name: "NestAdsSDKWrapper",
