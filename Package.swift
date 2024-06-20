@@ -9,21 +9,10 @@ let package = Package(
   products: [
     .library(
       name: "NestAdsSDK",
-      targets: ["NestAdsSDKWrapper"]
+      targets: ["NestAdsSDK"]
     ),
   ],
-  dependencies: [
-    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.8.1"),
-    .package(url: "https://github.com/realm/realm-swift.git", from: "10.49.3"),
-  ],
   targets: [
-    .target(name: "NestAdsSDKWrapper",
-            dependencies: [
-              .target(name: "NestAdsSDK", condition: .when(platforms: [.iOS])),
-              .product(name: "RealmSwift", package: "realm-swift"),
-              .product(name: "CryptoSwift", package: "CryptoSwift"),
-
-            ]),
     .binaryTarget(name: "NestAdsSDK", path: "Sources/NestAdsSDK.xcframework"),
   ]
 )

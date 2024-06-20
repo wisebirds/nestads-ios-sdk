@@ -4,8 +4,9 @@
 import AVFoundation
 import AVKit
 import AdSupport
+import CommonCrypto
+import Compression
 import CoreTelephony
-import CryptoSwift
 import Foundation
 @_exported import NestAdsSDK
 import Network
@@ -93,6 +94,11 @@ open class NestAdsAdLoaderOptions {
   override public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers open class NestAdsNativeAdImageAdLoaderOptions : NestAdsSDK.NestAdsAdLoaderOptions {
+  open var disableImageLoading: Swift.Bool
+  override public init()
+  @objc deinit
+}
 @objc public protocol NestAdsAdLoaderDelegate {
   @objc func adLoader(_ adLoader: NestAdsSDK.NestAdsAdLoader, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
   @objc optional func adLoaderDidFinishLoading(_ adLoader: NestAdsSDK.NestAdsAdLoader)
@@ -136,39 +142,6 @@ public struct NestAdsVersionNumber {
   public init(majorVersion: Swift.Int, minorVersion: Swift.Int, patchVersion: Swift.Int)
 }
 public func NestAdsGetStringFromVersionNumber(_ version: NestAdsSDK.NestAdsVersionNumber) -> Swift.String
-public struct CompressionLevel : Swift.RawRepresentable {
-  public let rawValue: Swift.Int32
-  public static let noCompression: NestAdsSDK.CompressionLevel
-  public static let bestSpeed: NestAdsSDK.CompressionLevel
-  public static let bestCompression: NestAdsSDK.CompressionLevel
-  public static let defaultCompression: NestAdsSDK.CompressionLevel
-  public init(rawValue: Swift.Int32)
-  public init(_ rawValue: Swift.Int32)
-  public typealias RawValue = Swift.Int32
-}
-public struct GzipError : Swift.Error {
-  public enum Kind : Swift.Equatable {
-    case stream
-    case data
-    case memory
-    case buffer
-    case version
-    case unknown(code: Swift.Int)
-    public static func == (a: NestAdsSDK.GzipError.Kind, b: NestAdsSDK.GzipError.Kind) -> Swift.Bool
-  }
-  public let kind: NestAdsSDK.GzipError.Kind
-  public let message: Swift.String
-  public var localizedDescription: Swift.String {
-    get
-  }
-}
-extension Foundation.Data {
-  public var isGzipped: Swift.Bool {
-    get
-  }
-  public func gzipped(level: NestAdsSDK.CompressionLevel = .defaultCompression) throws -> Foundation.Data
-  public func gunzipped() throws -> Foundation.Data
-}
 public let NestAdsCustomNativeAdVideoMediaSpecID: Swift.String
 public let NestAdsGenderUnknown: Swift.Int
 public let NestAdsGenderMale: Swift.Int
@@ -242,6 +215,10 @@ open class NestAdsAdRequest {
   }
   open var skipOffset: Foundation.TimeInterval?
   open var duration: Foundation.TimeInterval {
+    get
+    set
+  }
+  open var currentTime: Foundation.TimeInterval {
     get
     set
   }

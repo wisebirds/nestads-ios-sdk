@@ -16,42 +16,11 @@
       },
       {
         "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -87,20 +56,13 @@
       },
       {
         "kind": "Import",
-        "name": "CryptoSwift",
-        "printedName": "CryptoSwift",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
       },
       {
         "kind": "Import",
@@ -108,16 +70,6 @@
         "printedName": "Network",
         "declKind": "Import",
         "moduleName": "NestAdsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -1997,6 +1949,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "NestAdsAdLoaderOptions",
         "printedName": "NestAdsAdLoaderOptions",
@@ -2344,6 +2306,163 @@
         "superclassNames": [
           "NestAdsSDK.NestAdsAdLoaderOptions"
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NestAdsNativeAdImageAdLoaderOptions",
+        "printedName": "NestAdsNativeAdImageAdLoaderOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "disableImageLoading",
+            "printedName": "disableImageLoading",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvp",
+            "mangledName": "$s10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvp",
+            "moduleName": "NestAdsSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvg",
+                "mangledName": "$s10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvs",
+                "mangledName": "$s10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvs",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvM",
+                "mangledName": "$s10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC07disableF7LoadingSbvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsNativeAdImageAdLoaderOptions",
+                "printedName": "NestAdsSDK.NestAdsNativeAdImageAdLoaderOptions",
+                "usr": "s:10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsCACycfc",
+            "mangledName": "$s10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsCACycfc",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC",
+        "mangledName": "$s10NestAdsSDK0ab13NativeAdImageE13LoaderOptionsC",
+        "moduleName": "NestAdsSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:10NestAdsSDK0aB15AdLoaderOptionsC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "NestAdsSDK.NestAdsAdLoaderOptions"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Compression",
+        "printedName": "Compression",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
       },
       {
         "kind": "Import",
@@ -3442,6 +3561,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4151,809 +4280,6 @@
         "moduleName": "NestAdsSDK"
       },
       {
-        "kind": "TypeDecl",
-        "name": "CompressionLevel",
-        "printedName": "CompressionLevel",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK16CompressionLevelV8rawValues5Int32Vvp",
-            "mangledName": "$s10NestAdsSDK16CompressionLevelV8rawValues5Int32Vvp",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int32",
-                    "printedName": "Swift.Int32",
-                    "usr": "s:s5Int32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK16CompressionLevelV8rawValues5Int32Vvg",
-                "mangledName": "$s10NestAdsSDK16CompressionLevelV8rawValues5Int32Vvg",
-                "moduleName": "NestAdsSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "noCompression",
-            "printedName": "noCompression",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CompressionLevel",
-                "printedName": "NestAdsSDK.CompressionLevel",
-                "usr": "s:10NestAdsSDK16CompressionLevelV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK16CompressionLevelV02noD0ACvpZ",
-            "mangledName": "$s10NestAdsSDK16CompressionLevelV02noD0ACvpZ",
-            "moduleName": "NestAdsSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CompressionLevel",
-                    "printedName": "NestAdsSDK.CompressionLevel",
-                    "usr": "s:10NestAdsSDK16CompressionLevelV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK16CompressionLevelV02noD0ACvgZ",
-                "mangledName": "$s10NestAdsSDK16CompressionLevelV02noD0ACvgZ",
-                "moduleName": "NestAdsSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "bestSpeed",
-            "printedName": "bestSpeed",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CompressionLevel",
-                "printedName": "NestAdsSDK.CompressionLevel",
-                "usr": "s:10NestAdsSDK16CompressionLevelV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK16CompressionLevelV9bestSpeedACvpZ",
-            "mangledName": "$s10NestAdsSDK16CompressionLevelV9bestSpeedACvpZ",
-            "moduleName": "NestAdsSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CompressionLevel",
-                    "printedName": "NestAdsSDK.CompressionLevel",
-                    "usr": "s:10NestAdsSDK16CompressionLevelV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK16CompressionLevelV9bestSpeedACvgZ",
-                "mangledName": "$s10NestAdsSDK16CompressionLevelV9bestSpeedACvgZ",
-                "moduleName": "NestAdsSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "bestCompression",
-            "printedName": "bestCompression",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CompressionLevel",
-                "printedName": "NestAdsSDK.CompressionLevel",
-                "usr": "s:10NestAdsSDK16CompressionLevelV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK16CompressionLevelV04bestD0ACvpZ",
-            "mangledName": "$s10NestAdsSDK16CompressionLevelV04bestD0ACvpZ",
-            "moduleName": "NestAdsSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CompressionLevel",
-                    "printedName": "NestAdsSDK.CompressionLevel",
-                    "usr": "s:10NestAdsSDK16CompressionLevelV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK16CompressionLevelV04bestD0ACvgZ",
-                "mangledName": "$s10NestAdsSDK16CompressionLevelV04bestD0ACvgZ",
-                "moduleName": "NestAdsSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "defaultCompression",
-            "printedName": "defaultCompression",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CompressionLevel",
-                "printedName": "NestAdsSDK.CompressionLevel",
-                "usr": "s:10NestAdsSDK16CompressionLevelV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK16CompressionLevelV07defaultD0ACvpZ",
-            "mangledName": "$s10NestAdsSDK16CompressionLevelV07defaultD0ACvpZ",
-            "moduleName": "NestAdsSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CompressionLevel",
-                    "printedName": "NestAdsSDK.CompressionLevel",
-                    "usr": "s:10NestAdsSDK16CompressionLevelV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK16CompressionLevelV07defaultD0ACvgZ",
-                "mangledName": "$s10NestAdsSDK16CompressionLevelV07defaultD0ACvgZ",
-                "moduleName": "NestAdsSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CompressionLevel",
-                "printedName": "NestAdsSDK.CompressionLevel",
-                "usr": "s:10NestAdsSDK16CompressionLevelV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10NestAdsSDK16CompressionLevelV8rawValueACs5Int32V_tcfc",
-            "mangledName": "$s10NestAdsSDK16CompressionLevelV8rawValueACs5Int32V_tcfc",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CompressionLevel",
-                "printedName": "NestAdsSDK.CompressionLevel",
-                "usr": "s:10NestAdsSDK16CompressionLevelV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10NestAdsSDK16CompressionLevelVyACs5Int32Vcfc",
-            "mangledName": "$s10NestAdsSDK16CompressionLevelVyACs5Int32Vcfc",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10NestAdsSDK16CompressionLevelV",
-        "mangledName": "$s10NestAdsSDK16CompressionLevelV",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int32",
-                    "printedName": "Swift.Int32",
-                    "usr": "s:s5Int32V"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "GzipError",
-        "printedName": "GzipError",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "Kind",
-            "printedName": "Kind",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "stream",
-                "printedName": "stream",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(NestAdsSDK.GzipError.Kind.Type) -> NestAdsSDK.GzipError.Kind",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Kind",
-                        "printedName": "NestAdsSDK.GzipError.Kind",
-                        "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "NestAdsSDK.GzipError.Kind.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Kind",
-                            "printedName": "NestAdsSDK.GzipError.Kind",
-                            "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO6streamyA2EmF",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO6streamyA2EmF",
-                "moduleName": "NestAdsSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "data",
-                "printedName": "data",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(NestAdsSDK.GzipError.Kind.Type) -> NestAdsSDK.GzipError.Kind",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Kind",
-                        "printedName": "NestAdsSDK.GzipError.Kind",
-                        "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "NestAdsSDK.GzipError.Kind.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Kind",
-                            "printedName": "NestAdsSDK.GzipError.Kind",
-                            "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO4datayA2EmF",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO4datayA2EmF",
-                "moduleName": "NestAdsSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "memory",
-                "printedName": "memory",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(NestAdsSDK.GzipError.Kind.Type) -> NestAdsSDK.GzipError.Kind",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Kind",
-                        "printedName": "NestAdsSDK.GzipError.Kind",
-                        "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "NestAdsSDK.GzipError.Kind.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Kind",
-                            "printedName": "NestAdsSDK.GzipError.Kind",
-                            "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO6memoryyA2EmF",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO6memoryyA2EmF",
-                "moduleName": "NestAdsSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "buffer",
-                "printedName": "buffer",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(NestAdsSDK.GzipError.Kind.Type) -> NestAdsSDK.GzipError.Kind",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Kind",
-                        "printedName": "NestAdsSDK.GzipError.Kind",
-                        "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "NestAdsSDK.GzipError.Kind.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Kind",
-                            "printedName": "NestAdsSDK.GzipError.Kind",
-                            "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO6bufferyA2EmF",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO6bufferyA2EmF",
-                "moduleName": "NestAdsSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "version",
-                "printedName": "version",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(NestAdsSDK.GzipError.Kind.Type) -> NestAdsSDK.GzipError.Kind",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Kind",
-                        "printedName": "NestAdsSDK.GzipError.Kind",
-                        "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "NestAdsSDK.GzipError.Kind.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Kind",
-                            "printedName": "NestAdsSDK.GzipError.Kind",
-                            "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO7versionyA2EmF",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO7versionyA2EmF",
-                "moduleName": "NestAdsSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "unknown",
-                "printedName": "unknown",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(NestAdsSDK.GzipError.Kind.Type) -> (Swift.Int) -> NestAdsSDK.GzipError.Kind",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> NestAdsSDK.GzipError.Kind",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Kind",
-                            "printedName": "NestAdsSDK.GzipError.Kind",
-                            "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Tuple",
-                            "printedName": "(code: Swift.Int)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "NestAdsSDK.GzipError.Kind.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Kind",
-                            "printedName": "NestAdsSDK.GzipError.Kind",
-                            "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO7unknownyAESi_tcAEmF",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO7unknownyAESi_tcAEmF",
-                "moduleName": "NestAdsSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Kind",
-                    "printedName": "NestAdsSDK.GzipError.Kind",
-                    "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Kind",
-                    "printedName": "NestAdsSDK.GzipError.Kind",
-                    "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO2eeoiySbAE_AEtFZ",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO2eeoiySbAE_AEtFZ",
-                "moduleName": "NestAdsSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:10NestAdsSDK9GzipErrorV4KindO",
-            "mangledName": "$s10NestAdsSDK9GzipErrorV4KindO",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "kind",
-            "printedName": "kind",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Kind",
-                "printedName": "NestAdsSDK.GzipError.Kind",
-                "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK9GzipErrorV4kindAC4KindOvp",
-            "mangledName": "$s10NestAdsSDK9GzipErrorV4kindAC4KindOvp",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Kind",
-                    "printedName": "NestAdsSDK.GzipError.Kind",
-                    "usr": "s:10NestAdsSDK9GzipErrorV4KindO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK9GzipErrorV4kindAC4KindOvg",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV4kindAC4KindOvg",
-                "moduleName": "NestAdsSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "message",
-            "printedName": "message",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK9GzipErrorV7messageSSvp",
-            "mangledName": "$s10NestAdsSDK9GzipErrorV7messageSSvp",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK9GzipErrorV7messageSSvg",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV7messageSSvg",
-                "moduleName": "NestAdsSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "localizedDescription",
-            "printedName": "localizedDescription",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10NestAdsSDK9GzipErrorV20localizedDescriptionSSvp",
-            "mangledName": "$s10NestAdsSDK9GzipErrorV20localizedDescriptionSSvp",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK9GzipErrorV20localizedDescriptionSSvg",
-                "mangledName": "$s10NestAdsSDK9GzipErrorV20localizedDescriptionSSvg",
-                "moduleName": "NestAdsSDK",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10NestAdsSDK9GzipErrorV",
-        "mangledName": "$s10NestAdsSDK9GzipErrorV",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4975,15 +4301,22 @@
       },
       {
         "kind": "Import",
-        "name": "CoreTelephony",
-        "printedName": "CoreTelephony",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
         "declKind": "Import",
         "moduleName": "NestAdsSDK"
       },
       {
         "kind": "Import",
-        "name": "CryptoSwift",
-        "printedName": "CryptoSwift",
+        "name": "Compression",
+        "printedName": "Compression",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
         "declKind": "Import",
         "moduleName": "NestAdsSDK"
       },
@@ -4993,16 +4326,6 @@
         "printedName": "Network",
         "declKind": "Import",
         "moduleName": "NestAdsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -5018,17 +4341,6 @@
         "declKind": "Import",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK",
-        "declAttributes": [
-          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -5514,6 +4826,16 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -8132,6 +7454,91 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentTime",
+            "printedName": "currentTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK0aB12MediaContentC11currentTimeSdvp",
+            "mangledName": "$s10NestAdsSDK0aB12MediaContentC11currentTimeSdvp",
+            "moduleName": "NestAdsSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC11currentTimeSdvg",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC11currentTimeSdvg",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC11currentTimeSdvs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC11currentTimeSdvs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC11currentTimeSdvM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC11currentTimeSdvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -9166,744 +8573,11 @@
             "mangledName": "$ss26_ExpressibleByColorLiteralP"
           }
         ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Data",
-        "printedName": "Data",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "isGzipped",
-            "printedName": "isGzipped",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10Foundation4DataV10NestAdsSDKE9isGzippedSbvp",
-            "mangledName": "$s10Foundation4DataV10NestAdsSDKE9isGzippedSbvp",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10Foundation4DataV10NestAdsSDKE9isGzippedSbvg",
-                "mangledName": "$s10Foundation4DataV10NestAdsSDKE9isGzippedSbvg",
-                "moduleName": "NestAdsSDK",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "gzipped",
-            "printedName": "gzipped(level:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CompressionLevel",
-                "printedName": "NestAdsSDK.CompressionLevel",
-                "hasDefaultArg": true,
-                "usr": "s:10NestAdsSDK16CompressionLevelV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10Foundation4DataV10NestAdsSDKE7gzipped5levelAcD16CompressionLevelV_tKF",
-            "mangledName": "$s10Foundation4DataV10NestAdsSDKE7gzipped5levelAcD16CompressionLevelV_tKF",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "gunzipped",
-            "printedName": "gunzipped()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10Foundation4DataV10NestAdsSDKE9gunzippedACyKF",
-            "mangledName": "$s10Foundation4DataV10NestAdsSDKE9gunzippedACyKF",
-            "moduleName": "NestAdsSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10Foundation4DataV",
-        "mangledName": "$s10Foundation4DataV",
-        "moduleName": "Foundation",
-        "intro_Macosx": "10.10",
-        "intro_iOS": "8.0",
-        "intro_tvOS": "9.0",
-        "intro_watchOS": "2.0",
-        "declAttributes": [
-          "Frozen",
-          "Available",
-          "Available",
-          "Available",
-          "Available"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RandomAccessCollection",
-            "printedName": "RandomAccessCollection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Index",
-                "printedName": "Index",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Indices",
-                "printedName": "Indices",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Range",
-                    "printedName": "Swift.Range<Swift.Int>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sn"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sk",
-            "mangledName": "$sSk"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutableCollection",
-            "printedName": "MutableCollection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Index",
-                "printedName": "Index",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SM",
-            "mangledName": "$sSM"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RangeReplaceableCollection",
-            "printedName": "RangeReplaceableCollection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sm",
-            "mangledName": "$sSm"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContiguousBytes",
-            "printedName": "ContiguousBytes",
-            "usr": "s:10Foundation15ContiguousBytesP",
-            "mangledName": "$s10Foundation15ContiguousBytesP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BidirectionalCollection",
-            "printedName": "BidirectionalCollection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Index",
-                "printedName": "Index",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Indices",
-                "printedName": "Indices",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Range",
-                    "printedName": "Swift.Range<Swift.Int>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sn"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SK",
-            "mangledName": "$sSK"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Collection",
-            "printedName": "Collection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Index",
-                "printedName": "Index",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Iterator",
-                "printedName": "Iterator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Iterator",
-                    "printedName": "Foundation.Data.Iterator",
-                    "usr": "s:10Foundation4DataV8IteratorV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Indices",
-                "printedName": "Indices",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Range",
-                    "printedName": "Swift.Range<Swift.Int>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sn"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sl",
-            "mangledName": "$sSl"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<Foundation.Data>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sequence",
-            "printedName": "Sequence",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Element",
-                "printedName": "Element",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Iterator",
-                "printedName": "Iterator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Iterator",
-                    "printedName": "Foundation.Data.Iterator",
-                    "usr": "s:10Foundation4DataV8IteratorV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:ST",
-            "mangledName": "$sST"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Transferable",
-            "printedName": "Transferable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Representation",
-                "printedName": "Representation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some CoreTransferable.TransferRepresentation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransferRepresentation",
-                        "printedName": "CoreTransferable.TransferRepresentation",
-                        "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16CoreTransferable0B0P",
-            "mangledName": "$s16CoreTransferable0B0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BSON",
-            "printedName": "BSON",
-            "usr": "s:10RealmSwift4BSONP",
-            "mangledName": "$s10RealmSwift4BSONP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PartitionValue",
-            "printedName": "PartitionValue",
-            "usr": "s:10RealmSwift14PartitionValueP",
-            "mangledName": "$s10RealmSwift14PartitionValueP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_RealmSchemaDiscoverable",
-            "printedName": "_RealmSchemaDiscoverable",
-            "usr": "s:10RealmSwift01_A18SchemaDiscoverableP",
-            "mangledName": "$s10RealmSwift01_A18SchemaDiscoverableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_PersistableInsideOptional",
-            "printedName": "_PersistableInsideOptional",
-            "usr": "s:10RealmSwift26_PersistableInsideOptionalP",
-            "mangledName": "$s10RealmSwift26_PersistableInsideOptionalP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_DefaultConstructible",
-            "printedName": "_DefaultConstructible",
-            "usr": "s:10RealmSwift21_DefaultConstructibleP",
-            "mangledName": "$s10RealmSwift21_DefaultConstructibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_Persistable",
-            "printedName": "_Persistable",
-            "usr": "s:10RealmSwift12_PersistableP",
-            "mangledName": "$s10RealmSwift12_PersistableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_HasPersistedType",
-            "printedName": "_HasPersistedType",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "PersistedType",
-                "printedName": "PersistedType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10RealmSwift17_HasPersistedTypeP",
-            "mangledName": "$s10RealmSwift17_HasPersistedTypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjcBridgeable",
-            "printedName": "_ObjcBridgeable",
-            "usr": "s:10RealmSwift15_ObjcBridgeableP",
-            "mangledName": "$s10RealmSwift15_ObjcBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_QueryBinary",
-            "printedName": "_QueryBinary",
-            "usr": "s:10RealmSwift12_QueryBinaryP",
-            "mangledName": "$s10RealmSwift12_QueryBinaryP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_RealmCollectionValueInsideOptional",
-            "printedName": "_RealmCollectionValueInsideOptional",
-            "usr": "s:10RealmSwift01_A29CollectionValueInsideOptionalP",
-            "mangledName": "$s10RealmSwift01_A29CollectionValueInsideOptionalP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RealmCollectionValue",
-            "printedName": "RealmCollectionValue",
-            "usr": "s:10RealmSwift0A15CollectionValueP",
-            "mangledName": "$s10RealmSwift0A15CollectionValueP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SortableType",
-            "printedName": "SortableType",
-            "usr": "s:10RealmSwift12SortableTypeP",
-            "mangledName": "$s10RealmSwift12SortableTypeP"
-          }
-        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/ActionLog.swift",
-      "kind": "StringLiteral",
-      "offset": 248,
-      "length": 2,
-      "value": "\"\""
-    },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastClient.swift",
       "kind": "IntegerLiteral",
@@ -9947,16 +8621,16 @@
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/GlobalExceptionHandler.swift",
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Logging\/GlobalExceptionHandler.swift",
       "kind": "StringLiteral",
-      "offset": 224,
+      "offset": 166,
       "length": 24,
       "value": "\"GlobalExceptionHandler\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/GlobalExceptionHandler.swift",
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Logging\/GlobalExceptionHandler.swift",
       "kind": "StringLiteral",
-      "offset": 279,
+      "offset": 221,
       "length": 48,
       "value": "\"https:\/\/delog-dev.nestads.com\/api\/v1\/error-log\""
     },
@@ -10010,14 +8684,14 @@
       "value": "\"VASTAdTagURI\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/CustomLogger.swift",
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Logging\/CustomLogger.swift",
       "kind": "StringLiteral",
       "offset": 174,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/CustomLogger.swift",
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Logging\/CustomLogger.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 2,
@@ -10150,6 +8824,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2100,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VastCreativeParameter.swift",
       "kind": "StringLiteral",
       "offset": 402,
@@ -10176,6 +8857,13 @@
       "offset": 738,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Extension\/Notification+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 192,
+      "length": 27,
+      "value": "\"videoProgressNotification\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastVideoClick.swift",
@@ -10444,6 +9132,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdLoaderOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 518,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/CountryCodeConverter.swift",
       "kind": "Dictionary",
       "offset": 208,
@@ -10460,7 +9155,7 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1156,
+      "offset": 1152,
       "length": 5,
       "value": "false"
     },
@@ -13330,35 +12025,35 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Extension\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
-      "offset": 9783,
+      "offset": 8373,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Extension\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
-      "offset": 9788,
+      "offset": 8378,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdManager.swift",
       "kind": "StringLiteral",
-      "offset": 692,
+      "offset": 673,
       "length": 24,
       "value": "\"com.nestads.NestAdsSdk\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdManager.swift",
       "kind": "StringLiteral",
-      "offset": 735,
+      "offset": 716,
       "length": 14,
       "value": "\"BASE_API_URL\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 807,
+      "offset": 788,
       "length": 4,
       "value": "true"
     },
@@ -13466,6 +12161,20 @@
       "offset": 437,
       "length": 14,
       "value": "\"customNative\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/ActionLogManager.swift",
+      "kind": "Dictionary",
+      "offset": 216,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/ActionLogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 28,
+      "value": "\"com.actionLogManager.queue\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPTrackingEvent.swift",
@@ -14297,6 +13006,13 @@
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "IntegerLiteral",
       "offset": 1014,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1165,
       "length": 1,
       "value": "0"
     },
