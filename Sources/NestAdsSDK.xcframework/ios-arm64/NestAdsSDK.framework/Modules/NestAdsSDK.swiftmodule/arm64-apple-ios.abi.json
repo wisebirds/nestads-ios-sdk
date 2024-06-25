@@ -4301,6 +4301,13 @@
       },
       {
         "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
         "name": "CommonCrypto",
         "printedName": "CommonCrypto",
         "declKind": "Import",
@@ -12039,21 +12046,21 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdManager.swift",
       "kind": "StringLiteral",
-      "offset": 673,
+      "offset": 847,
       "length": 24,
       "value": "\"com.nestads.NestAdsSdk\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdManager.swift",
       "kind": "StringLiteral",
-      "offset": 716,
+      "offset": 890,
       "length": 14,
       "value": "\"BASE_API_URL\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 788,
+      "offset": 962,
       "length": 4,
       "value": "true"
     },

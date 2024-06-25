@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Py1n2pl1dXdRqEaQmqmItYDlgrs=
+		M2sYrh0UQFEKUy4t+RHL2/Y0/JQ=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fpF/cFjUTEPEm87MkGct6rVCXUg=
+		M6ih1NQqJhVQh6nhoixPgXinr+k=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		r6WqVQecISoVO74vB3N8u0VoYXo=
+		EUxkkx/99pnBRcFbvBejpadDqfI=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		r6WqVQecISoVO74vB3N8u0VoYXo=
+		EUxkkx/99pnBRcFbvBejpadDqfI=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jyK6p4pSkYr9tpaadidcUyzirVI=
+		8Ah7vgbR8Jmsw/VUbkUEQwLuSKI=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fpF/cFjUTEPEm87MkGct6rVCXUg=
+		M6ih1NQqJhVQh6nhoixPgXinr+k=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5Eg43qLV83/UmXLVWdMsAa/9Czw=
+		VbxZ9TXrNkup9+TwTB1kHoedi28=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5Eg43qLV83/UmXLVWdMsAa/9Czw=
+		VbxZ9TXrNkup9+TwTB1kHoedi28=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZT1BiiK3WD+AYGW5ON+efPgTX+w=
+		IkmX+gENxQXDz85IwhU8sERsGbg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		ZeVhrAjHWYK7OsginD5E31eL1AA=
+		oUIzKGt4OjA8oycFMv6mPmUeclE=
 		</data>
 		<key>Replay.png</key>
 		<data>
@@ -128,14 +128,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8dzqwwsSV2mq9o/CTC/UUb0g+a6Ri8xgAd6YtIVayo=
+			jVkv4G95MI+e8L3Cc8SOfzegJap1w0UJ8oTsecLrCDY=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfcOmnvg/TmoRRKRgaqNrlmnQehXbj+3YVlqezvYQQ4=
+			K0jsv6QiyR+DR2a3ronKFiKr2Z3EGQwkXPBh3BjmRVU=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -149,28 +149,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfcOmnvg/TmoRRKRgaqNrlmnQehXbj+3YVlqezvYQQ4=
+			K0jsv6QiyR+DR2a3ronKFiKr2Z3EGQwkXPBh3BjmRVU=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G7qRs1Lk0LCn8IASM33VlGZrZ+e3dupYVwvPUHR/2ak=
+			2dQU27p2LCvxd3EchRJnuXef5sv2h+8Jic7Homo4jWA=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8dzqwwsSV2mq9o/CTC/UUb0g+a6Ri8xgAd6YtIVayo=
+			jVkv4G95MI+e8L3Cc8SOfzegJap1w0UJ8oTsecLrCDY=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p+RD4C46OVuIYfwhyz54VrfY+hm3ThUCWt8RBGdffnM=
+			0LTGFTYoKhzgIpoOVXwnqW7kB6D8LWnoQas9knjggVo=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -184,14 +184,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p+RD4C46OVuIYfwhyz54VrfY+hm3ThUCWt8RBGdffnM=
+			0LTGFTYoKhzgIpoOVXwnqW7kB6D8LWnoQas9knjggVo=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6SWiyCSZv0eeDM3/wipvM208NLMzfRJ1vuuUOmcE59c=
+			1TzskGJoMTKHO32WAGiqx+AbgK5Hu8kqsbrzWn+iagU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -219,7 +219,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfBDF5PqJU4ObmJUIGzSJ4sqviRlXdKwJKcmBU7e1Ms=
+			snacHQzNX9CaSfpCQ8jN+nZk0GazWAPPoRxjW8YXq/M=
 			</data>
 		</dict>
 		<key>Replay.png</key>
