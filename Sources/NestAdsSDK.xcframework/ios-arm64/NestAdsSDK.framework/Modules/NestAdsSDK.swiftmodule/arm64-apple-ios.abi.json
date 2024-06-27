@@ -12058,13 +12058,6 @@
       "value": "\"BASE_API_URL\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 962,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 145,

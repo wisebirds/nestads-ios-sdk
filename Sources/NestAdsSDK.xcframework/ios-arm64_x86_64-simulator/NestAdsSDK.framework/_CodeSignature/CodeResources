@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		M2sYrh0UQFEKUy4t+RHL2/Y0/JQ=
+		qd7zTXqCXw2uqxtKuM2Ko+JF92g=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		M6ih1NQqJhVQh6nhoixPgXinr+k=
+		2TDLg6QX/xz1y5NwNylNI/LQ50Q=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8Ah7vgbR8Jmsw/VUbkUEQwLuSKI=
+		JT4eNs9Jm6LOrEYBgErIQL1I2IU=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		M6ih1NQqJhVQh6nhoixPgXinr+k=
+		2TDLg6QX/xz1y5NwNylNI/LQ50Q=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IkmX+gENxQXDz85IwhU8sERsGbg=
+		VvWcL9wAbARIz5I06oFBaxYSXX0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jVkv4G95MI+e8L3Cc8SOfzegJap1w0UJ8oTsecLrCDY=
+			b45foYqje1PR4/g7qxAH5m5VIUbcSUxvlCNUDVcUSRw=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -156,14 +156,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2dQU27p2LCvxd3EchRJnuXef5sv2h+8Jic7Homo4jWA=
+			u1CFPbz3XXny0DKufEPxNvrzsUfPM1s60V4Qb2Mxamk=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jVkv4G95MI+e8L3Cc8SOfzegJap1w0UJ8oTsecLrCDY=
+			b45foYqje1PR4/g7qxAH5m5VIUbcSUxvlCNUDVcUSRw=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -191,7 +191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1TzskGJoMTKHO32WAGiqx+AbgK5Hu8kqsbrzWn+iagU=
+			Ego/VwPb+57760PKf2bACzvMoCqtO12T5/swpwocKZM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
