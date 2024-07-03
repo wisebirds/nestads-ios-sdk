@@ -12164,15 +12164,8 @@
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/ActionLogManager.swift",
-      "kind": "Dictionary",
-      "offset": 216,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Manager\/ActionLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 263,
+      "offset": 247,
       "length": 28,
       "value": "\"com.actionLogManager.queue\""
     },
