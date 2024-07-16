@@ -8637,9 +8637,16 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Logging\/GlobalExceptionHandler.swift",
       "kind": "StringLiteral",
-      "offset": 221,
-      "length": 48,
-      "value": "\"https:\/\/delog-dev.nestads.com\/api\/v1\/error-log\""
+      "offset": 236,
+      "length": 24,
+      "value": "\"com.nestads.NestAdsSdk\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Logging\/GlobalExceptionHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 279,
+      "length": 18,
+      "value": "\"ERRORLOG_API_URL\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastModel.swift",
@@ -12966,6 +12973,13 @@
       "offset": 939,
       "length": 3,
       "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1040,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/nestads-sdk-ios-complete-sample\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
