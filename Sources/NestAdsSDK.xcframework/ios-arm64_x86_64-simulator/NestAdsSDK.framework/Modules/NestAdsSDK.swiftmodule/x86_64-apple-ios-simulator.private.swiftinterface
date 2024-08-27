@@ -100,6 +100,11 @@ open class NestAdsAdLoaderOptions {
   override public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers open class NestAdsMultipleAdsAdLoaderOptions : NestAdsSDK.NestAdsAdLoaderOptions {
+  open var numberOfAds: Swift.Int
+  override public init()
+  @objc deinit
+}
 @objc public protocol NestAdsAdLoaderDelegate {
   @objc func adLoader(_ adLoader: NestAdsSDK.NestAdsAdLoader, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
   @objc optional func adLoaderDidFinishLoading(_ adLoader: NestAdsSDK.NestAdsAdLoader)
