@@ -13192,6 +13192,13 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1318,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 221,
