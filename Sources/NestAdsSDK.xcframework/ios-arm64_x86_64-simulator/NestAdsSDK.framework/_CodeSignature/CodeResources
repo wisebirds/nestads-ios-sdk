@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eahkba/VaWIO/GuW4aQaxtWfliY=
+		KQfBLPnMrbmaK+bV5jsgrr4ubWk=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MPlKCS3tNb1sAnEyyuD+1v70zAs=
+		7iiUIMd6q/e9xJhzxe2jEKaN+lo=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sDVERTwumtG/0u9VpZbLiuXdIwI=
+		e55pJ/OndXkcmI5sLvyFfFinhgI=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MPlKCS3tNb1sAnEyyuD+1v70zAs=
+		7iiUIMd6q/e9xJhzxe2jEKaN+lo=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ILrYQsgIrIdnXU05LRQfHnijRt4=
+		GueMy/yielWraQFb2SrotLFpFlY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			klZ9uuIgbdhvmtpYClwBAhLjGNYKZpDQBtwrEHXhP/s=
+			JlpjjpBUuvVM2PSUUmMqAxgnSjijt5XGxedybIKj+EQ=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -156,14 +156,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I6NND6/of01t8E06ugeN/UAPoI9iiM9mWsc9U4/3rmA=
+			8MhhuiDx/TmyZD7RZeUKml3ZNm2jsLpX/3nPhn71nl8=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			klZ9uuIgbdhvmtpYClwBAhLjGNYKZpDQBtwrEHXhP/s=
+			JlpjjpBUuvVM2PSUUmMqAxgnSjijt5XGxedybIKj+EQ=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -191,7 +191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9cYqQ/IimKzpJFu3ouCx/a25E8FsaX7dijqjINdlbN0=
+			R24wgpTqea+m1LNzRAFJWxc6aDFaxOhsyjQH8DLuF4c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
