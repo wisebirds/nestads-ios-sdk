@@ -183,6 +183,7 @@ public struct NestAdsAdLoaderAdType : Swift.Hashable, Swift.Equatable, @unchecke
   open func replay()
   open func pause()
   open func stop()
+  open func cleanupPlayer()
   open func customControlsEnabled() -> Swift.Bool
   @objc override dynamic public init()
 }

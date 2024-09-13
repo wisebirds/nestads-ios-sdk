@@ -5704,6 +5704,27 @@
           },
           {
             "kind": "Function",
+            "name": "cleanupPlayer",
+            "printedName": "cleanupPlayer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB15VideoControllerC13cleanupPlayeryyF",
+            "mangledName": "$s10NestAdsSDK0aB15VideoControllerC13cleanupPlayeryyF",
+            "moduleName": "NestAdsSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "customControlsEnabled",
             "printedName": "customControlsEnabled()",
             "children": [
@@ -13005,14 +13026,21 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2967,
+      "offset": 2968,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3188,
+      "offset": 3005,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3337,
       "length": 5,
       "value": "false"
     },
