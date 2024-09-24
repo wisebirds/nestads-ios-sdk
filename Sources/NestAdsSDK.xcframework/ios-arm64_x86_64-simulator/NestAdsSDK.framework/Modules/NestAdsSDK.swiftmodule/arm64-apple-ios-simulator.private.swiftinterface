@@ -36,12 +36,13 @@ extension CoreMedia.CMTime : Swift.CustomStringConvertible {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToWindow()
   @_Concurrency.MainActor(unsafe) @objc override public static var layerClass: Swift.AnyClass {
     @objc get
   }
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public protocol NestAdsCustomNativeAdDelegate : AnyObject {
   func customNativdAdDidRecordImpression(_ nativeAd: NestAdsSDK.NestAdsCustomNativeAd)
@@ -202,32 +203,27 @@ open class NestAdsAdRequest {
 @_hasMissingDesignatedInitializers open class NestAdsMediaContent {
   open var hasVideoContent: Swift.Bool {
     get
-    set
   }
   open var videoController: NestAdsSDK.NestAdsVideoController {
     get
-    set
   }
   open var width: Swift.Int {
     get
-    set
   }
   open var height: Swift.Int {
     get
-    set
   }
   open var aspectRatio: CoreFoundation.CGFloat {
     get
-    set
   }
-  open var skipOffset: Foundation.TimeInterval?
-  open var duration: Foundation.TimeInterval {
+  open var skipOffset: Foundation.TimeInterval? {
     get
-    set
   }
-  open var currentTime: Foundation.TimeInterval {
+  open var duration: Swift.Double {
     get
-    set
+  }
+  open var currentTime: Swift.Double {
+    get
   }
   @objc deinit
 }

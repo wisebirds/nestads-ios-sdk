@@ -327,6 +327,7 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK23NestAdsAdLoaderDelegate_")
 
 SWIFT_CLASS("_TtC10NestAdsSDK16NestAdsMediaView")
 @interface NestAdsMediaView : UIView
+- (void)didMoveToWindow;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -694,6 +695,7 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK23NestAdsAdLoaderDelegate_")
 
 SWIFT_CLASS("_TtC10NestAdsSDK16NestAdsMediaView")
 @interface NestAdsMediaView : UIView
+- (void)didMoveToWindow;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;

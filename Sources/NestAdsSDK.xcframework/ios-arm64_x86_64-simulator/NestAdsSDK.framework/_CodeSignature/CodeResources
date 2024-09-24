@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/NestAdsSDK-Swift.h</key>
 		<data>
-		TTK4gxiFXqzbKTHUo8+lB2KmjTY=
+		V/wpucyRcs2Oue76QWUTZuRZLOw=
 		</data>
 		<key>Headers/NestAdsSdk.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		iStfS0HTh9LW7hEm+vYPTrHibzI=
+		j1ldCX9ZD/2qlza7PQhKod/xnmc=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dy0jIWVaa7Glp2w+bk5FK+/onNY=
+		IN4MI1fQXv5juFF8ZXqDmPeOjgc=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dy0jIWVaa7Glp2w+bk5FK+/onNY=
+		IN4MI1fQXv5juFF8ZXqDmPeOjgc=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iJRFa+fwSHzQ/na4HfJ+cags+EU=
+		RdftuRLo3G5+rTgYLQLqoitRnSE=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		iStfS0HTh9LW7hEm+vYPTrHibzI=
+		j1ldCX9ZD/2qlza7PQhKod/xnmc=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		f8exJ9NjB8NFMjWp9IbDnw7V/2s=
+		Xf/Ioj3uU9JUsXJ5v59hs+R6tv0=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		f8exJ9NjB8NFMjWp9IbDnw7V/2s=
+		Xf/Ioj3uU9JUsXJ5v59hs+R6tv0=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O1c2M+0jG9MYH2PHxFVtjojY2R8=
+		uXRk1KOzbhoklDtYEQYu1azC9Zo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,7 +114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GH44Hng+owkig/jLfy1Lk0lqM+h9FVcwlucbxYpuIa0=
+			hBCiUAu9ohNGXOwwHAVP+PYxTJqMkNiWw3s77tJk5fY=
 			</data>
 		</dict>
 		<key>Headers/NestAdsSdk.h</key>
@@ -128,14 +128,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAegZqUBOsg880wKAmw3+VqmKlVKOhs+boGBrIg5ngk=
+			rylMtMHTP33Sk6uLXbvpro+ZwkFKc/2YI9ALTyXZ39o=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n40I+vyj80UDWGsIAtS/BgRNuQqzw9Vcp78DqxBeaNA=
+			G9Z0xRKn48YQV9QOSeHeptD+6ujK0f1XOFoXXH4P74Q=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -149,28 +149,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n40I+vyj80UDWGsIAtS/BgRNuQqzw9Vcp78DqxBeaNA=
+			G9Z0xRKn48YQV9QOSeHeptD+6ujK0f1XOFoXXH4P74Q=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R44HOpbY0tVcOEN5ukZaa8WKietj27Yl1usuxXCyaYc=
+			TQwXR7deIxS9JfmPJBsN3VodyE27kH0AU1L2o8spHNQ=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAegZqUBOsg880wKAmw3+VqmKlVKOhs+boGBrIg5ngk=
+			rylMtMHTP33Sk6uLXbvpro+ZwkFKc/2YI9ALTyXZ39o=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s5+0AWtlTAYX/g/cxjcGpAQqmCT32oiXg6ieusqb/mo=
+			/zTkLWE85eKntWBGtmvjjpiobe71UjkM6N0SIP649u8=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -184,14 +184,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s5+0AWtlTAYX/g/cxjcGpAQqmCT32oiXg6ieusqb/mo=
+			/zTkLWE85eKntWBGtmvjjpiobe71UjkM6N0SIP649u8=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			22twS6fTSKBsYr+VTBh6BXB9Gz2+Im7ycnvXPLDWT34=
+			UXPUZukptlZ+Mye0+FDd3bPCn1CVXC62X35CMC6XiP4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
