@@ -594,33 +594,6 @@
             ]
           },
           {
-            "kind": "Function",
-            "name": "didMoveToWindow",
-            "printedName": "didMoveToWindow()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsMediaView(im)didMoveToWindow",
-            "mangledName": "$s10NestAdsSDK0aB9MediaViewC15didMoveToWindowyyF",
-            "moduleName": "NestAdsSDK",
-            "overriding": true,
-            "isOpen": true,
-            "objc_name": "didMoveToWindow",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Var",
             "name": "layerClass",
             "printedName": "layerClass",
@@ -2289,6 +2262,96 @@
                 "declKind": "Accessor",
                 "usr": "s:10NestAdsSDK0aB12VideoOptionsC13playConditionSSvM",
                 "mangledName": "$s10NestAdsSDK0aB12VideoOptionsC13playConditionSSvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customAudioSessionRequested",
+            "printedName": "customAudioSessionRequested",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvp",
+            "mangledName": "$s10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvp",
+            "moduleName": "NestAdsSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvg",
+                "mangledName": "$s10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvs",
+                "mangledName": "$s10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvs",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvM",
+                "mangledName": "$s10NestAdsSDK0aB12VideoOptionsC27customAudioSessionRequestedSbvM",
                 "moduleName": "NestAdsSDK",
                 "implicit": true,
                 "isOpen": true,
@@ -5640,7 +5703,8 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7005,20 +7069,13 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
       },
       {
         "kind": "TypeDecl",
@@ -7043,12 +7100,8 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7066,9 +7119,51 @@
                 "usr": "s:10NestAdsSDK0aB12MediaContentC08hasVideoE0Sbvg",
                 "mangledName": "$s10NestAdsSDK0aB12MediaContentC08hasVideoE0Sbvg",
                 "moduleName": "NestAdsSDK",
-                "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC08hasVideoE0Sbvs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC08hasVideoE0Sbvs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC08hasVideoE0SbvM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC08hasVideoE0SbvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7090,8 +7185,6 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "Lazy",
-              "SetterAccess",
               "AccessControl"
             ],
             "accessors": [
@@ -7111,9 +7204,51 @@
                 "usr": "s:10NestAdsSDK0aB12MediaContentC15videoControllerAA0ab5VideoG0Cvg",
                 "mangledName": "$s10NestAdsSDK0aB12MediaContentC15videoControllerAA0ab5VideoG0Cvg",
                 "moduleName": "NestAdsSDK",
-                "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsVideoController",
+                    "printedName": "NestAdsSDK.NestAdsVideoController",
+                    "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsVideoController"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC15videoControllerAA0ab5VideoG0Cvs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC15videoControllerAA0ab5VideoG0Cvs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC15videoControllerAA0ab5VideoG0CvM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC15videoControllerAA0ab5VideoG0CvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7135,12 +7270,8 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7158,9 +7289,51 @@
                 "usr": "s:10NestAdsSDK0aB12MediaContentC5widthSivg",
                 "mangledName": "$s10NestAdsSDK0aB12MediaContentC5widthSivg",
                 "moduleName": "NestAdsSDK",
-                "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC5widthSivs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC5widthSivs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC5widthSivM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC5widthSivM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7182,12 +7355,8 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7205,9 +7374,51 @@
                 "usr": "s:10NestAdsSDK0aB12MediaContentC6heightSivg",
                 "mangledName": "$s10NestAdsSDK0aB12MediaContentC6heightSivg",
                 "moduleName": "NestAdsSDK",
-                "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC6heightSivs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC6heightSivs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC6heightSivM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC6heightSivM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7229,12 +7440,8 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7252,9 +7459,51 @@
                 "usr": "s:10NestAdsSDK0aB12MediaContentC11aspectRatio14CoreFoundation7CGFloatVvg",
                 "mangledName": "$s10NestAdsSDK0aB12MediaContentC11aspectRatio12CoreGraphics7CGFloatVvg",
                 "moduleName": "NestAdsSDK",
-                "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC11aspectRatio14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC11aspectRatio12CoreGraphics7CGFloatVvs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC11aspectRatio14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC11aspectRatio12CoreGraphics7CGFloatVvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7286,7 +7535,6 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -7318,6 +7566,58 @@
                 "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC10skipOffsetSdSgvs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC10skipOffsetSdSgvs",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC10skipOffsetSdSgvM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC10skipOffsetSdSgvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7339,12 +7639,8 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7362,9 +7658,51 @@
                 "usr": "s:10NestAdsSDK0aB12MediaContentC8durationSdvg",
                 "mangledName": "$s10NestAdsSDK0aB12MediaContentC8durationSdvg",
                 "moduleName": "NestAdsSDK",
-                "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC8durationSdvs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC8durationSdvs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC8durationSdvM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC8durationSdvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7386,12 +7724,8 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7409,9 +7743,51 @@
                 "usr": "s:10NestAdsSDK0aB12MediaContentC11currentTimeSdvg",
                 "mangledName": "$s10NestAdsSDK0aB12MediaContentC11currentTimeSdvg",
                 "moduleName": "NestAdsSDK",
-                "implicit": true,
                 "isOpen": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC11currentTimeSdvs",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC11currentTimeSdvs",
+                "moduleName": "NestAdsSDK",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12MediaContentC11currentTimeSdvM",
+                "mangledName": "$s10NestAdsSDK0aB12MediaContentC11currentTimeSdvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           }
@@ -8748,13 +9124,6 @@
       "value": "\"videoProgressNotification\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Extension\/Notification+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 25,
-      "value": "\"mediaContentVastUpdated\""
-    },
-    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastVideoClick.swift",
       "kind": "StringLiteral",
       "offset": 153,
@@ -9023,14 +9392,21 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdLoaderOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 518,
+      "offset": 421,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdLoaderOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 571,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdLoaderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 659,
+      "offset": 712,
       "length": 1,
       "value": "1"
     },
@@ -12642,91 +13018,133 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1627,
+      "offset": 1710,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1660,
+      "offset": 1750,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1787,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1758,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1814,
+      "offset": 1950,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "FloatLiteral",
-      "offset": 1827,
+      "offset": 1967,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1862,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2115,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2169,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2182,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "FloatLiteral",
-      "offset": 1689,
+      "offset": 2012,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1882,
+      "offset": 2247,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2329,
+      "offset": 2346,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2259,
+      "offset": 2810,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2385,
+      "offset": 2740,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2419,
+      "offset": 2866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2530,
+      "offset": 2900,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2567,
+      "offset": 3011,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3048,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3380,
       "length": 5,
       "value": "false"
     },
@@ -12866,44 +13284,51 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "BooleanLiteral",
-      "offset": 240,
+      "offset": 285,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 398,
+      "offset": 579,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 438,
+      "offset": 690,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 487,
+      "offset": 829,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 588,
+      "offset": 1004,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "IntegerLiteral",
-      "offset": 642,
+      "offset": 1153,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1308,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsResponseModel.swift",
