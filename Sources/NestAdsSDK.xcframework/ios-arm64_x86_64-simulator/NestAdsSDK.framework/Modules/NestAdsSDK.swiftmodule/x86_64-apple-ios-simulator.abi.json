@@ -5794,27 +5794,6 @@
           },
           {
             "kind": "Function",
-            "name": "cleanupPlayer",
-            "printedName": "cleanupPlayer()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10NestAdsSDK0aB15VideoControllerC13cleanupPlayeryyF",
-            "mangledName": "$s10NestAdsSDK0aB15VideoControllerC13cleanupPlayeryyF",
-            "moduleName": "NestAdsSDK",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "customControlsEnabled",
             "printedName": "customControlsEnabled()",
             "children": [
@@ -5831,8 +5810,7 @@
             "moduleName": "NestAdsSDK",
             "isOpen": true,
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
