@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "NestAdsSDK",
+    "printedName": "NestAdsSDK",
     "children": [
       {
         "kind": "Import",
@@ -360,7 +360,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -505,8 +521,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -621,6 +638,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -687,6 +705,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -728,6 +747,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -740,6 +760,7 @@
         "moduleName": "NestAdsSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -752,6 +773,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -992,6 +1027,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1829,7 +1880,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1992,6 +2059,22 @@
         "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2395,6 +2478,22 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "NestAdsSDK.NestAdsAdLoaderOptions"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2528,6 +2627,22 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "NestAdsSDK.NestAdsAdLoaderOptions"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2661,6 +2776,22 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "NestAdsSDK.NestAdsAdLoaderOptions"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2811,6 +2942,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2904,6 +3051,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "NestAdsAdLoaderDelegate",
@@ -3351,6 +3512,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3646,6 +3821,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3911,7 +4100,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4266,6 +4471,22 @@
         "moduleName": "NestAdsSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5037,6 +5258,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -5387,6 +5622,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -5856,6 +6107,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7043,6 +7308,22 @@
         "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7778,7 +8059,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -8405,7 +8702,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -8508,6 +8821,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "CustomStringConvertible",
@@ -8747,6 +9074,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8953,48 +9294,6 @@
       "offset": 401,
       "length": 19,
       "value": "\"CreativeParameter\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/LogLevel.swift",
-      "kind": "StringLiteral",
-      "offset": 142,
-      "length": 7,
-      "value": "\"FATAL\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/LogLevel.swift",
-      "kind": "StringLiteral",
-      "offset": 165,
-      "length": 7,
-      "value": "\"ERROR\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/LogLevel.swift",
-      "kind": "StringLiteral",
-      "offset": 187,
-      "length": 6,
-      "value": "\"WARN\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/LogLevel.swift",
-      "kind": "StringLiteral",
-      "offset": 208,
-      "length": 6,
-      "value": "\"INFO\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/LogLevel.swift",
-      "kind": "StringLiteral",
-      "offset": 230,
-      "length": 7,
-      "value": "\"DEBUG\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/LogLevel.swift",
-      "kind": "StringLiteral",
-      "offset": 255,
-      "length": 9,
-      "value": "\"VERBOSE\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/LogLevel.swift",
@@ -9417,13 +9716,6 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 774,
-      "length": 15,
-      "value": "\"NestAdsSDK.NestAdsAdLoader\""
-    },
-    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
       "kind": "IntegerLiteral",
       "offset": 174,
@@ -9436,139 +9728,6 @@
       "offset": 208,
       "length": 9,
       "value": "\"UNKNOWN\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "StringLiteral",
-      "offset": 117,
-      "length": 14,
-      "value": "\"NestAdsSDK.NestAdsAdError\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 366,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 386,
-      "length": 4,
-      "value": "3000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 421,
-      "length": 4,
-      "value": "3001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 446,
-      "length": 4,
-      "value": "4000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 4,
-      "value": "4001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 509,
-      "length": 4,
-      "value": "5000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 531,
-      "length": 4,
-      "value": "5001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 568,
-      "length": 4,
-      "value": "5002"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 590,
-      "length": 4,
-      "value": "9999"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 366,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 386,
-      "length": 4,
-      "value": "3000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 421,
-      "length": 4,
-      "value": "3001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 446,
-      "length": 4,
-      "value": "4000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 4,
-      "value": "4001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 509,
-      "length": 4,
-      "value": "5000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 531,
-      "length": 4,
-      "value": "5001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 568,
-      "length": 4,
-      "value": "5002"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 590,
-      "length": 4,
-      "value": "9999"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdError.swift",
@@ -10124,454 +10283,6 @@
       "value": "901"
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 226,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 312,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 342,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 394,
-      "length": 3,
-      "value": "201"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 445,
-      "length": 3,
-      "value": "202"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 492,
-      "length": 3,
-      "value": "203"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 527,
-      "length": 3,
-      "value": "204"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 560,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 590,
-      "length": 3,
-      "value": "301"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 623,
-      "length": 3,
-      "value": "302"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 654,
-      "length": 3,
-      "value": "303"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 703,
-      "length": 3,
-      "value": "304"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 735,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 761,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 793,
-      "length": 3,
-      "value": "402"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 828,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 868,
-      "length": 3,
-      "value": "405"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 903,
-      "length": 3,
-      "value": "408"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 949,
-      "length": 3,
-      "value": "409"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 996,
-      "length": 3,
-      "value": "410"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1034,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1073,
-      "length": 3,
-      "value": "501"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1108,
-      "length": 3,
-      "value": "502"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1151,
-      "length": 3,
-      "value": "503"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1189,
-      "length": 3,
-      "value": "600"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1219,
-      "length": 3,
-      "value": "601"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1257,
-      "length": 3,
-      "value": "602"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1301,
-      "length": 3,
-      "value": "603"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1344,
-      "length": 3,
-      "value": "604"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1372,
-      "length": 3,
-      "value": "900"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1403,
-      "length": 3,
-      "value": "901"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 226,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 312,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 342,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 394,
-      "length": 3,
-      "value": "201"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 445,
-      "length": 3,
-      "value": "202"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 492,
-      "length": 3,
-      "value": "203"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 527,
-      "length": 3,
-      "value": "204"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 560,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 590,
-      "length": 3,
-      "value": "301"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 623,
-      "length": 3,
-      "value": "302"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 654,
-      "length": 3,
-      "value": "303"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 703,
-      "length": 3,
-      "value": "304"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 735,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 761,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 793,
-      "length": 3,
-      "value": "402"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 828,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 868,
-      "length": 3,
-      "value": "405"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 903,
-      "length": 3,
-      "value": "408"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 949,
-      "length": 3,
-      "value": "409"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 996,
-      "length": 3,
-      "value": "410"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1034,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1073,
-      "length": 3,
-      "value": "501"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1108,
-      "length": 3,
-      "value": "502"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1151,
-      "length": 3,
-      "value": "503"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1189,
-      "length": 3,
-      "value": "600"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1219,
-      "length": 3,
-      "value": "601"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1257,
-      "length": 3,
-      "value": "602"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1301,
-      "length": 3,
-      "value": "603"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1344,
-      "length": 3,
-      "value": "604"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1372,
-      "length": 3,
-      "value": "900"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1403,
-      "length": 3,
-      "value": "901"
-    },
-    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastCompanionAds.swift",
       "kind": "StringLiteral",
       "offset": 231,
@@ -10584,27 +10295,6 @@
       "offset": 300,
       "length": 11,
       "value": "\"Companion\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastCompanionAds.swift",
-      "kind": "StringLiteral",
-      "offset": 945,
-      "length": 5,
-      "value": "\"all\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastCompanionAds.swift",
-      "kind": "StringLiteral",
-      "offset": 1305,
-      "length": 5,
-      "value": "\"any\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastCompanionAds.swift",
-      "kind": "StringLiteral",
-      "offset": 1594,
-      "length": 6,
-      "value": "\"none\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastCompanionAds.swift",
@@ -10724,83 +10414,6 @@
       "offset": 709,
       "length": 9,
       "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 593,
-      "length": 6,
-      "value": "\"vast\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 615,
-      "length": 7,
-      "value": "\"vast1\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 638,
-      "length": 7,
-      "value": "\"vast2\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 661,
-      "length": 7,
-      "value": "\"vast3\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 684,
-      "length": 7,
-      "value": "\"vast4\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 709,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastMacros.swift",
-      "kind": "StringLiteral",
-      "offset": 213,
-      "length": 13,
-      "value": "\"[ERRORCODE]\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastMacros.swift",
-      "kind": "StringLiteral",
-      "offset": 252,
-      "length": 19,
-      "value": "\"[CONTENTPLAYHEAD]\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastMacros.swift",
-      "kind": "StringLiteral",
-      "offset": 357,
-      "length": 16,
-      "value": "\"[CACHEBUSTING]\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastMacros.swift",
-      "kind": "StringLiteral",
-      "offset": 434,
-      "length": 12,
-      "value": "\"[ASSETURI]\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastMacros.swift",
-      "kind": "StringLiteral",
-      "offset": 466,
-      "length": 13,
-      "value": "\"[TIMESTAMP]\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VastMacros.swift",
@@ -12490,34 +12103,6 @@
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPTrackingEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 441,
-      "length": 12,
-      "value": "\"breakStart\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPTrackingEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 472,
-      "length": 10,
-      "value": "\"breakEnd\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPTrackingEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 498,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPTrackingEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 523,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastLinearCreative.swift",
       "kind": "StringLiteral",
       "offset": 233,
@@ -12672,146 +12257,6 @@
       "value": "1008"
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 219,
-      "length": 3,
-      "value": "900"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 248,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 294,
-      "length": 4,
-      "value": "1001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 325,
-      "length": 4,
-      "value": "1002"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 363,
-      "length": 4,
-      "value": "1003"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 408,
-      "length": 4,
-      "value": "1004"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 457,
-      "length": 4,
-      "value": "1005"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 514,
-      "length": 4,
-      "value": "1006"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 563,
-      "length": 4,
-      "value": "1007"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 610,
-      "length": 4,
-      "value": "1008"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 219,
-      "length": 3,
-      "value": "900"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 248,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 294,
-      "length": 4,
-      "value": "1001"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 325,
-      "length": 4,
-      "value": "1002"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 363,
-      "length": 4,
-      "value": "1003"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 408,
-      "length": 4,
-      "value": "1004"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 457,
-      "length": 4,
-      "value": "1005"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 514,
-      "length": 4,
-      "value": "1006"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 563,
-      "length": 4,
-      "value": "1007"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",
-      "kind": "IntegerLiteral",
-      "offset": 610,
-      "length": 4,
-      "value": "1008"
-    },
-    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastViewableImpression.swift",
       "kind": "StringLiteral",
       "offset": 242,
@@ -12873,13 +12318,6 @@
       "offset": 732,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/parsers\/VMAPParser.swift",
-      "kind": "StringLiteral",
-      "offset": 175,
-      "length": 10,
-      "value": "\"NestAdsSDK.VMAPParser\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/parsers\/VMAPParser.swift",
@@ -13160,34 +12598,6 @@
       "offset": 407,
       "length": 13,
       "value": "\"repeatAfter\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdBreak.swift",
-      "kind": "StringLiteral",
-      "offset": 480,
-      "length": 8,
-      "value": "\"linear\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdBreak.swift",
-      "kind": "StringLiteral",
-      "offset": 508,
-      "length": 11,
-      "value": "\"nonlinear\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdBreak.swift",
-      "kind": "StringLiteral",
-      "offset": 537,
-      "length": 9,
-      "value": "\"display\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdBreak.swift",
-      "kind": "StringLiteral",
-      "offset": 564,
-      "length": 9,
-      "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VMAP\/VMAPAdBreak.swift",
