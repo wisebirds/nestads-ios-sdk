@@ -56,19 +56,18 @@ public typealias NestAdsCustomClickHandler = (Swift.String) -> Swift.Void
   weak open var delegate: (any NestAdsSDK.NestAdsCustomNativeAdDelegate)?
   open var placementCode: Swift.String {
     get
-    set
   }
   open var availableMediaSpecIDs: [Swift.String] {
     get
-    set
   }
   open var creativeSpecID: Swift.String {
     get
-    set
+  }
+  open var adInfo: NestAdsSDK.NestAdsAdInfo {
+    get
   }
   open var mediaContent: NestAdsSDK.NestAdsMediaContent {
     get
-    set
   }
   open var customClickHandler: NestAdsSDK.NestAdsCustomClickHandler?
   @objc deinit
@@ -122,7 +121,6 @@ public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoader
   }
   open var isLoading: Swift.Bool {
     get
-    set
   }
   weak open var delegate: (any NestAdsSDK.NestAdsAdLoaderDelegate)?
   public init(placementCode: Swift.String, rootViewController: UIKit.UIViewController?, adTypes: [NestAdsSDK.NestAdsAdLoaderAdType], options: [NestAdsSDK.NestAdsAdLoaderOptions]? = nil)
@@ -150,19 +148,63 @@ public struct NestAdsVersionNumber {
   public init(majorVersion: Swift.Int, minorVersion: Swift.Int, patchVersion: Swift.Int)
 }
 public func NestAdsGetStringFromVersionNumber(_ version: NestAdsSDK.NestAdsVersionNumber) -> Swift.String
+public func NestAdsAdSizeFromCGSize(_ size: CoreFoundation.CGSize) -> NestAdsSDK.NestAdsAdSize
+@_hasMissingDesignatedInitializers open class NestAdsAdInfo {
+  open var adProductID: Swift.Int64 {
+    get
+    set
+  }
+  open var campaignID: Swift.Int64 {
+    get
+    set
+  }
+  open var adGroupID: Swift.Int64 {
+    get
+    set
+  }
+  open var adID: Swift.Int64 {
+    get
+    set
+  }
+  @objc deinit
+}
 public let NestAdsCustomNativeAdVideoMediaSpecID: Swift.String
 public let NestAdsGenderUnknown: Swift.Int
 public let NestAdsGenderMale: Swift.Int
 public let NestAdsGenderFemale: Swift.Int
 public let NestAdsPlayConditionCustom: Swift.String
 public struct NestAdsAdLoaderAdType : Swift.Hashable, Swift.Equatable, @unchecked Swift.Sendable {
-  public static let native: NestAdsSDK.NestAdsAdLoaderAdType
   public static let customNative: NestAdsSDK.NestAdsAdLoaderAdType
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: NestAdsSDK.NestAdsAdLoaderAdType, b: NestAdsSDK.NestAdsAdLoaderAdType) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct NestAdsAdSize {
+  public var size: CoreFoundation.CGSize
+  public init()
+  public init(size: CoreFoundation.CGSize)
+}
+public protocol NestAdsSplashAdViewDelegate : AnyObject {
+  func splashAdViewDidReceiveAd(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
+  func splashAdView(_ splashAdView: NestAdsSDK.NestAdsSplashAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
+  func splashAdViewDidRecordImpression(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
+  func splashAdViewDidReachDuration(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
+}
+@objc @_Concurrency.MainActor @preconcurrency open class NestAdsSplashAdView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsSplashAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
+  @_Concurrency.MainActor @preconcurrency open var duration: Swift.Double
+  @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(size: NestAdsSDK.NestAdsAdSize, origin: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor @preconcurrency public init(size: NestAdsSDK.NestAdsAdSize)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
+  @objc deinit
 }
 @objc public protocol NestAdsVideoControllerDelegate {
   @objc optional func videoControllerDidPlayVideo()
@@ -171,12 +213,12 @@ public struct NestAdsAdLoaderAdType : Swift.Hashable, Swift.Equatable, @unchecke
   @objc optional func videoControllerDidMuteVideo(_ videoController: NestAdsSDK.NestAdsVideoController)
   @objc optional func videoControllerDidUnmuteVideo(_ videoController: NestAdsSDK.NestAdsVideoController)
   @objc optional func videoControllerDidUpdateVideoProgress(current: Foundation.TimeInterval)
+  @objc optional func videoControllerDidFailToLoadVideo()
 }
 @objc @_inheritsConvenienceInitializers open class NestAdsVideoController : ObjectiveC.NSObject {
   weak open var delegate: (any NestAdsSDK.NestAdsVideoControllerDelegate)?
   open var isMuted: Swift.Bool {
     get
-    set
   }
   @objc deinit
   @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
@@ -203,32 +245,27 @@ open class NestAdsAdRequest {
 @_hasMissingDesignatedInitializers open class NestAdsMediaContent {
   open var hasVideoContent: Swift.Bool {
     get
-    set
   }
   open var videoController: NestAdsSDK.NestAdsVideoController {
     get
-    set
   }
   open var width: Swift.Int {
     get
-    set
   }
   open var height: Swift.Int {
     get
-    set
   }
   open var aspectRatio: CoreFoundation.CGFloat {
     get
-    set
   }
-  open var skipOffset: Foundation.TimeInterval?
+  open var skipOffset: Foundation.TimeInterval? {
+    get
+  }
   open var duration: Foundation.TimeInterval {
     get
-    set
   }
   open var currentTime: Foundation.TimeInterval {
     get
-    set
   }
   @objc deinit
 }

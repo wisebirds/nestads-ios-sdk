@@ -337,6 +337,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
+@interface NestAdsSplashAdView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
 @class NSString;
 
 SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
@@ -356,6 +365,7 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidMuteVideo:(NestAdsVideoController * _Nonnull)videoController;
 - (void)videoControllerDidUnmuteVideo:(NestAdsVideoController * _Nonnull)videoController;
 - (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
+- (void)videoControllerDidFailToLoadVideo;
 @end
 
 
@@ -708,6 +718,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
+@interface NestAdsSplashAdView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
 @class NSString;
 
 SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
@@ -727,6 +746,7 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidMuteVideo:(NestAdsVideoController * _Nonnull)videoController;
 - (void)videoControllerDidUnmuteVideo:(NestAdsVideoController * _Nonnull)videoController;
 - (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
+- (void)videoControllerDidFailToLoadVideo;
 @end
 
 
