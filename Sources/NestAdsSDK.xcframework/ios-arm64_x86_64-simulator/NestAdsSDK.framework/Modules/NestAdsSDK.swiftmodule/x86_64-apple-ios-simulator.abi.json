@@ -734,13 +734,13 @@
             "mangledName": "$s10NestAdsSDK0aB9MediaViewC5frameACSo6CGRectV_tcfc",
             "moduleName": "NestAdsSDK",
             "overriding": true,
-            "implicit": true,
             "objc_name": "initWithFrame:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
               "Preconcurrency",
               "Custom",
+              "AccessControl",
               "Override"
             ],
             "init_kind": "Designated"
@@ -776,13 +776,13 @@
             "mangledName": "$s10NestAdsSDK0aB9MediaViewC5coderACSgSo7NSCoderC_tcfc",
             "moduleName": "NestAdsSDK",
             "overriding": true,
-            "implicit": true,
             "objc_name": "initWithCoder:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
               "Preconcurrency",
               "Custom",
+              "AccessControl",
               "Required"
             ],
             "init_kind": "Designated"
@@ -13567,35 +13567,42 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2946,
+      "offset": 2967,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2978,
+      "offset": 2999,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3015,
+      "offset": 3036,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3095,
+      "offset": 3071,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3372,
+      "offset": 3151,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3428,
       "length": 5,
       "value": "false"
     },

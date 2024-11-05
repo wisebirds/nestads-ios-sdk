@@ -40,9 +40,9 @@ extension CoreMedia.CMTime : Swift.CustomStringConvertible {
   @_Concurrency.MainActor @preconcurrency @objc override public static var layerClass: Swift.AnyClass {
     @objc get
   }
+  @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public protocol NestAdsCustomNativeAdDelegate : AnyObject {
   func customNativdAdDidRecordImpression(_ nativeAd: NestAdsSDK.NestAdsCustomNativeAd)
