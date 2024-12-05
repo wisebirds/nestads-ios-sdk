@@ -80,8 +80,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
@@ -90,8 +90,8 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "NestAdsSDK"
       },
@@ -10238,6 +10238,32 @@
         "children": [
           {
             "kind": "Function",
+            "name": "videoControllerDidCompletePreparation",
+            "printedName": "videoControllerDidCompletePreparation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(pl)NestAdsVideoControllerDelegate(im)videoControllerDidCompletePreparation",
+            "mangledName": "$s10NestAdsSDK0aB23VideoControllerDelegateP05videoE22DidCompletePreparationyyF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsVideoControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsVideoControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "videoControllerDidPlayVideo",
             "printedName": "videoControllerDidPlayVideo()",
             "children": [
@@ -10430,6 +10456,38 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoControllerDidFailToLoadVideo",
+            "printedName": "videoControllerDidFailToLoadVideo(errorDescription:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(pl)NestAdsVideoControllerDelegate(im)videoControllerDidFailToLoadVideoWithErrorDescription:",
+            "mangledName": "$s10NestAdsSDK0aB23VideoControllerDelegateP05videoe13DidFailToLoadD016errorDescriptionySS_tF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsVideoControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsVideoControllerDelegate>",
+            "protocolReq": true,
+            "objc_name": "videoControllerDidFailToLoadVideoWithErrorDescription:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -10613,100 +10671,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "observeValue",
-            "printedName": "observeValue(forKeyPath:of:change:context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Foundation.NSKeyValueChangeKey : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Foundation.NSKeyValueChangeKey : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSKeyValueChangeKey",
-                        "printedName": "Foundation.NSKeyValueChangeKey",
-                        "usr": "c:@T@NSKeyValueChangeKey"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.UnsafeMutableRawPointer?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UnsafeMutableRawPointer",
-                    "printedName": "Swift.UnsafeMutableRawPointer",
-                    "usr": "s:Sv"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsVideoController(im)observeValueForKeyPath:ofObject:change:context:",
-            "mangledName": "$s10NestAdsSDK0aB15VideoControllerC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeyg6ChangeI0aypGSgSvSgtF",
-            "moduleName": "NestAdsSDK",
-            "overriding": true,
-            "objc_name": "observeValueForKeyPath:ofObject:change:context:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -13643,13 +13607,6 @@
       "value": "\"ERRORLOG_API_URL\""
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAVPlayerSet.swift",
-      "kind": "BooleanLiteral",
-      "offset": 310,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastModel.swift",
       "kind": "StringLiteral",
       "offset": 210,
@@ -13714,15 +13671,22 @@
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/AVPlayerQueueManager.swift",
+      "kind": "StringLiteral",
+      "offset": 254,
+      "length": 27,
+      "value": "\"com.nestads.avplayerqueue\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/AVPlayerQueueManager.swift",
       "kind": "Array",
-      "offset": 260,
+      "offset": 336,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/AVPlayerQueueManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 288,
+      "offset": 364,
       "length": 2,
       "value": "10"
     },
@@ -13792,7 +13756,7 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/NestAdsMediaView.swift",
       "kind": "BooleanLiteral",
-      "offset": 954,
+      "offset": 1162,
       "length": 5,
       "value": "false"
     },
@@ -14765,28 +14729,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4094,
+      "offset": 4090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4239,
+      "offset": 4222,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4391,
+      "offset": 4272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4435,
+      "offset": 4316,
       "length": 5,
       "value": "false"
     },
@@ -17269,177 +17233,177 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1197,
-      "length": 1,
-      "value": "1"
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1648,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1211,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1488,
+      "offset": 1587,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1522,
+      "offset": 1621,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1407,
+      "offset": 1506,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "StringLiteral",
-      "offset": 1591,
+      "offset": 1690,
       "length": 9,
       "value": "\"UNKNOWN\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1818,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1858,
+      "offset": 1871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1895,
+      "offset": 1908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2069,
+      "offset": 2082,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2123,
+      "offset": 2136,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "FloatLiteral",
-      "offset": 2136,
+      "offset": 2149,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "FloatLiteral",
-      "offset": 1966,
+      "offset": 1979,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2201,
+      "offset": 2214,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2300,
+      "offset": 2313,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2728,
+      "offset": 2741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2658,
+      "offset": 2671,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2784,
+      "offset": 2797,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2818,
+      "offset": 2831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2959,
+      "offset": 2972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2991,
+      "offset": 3049,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3028,
+      "offset": 3128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3063,
+      "offset": 3201,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3143,
+      "offset": 3274,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "Array",
+      "offset": 3328,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3381,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3420,
+      "offset": 3829,
       "length": 5,
       "value": "false"
     },

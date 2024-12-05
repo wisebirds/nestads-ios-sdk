@@ -356,19 +356,19 @@ SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
 @end
 
 
-@class NSString;
 
 SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
 @interface NestAdsVideoController : NSObject
-- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+@class NSString;
 
 SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 @protocol NestAdsVideoControllerDelegate
 @optional
+- (void)videoControllerDidCompletePreparation;
 - (void)videoControllerDidPlayVideo;
 - (void)videoControllerDidPauseVideo;
 - (void)videoControllerDidEndVideoPlayback;
@@ -376,6 +376,7 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidUnmuteVideo:(NestAdsVideoController * _Nonnull)videoController;
 - (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
 - (void)videoControllerDidFailToLoadVideo;
+- (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
 @end
 
 

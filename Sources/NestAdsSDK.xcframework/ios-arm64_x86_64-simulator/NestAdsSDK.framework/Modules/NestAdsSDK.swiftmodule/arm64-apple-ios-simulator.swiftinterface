@@ -284,6 +284,7 @@ public protocol NestAdsSplashAdViewDelegate : AnyObject {
   @objc deinit
 }
 @objc public protocol NestAdsVideoControllerDelegate {
+  @objc optional func videoControllerDidCompletePreparation()
   @objc optional func videoControllerDidPlayVideo()
   @objc optional func videoControllerDidPauseVideo()
   @objc optional func videoControllerDidEndVideoPlayback()
@@ -291,6 +292,7 @@ public protocol NestAdsSplashAdViewDelegate : AnyObject {
   @objc optional func videoControllerDidUnmuteVideo(_ videoController: NestAdsSDK.NestAdsVideoController)
   @objc optional func videoControllerDidUpdateVideoProgress(current: Foundation.TimeInterval)
   @objc optional func videoControllerDidFailToLoadVideo()
+  @objc optional func videoControllerDidFailToLoadVideo(errorDescription: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers open class NestAdsVideoController : ObjectiveC.NSObject {
   weak open var delegate: (any NestAdsSDK.NestAdsVideoControllerDelegate)?
@@ -298,7 +300,6 @@ public protocol NestAdsSplashAdViewDelegate : AnyObject {
     get
   }
   @objc deinit
-  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   open func setMute(_ mute: Swift.Bool)
   open func play()
   open func replay()
