@@ -84,6 +84,42 @@ extension UIKit.UIColor {
   convenience public init?(hexaRGB: Swift.String, alpha: CoreFoundation.CGFloat = 1)
   convenience public init?(hexaRGBA: Swift.String)
 }
+public enum PopupPosition {
+  case center
+  case bottom
+  public static func == (a: NestAdsSDK.PopupPosition, b: NestAdsSDK.PopupPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PopupCornerStyle {
+  case straight
+  case round
+  public static func == (a: NestAdsSDK.PopupCornerStyle, b: NestAdsSDK.PopupCornerStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PopupButtonStyle {
+  case button
+  case text
+  public static func == (a: NestAdsSDK.PopupButtonStyle, b: NestAdsSDK.PopupButtonStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PopupButtonPosition {
+  case aboveImage
+  case underImage
+  public static func == (a: NestAdsSDK.PopupButtonPosition, b: NestAdsSDK.PopupButtonPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 open class NestAdsPopupAdViewOptions {
   public init()
   @objc deinit
@@ -205,7 +241,10 @@ public protocol NestAdsPopupAdViewDelegate : AnyObject {
     get
     set
   }
-  @_Concurrency.MainActor @preconcurrency open var layoutConstraintsOptions: NestAdsSDK.NestAdsPopupLayoutConstraintsOptions
+  @_Concurrency.MainActor @preconcurrency open var layoutConstraintsOptions: NestAdsSDK.NestAdsPopupLayoutConstraintsOptions {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo {
     get
   }
@@ -355,3 +394,11 @@ open class NestAdsAdRequest {
   open var landingURL: Swift.String?
   @objc deinit
 }
+extension NestAdsSDK.PopupPosition : Swift.Equatable {}
+extension NestAdsSDK.PopupPosition : Swift.Hashable {}
+extension NestAdsSDK.PopupCornerStyle : Swift.Equatable {}
+extension NestAdsSDK.PopupCornerStyle : Swift.Hashable {}
+extension NestAdsSDK.PopupButtonStyle : Swift.Equatable {}
+extension NestAdsSDK.PopupButtonStyle : Swift.Hashable {}
+extension NestAdsSDK.PopupButtonPosition : Swift.Equatable {}
+extension NestAdsSDK.PopupButtonPosition : Swift.Hashable {}

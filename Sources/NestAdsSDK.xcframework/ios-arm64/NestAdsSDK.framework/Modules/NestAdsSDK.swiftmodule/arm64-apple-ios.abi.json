@@ -1211,8 +1211,7 @@
             "isOpen": true,
             "declAttributes": [
               "SetterAccess",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -1888,6 +1887,862 @@
         "moduleName": "NestAdsSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PopupPosition",
+        "printedName": "PopupPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupPosition.Type) -> NestAdsSDK.PopupPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupPosition",
+                    "printedName": "NestAdsSDK.PopupPosition",
+                    "usr": "s:10NestAdsSDK13PopupPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupPosition",
+                        "printedName": "NestAdsSDK.PopupPosition",
+                        "usr": "s:10NestAdsSDK13PopupPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK13PopupPositionO6centeryA2CmF",
+            "mangledName": "$s10NestAdsSDK13PopupPositionO6centeryA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "bottom",
+            "printedName": "bottom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupPosition.Type) -> NestAdsSDK.PopupPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupPosition",
+                    "printedName": "NestAdsSDK.PopupPosition",
+                    "usr": "s:10NestAdsSDK13PopupPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupPosition",
+                        "printedName": "NestAdsSDK.PopupPosition",
+                        "usr": "s:10NestAdsSDK13PopupPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK13PopupPositionO6bottomyA2CmF",
+            "mangledName": "$s10NestAdsSDK13PopupPositionO6bottomyA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupPosition",
+                "printedName": "NestAdsSDK.PopupPosition",
+                "usr": "s:10NestAdsSDK13PopupPositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupPosition",
+                "printedName": "NestAdsSDK.PopupPosition",
+                "usr": "s:10NestAdsSDK13PopupPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK13PopupPositionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10NestAdsSDK13PopupPositionO2eeoiySbAC_ACtFZ",
+            "moduleName": "NestAdsSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK13PopupPositionO9hashValueSivp",
+            "mangledName": "$s10NestAdsSDK13PopupPositionO9hashValueSivp",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK13PopupPositionO9hashValueSivg",
+                "mangledName": "$s10NestAdsSDK13PopupPositionO9hashValueSivg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK13PopupPositionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10NestAdsSDK13PopupPositionO4hash4intoys6HasherVz_tF",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NestAdsSDK13PopupPositionO",
+        "mangledName": "$s10NestAdsSDK13PopupPositionO",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PopupCornerStyle",
+        "printedName": "PopupCornerStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "straight",
+            "printedName": "straight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupCornerStyle.Type) -> NestAdsSDK.PopupCornerStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupCornerStyle",
+                    "printedName": "NestAdsSDK.PopupCornerStyle",
+                    "usr": "s:10NestAdsSDK16PopupCornerStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupCornerStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupCornerStyle",
+                        "printedName": "NestAdsSDK.PopupCornerStyle",
+                        "usr": "s:10NestAdsSDK16PopupCornerStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK16PopupCornerStyleO8straightyA2CmF",
+            "mangledName": "$s10NestAdsSDK16PopupCornerStyleO8straightyA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "round",
+            "printedName": "round",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupCornerStyle.Type) -> NestAdsSDK.PopupCornerStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupCornerStyle",
+                    "printedName": "NestAdsSDK.PopupCornerStyle",
+                    "usr": "s:10NestAdsSDK16PopupCornerStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupCornerStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupCornerStyle",
+                        "printedName": "NestAdsSDK.PopupCornerStyle",
+                        "usr": "s:10NestAdsSDK16PopupCornerStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK16PopupCornerStyleO5roundyA2CmF",
+            "mangledName": "$s10NestAdsSDK16PopupCornerStyleO5roundyA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupCornerStyle",
+                "printedName": "NestAdsSDK.PopupCornerStyle",
+                "usr": "s:10NestAdsSDK16PopupCornerStyleO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupCornerStyle",
+                "printedName": "NestAdsSDK.PopupCornerStyle",
+                "usr": "s:10NestAdsSDK16PopupCornerStyleO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK16PopupCornerStyleO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10NestAdsSDK16PopupCornerStyleO2eeoiySbAC_ACtFZ",
+            "moduleName": "NestAdsSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK16PopupCornerStyleO9hashValueSivp",
+            "mangledName": "$s10NestAdsSDK16PopupCornerStyleO9hashValueSivp",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK16PopupCornerStyleO9hashValueSivg",
+                "mangledName": "$s10NestAdsSDK16PopupCornerStyleO9hashValueSivg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK16PopupCornerStyleO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10NestAdsSDK16PopupCornerStyleO4hash4intoys6HasherVz_tF",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NestAdsSDK16PopupCornerStyleO",
+        "mangledName": "$s10NestAdsSDK16PopupCornerStyleO",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PopupButtonStyle",
+        "printedName": "PopupButtonStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "button",
+            "printedName": "button",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupButtonStyle.Type) -> NestAdsSDK.PopupButtonStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupButtonStyle",
+                    "printedName": "NestAdsSDK.PopupButtonStyle",
+                    "usr": "s:10NestAdsSDK16PopupButtonStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupButtonStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupButtonStyle",
+                        "printedName": "NestAdsSDK.PopupButtonStyle",
+                        "usr": "s:10NestAdsSDK16PopupButtonStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK16PopupButtonStyleO6buttonyA2CmF",
+            "mangledName": "$s10NestAdsSDK16PopupButtonStyleO6buttonyA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupButtonStyle.Type) -> NestAdsSDK.PopupButtonStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupButtonStyle",
+                    "printedName": "NestAdsSDK.PopupButtonStyle",
+                    "usr": "s:10NestAdsSDK16PopupButtonStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupButtonStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupButtonStyle",
+                        "printedName": "NestAdsSDK.PopupButtonStyle",
+                        "usr": "s:10NestAdsSDK16PopupButtonStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK16PopupButtonStyleO4textyA2CmF",
+            "mangledName": "$s10NestAdsSDK16PopupButtonStyleO4textyA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupButtonStyle",
+                "printedName": "NestAdsSDK.PopupButtonStyle",
+                "usr": "s:10NestAdsSDK16PopupButtonStyleO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupButtonStyle",
+                "printedName": "NestAdsSDK.PopupButtonStyle",
+                "usr": "s:10NestAdsSDK16PopupButtonStyleO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK16PopupButtonStyleO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10NestAdsSDK16PopupButtonStyleO2eeoiySbAC_ACtFZ",
+            "moduleName": "NestAdsSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK16PopupButtonStyleO9hashValueSivp",
+            "mangledName": "$s10NestAdsSDK16PopupButtonStyleO9hashValueSivp",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK16PopupButtonStyleO9hashValueSivg",
+                "mangledName": "$s10NestAdsSDK16PopupButtonStyleO9hashValueSivg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK16PopupButtonStyleO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10NestAdsSDK16PopupButtonStyleO4hash4intoys6HasherVz_tF",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NestAdsSDK16PopupButtonStyleO",
+        "mangledName": "$s10NestAdsSDK16PopupButtonStyleO",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PopupButtonPosition",
+        "printedName": "PopupButtonPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "aboveImage",
+            "printedName": "aboveImage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupButtonPosition.Type) -> NestAdsSDK.PopupButtonPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupButtonPosition",
+                    "printedName": "NestAdsSDK.PopupButtonPosition",
+                    "usr": "s:10NestAdsSDK19PopupButtonPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupButtonPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupButtonPosition",
+                        "printedName": "NestAdsSDK.PopupButtonPosition",
+                        "usr": "s:10NestAdsSDK19PopupButtonPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK19PopupButtonPositionO10aboveImageyA2CmF",
+            "mangledName": "$s10NestAdsSDK19PopupButtonPositionO10aboveImageyA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "underImage",
+            "printedName": "underImage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.PopupButtonPosition.Type) -> NestAdsSDK.PopupButtonPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PopupButtonPosition",
+                    "printedName": "NestAdsSDK.PopupButtonPosition",
+                    "usr": "s:10NestAdsSDK19PopupButtonPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.PopupButtonPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PopupButtonPosition",
+                        "printedName": "NestAdsSDK.PopupButtonPosition",
+                        "usr": "s:10NestAdsSDK19PopupButtonPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK19PopupButtonPositionO10underImageyA2CmF",
+            "mangledName": "$s10NestAdsSDK19PopupButtonPositionO10underImageyA2CmF",
+            "moduleName": "NestAdsSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupButtonPosition",
+                "printedName": "NestAdsSDK.PopupButtonPosition",
+                "usr": "s:10NestAdsSDK19PopupButtonPositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PopupButtonPosition",
+                "printedName": "NestAdsSDK.PopupButtonPosition",
+                "usr": "s:10NestAdsSDK19PopupButtonPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK19PopupButtonPositionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10NestAdsSDK19PopupButtonPositionO2eeoiySbAC_ACtFZ",
+            "moduleName": "NestAdsSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK19PopupButtonPositionO9hashValueSivp",
+            "mangledName": "$s10NestAdsSDK19PopupButtonPositionO9hashValueSivp",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK19PopupButtonPositionO9hashValueSivg",
+                "mangledName": "$s10NestAdsSDK19PopupButtonPositionO9hashValueSivg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK19PopupButtonPositionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10NestAdsSDK19PopupButtonPositionO4hash4intoys6HasherVz_tF",
+            "moduleName": "NestAdsSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NestAdsSDK19PopupButtonPositionO",
+        "mangledName": "$s10NestAdsSDK19PopupButtonPositionO",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
         ]
       },
       {
@@ -6066,13 +6921,41 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
         "declKind": "Import",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
       },
       {
         "kind": "Import",
@@ -7203,7 +8086,8 @@
               "Custom",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8189,55 +9073,13 @@
       },
       {
         "kind": "Import",
-        "name": "AdSupport",
-        "printedName": "AdSupport",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "AppTrackingTransparency",
-        "printedName": "AppTrackingTransparency",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CommonCrypto",
-        "printedName": "CommonCrypto",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Compression",
-        "printedName": "Compression",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreTelephony",
-        "printedName": "CoreTelephony",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Network",
-        "printedName": "Network",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "NestAdsSDK"
       },
       {
         "kind": "Import",
@@ -13763,56 +14605,56 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 1244,
+      "offset": 1296,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "Array",
-      "offset": 1449,
+      "offset": 1501,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 1620,
+      "offset": 1672,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1684,
+      "offset": 1736,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1699,
+      "offset": 1751,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1713,
+      "offset": 1765,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 1722,
+      "offset": 1774,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2295,
+      "offset": 2375,
       "length": 5,
       "value": "false"
     },
@@ -13889,114 +14731,170 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 269,
+      "offset": 524,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 302,
+      "offset": 557,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 654,
       "length": 8,
       "value": "\"F1F1F1\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 470,
+      "offset": 725,
       "length": 8,
-      "value": "\"F1F1F1\""
+      "value": "\"B1B1B1\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 794,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 1453,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1066,
+      "offset": 1486,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 1538,
       "length": 8,
       "value": "\"F1F1F1\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1820,
+      "offset": 1613,
+      "length": 8,
+      "value": "\"222222\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 1685,
+      "length": 8,
+      "value": "\"222222\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1739,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 2460,
       "length": 8,
       "value": "\"B1B1B1\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2618,
+      "offset": 3258,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2624,
+      "offset": 3264,
       "length": 3,
       "value": "640"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2745,
+      "offset": 3385,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2750,
+      "offset": 3390,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2872,
+      "offset": 3512,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2877,
+      "offset": 3517,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3000,
+      "offset": 3640,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3006,
+      "offset": 3646,
       "length": 3,
       "value": "640"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3682,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3941,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3981,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsPopupAdViewOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4022,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastAd.swift",
@@ -14274,21 +15172,21 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 1267,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1465,
+      "offset": 1487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 1702,
+      "offset": 1724,
       "length": 1,
       "value": "1"
     },
@@ -14638,119 +15536,154 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1800,
+      "offset": 1799,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2050,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2090,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2225,
+      "offset": 1830,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2455,
+      "offset": 2042,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2589,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2731,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2867,
-      "length": 1,
-      "value": "1"
+      "offset": 2181,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3010,
+      "offset": 2263,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2446,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2689,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2722,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2967,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3000,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 3160,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3488,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3656,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4118,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3835,
+      "offset": 4263,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3850,
+      "offset": 4278,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3864,
+      "offset": 4292,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3873,
+      "offset": 4301,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4090,
+      "offset": 4518,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4222,
+      "offset": 4650,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4272,
+      "offset": 4700,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4316,
+      "offset": 4744,
       "length": 5,
       "value": "false"
     },
@@ -16647,56 +17580,70 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 881,
+      "offset": 399,
       "length": 24,
       "value": "\"com.nestads.NestAdsSdk\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 442,
       "length": 14,
       "value": "\"BASE_API_URL\""
     },
     {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 505,
+      "length": 38,
+      "value": "\"BASE_API_URL not found in Info.plist\""
+    },
+    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 145,
+      "offset": 129,
+      "length": 17,
+      "value": "\"nestads-sdk-ios\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
       "length": 24,
       "value": "\"com.nestads.NestAdsSdk\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 254,
+      "offset": 300,
       "length": 17,
       "value": "\"_videoMediaSpec\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 312,
+      "offset": 358,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 350,
+      "offset": 396,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 390,
+      "offset": 436,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 624,
       "length": 8,
       "value": "\"CUSTOM\""
     },
@@ -17186,56 +18133,63 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1182,
+      "offset": 1314,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1197,
+      "offset": 1329,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1211,
+      "offset": 1343,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1220,
+      "offset": 1352,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 1429,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1301,
+      "offset": 1511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1446,
+      "offset": 1656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1598,
+      "offset": 1808,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1648,
+      "offset": 1858,
       "length": 5,
       "value": "false"
     },
