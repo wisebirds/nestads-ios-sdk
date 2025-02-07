@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NestAdsSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -84,37 +84,12 @@ extension UIKit.UIColor {
   convenience public init?(hexaRGB: Swift.String, alpha: CoreFoundation.CGFloat = 1)
   convenience public init?(hexaRGBA: Swift.String)
 }
-public enum PopupPosition {
-  case center
-  case bottom
-  public static func == (a: NestAdsSDK.PopupPosition, b: NestAdsSDK.PopupPosition) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum PopupCornerStyle {
-  case straight
-  case round
-  public static func == (a: NestAdsSDK.PopupCornerStyle, b: NestAdsSDK.PopupCornerStyle) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum PopupButtonStyle {
-  case button
-  case text
-  public static func == (a: NestAdsSDK.PopupButtonStyle, b: NestAdsSDK.PopupButtonStyle) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum PopupButtonPosition {
-  case aboveImage
-  case underImage
-  public static func == (a: NestAdsSDK.PopupButtonPosition, b: NestAdsSDK.PopupButtonPosition) -> Swift.Bool
+public enum NestAdsPopupBackgroundArea {
+  case fullScreen
+  case fullScreenExceptBottom
+  case fullScreenExceptTop
+  case safeArea
+  public static func == (a: NestAdsSDK.NestAdsPopupBackgroundArea, b: NestAdsSDK.NestAdsPopupBackgroundArea) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -124,22 +99,27 @@ open class NestAdsPopupAdViewOptions {
   public init()
   @objc deinit
 }
+open class NestAdsPopupBackgroundOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
+  open var backgroundArea: NestAdsSDK.NestAdsPopupBackgroundArea
+  public init(backgroundArea: NestAdsSDK.NestAdsPopupBackgroundArea? = nil)
+  @objc deinit
+}
 open class NestAdsPopupLeftButtonOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
   open var text: Swift.String
-  open var fontName: Swift.String
+  open var font: UIKit.UIFont
   open var fontColor: UIKit.UIColor
   open var backgroundColor: UIKit.UIColor
   open var borderColor: CoreGraphics.CGColor
-  public init(text: Swift.String? = nil, fontName: Swift.String? = nil, fontColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, borderColor: CoreGraphics.CGColor? = nil)
+  public init(text: Swift.String? = nil, font: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, borderColor: CoreGraphics.CGColor? = nil)
   @objc deinit
 }
 open class NestAdsPopupRightButtonOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
   open var text: Swift.String
-  open var fontName: Swift.String
+  open var font: UIKit.UIFont
   open var fontColor: UIKit.UIColor
   open var backgroundColor: UIKit.UIColor
   open var borderColor: CoreGraphics.CGColor
-  public init(text: Swift.String? = nil, fontName: Swift.String? = nil, fontColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, borderColor: CoreGraphics.CGColor? = nil)
+  public init(text: Swift.String? = nil, font: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, borderColor: CoreGraphics.CGColor? = nil)
   @objc deinit
 }
 open class NestAdsPopupImageOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
@@ -245,6 +225,7 @@ public protocol NestAdsPopupAdViewDelegate : AnyObject {
     get
     set
   }
+  @_Concurrency.MainActor @preconcurrency open var backgroundOptions: NestAdsSDK.NestAdsPopupBackgroundOptions
   @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo {
     get
   }
@@ -394,11 +375,5 @@ open class NestAdsAdRequest {
   open var landingURL: Swift.String?
   @objc deinit
 }
-extension NestAdsSDK.PopupPosition : Swift.Equatable {}
-extension NestAdsSDK.PopupPosition : Swift.Hashable {}
-extension NestAdsSDK.PopupCornerStyle : Swift.Equatable {}
-extension NestAdsSDK.PopupCornerStyle : Swift.Hashable {}
-extension NestAdsSDK.PopupButtonStyle : Swift.Equatable {}
-extension NestAdsSDK.PopupButtonStyle : Swift.Hashable {}
-extension NestAdsSDK.PopupButtonPosition : Swift.Equatable {}
-extension NestAdsSDK.PopupButtonPosition : Swift.Hashable {}
+extension NestAdsSDK.NestAdsPopupBackgroundArea : Swift.Equatable {}
+extension NestAdsSDK.NestAdsPopupBackgroundArea : Swift.Hashable {}
