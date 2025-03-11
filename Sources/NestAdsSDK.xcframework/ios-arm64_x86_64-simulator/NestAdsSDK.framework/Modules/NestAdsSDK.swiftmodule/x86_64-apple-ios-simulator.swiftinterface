@@ -204,7 +204,6 @@ public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoader
     get
   }
   open func start()
-  open func cleanCache()
   @objc deinit
 }
 public protocol NestAdsPopupAdViewDelegate : AnyObject {

@@ -7212,27 +7212,6 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "cleanCache",
-            "printedName": "cleanCache()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10NestAdsSDK0aB0C10cleanCacheyyF",
-            "mangledName": "$s10NestAdsSDK0aB0C10cleanCacheyyF",
-            "moduleName": "NestAdsSDK",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
