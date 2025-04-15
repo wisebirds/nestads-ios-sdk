@@ -6,11 +6,15 @@
 	<dict>
 		<key>.gitignore</key>
 		<data>
-		b3lFpZKK3zT5ARnZPpst/mWBK5w=
+		KNBXaoxviVq7KRUNz+v6n9NTvQ4=
+		</data>
+		<key>.swiftlint.yml</key>
+		<data>
+		L1NcUSH42ulBgNu73LJ2GrMaUZU=
 		</data>
 		<key>Headers/NestAdsSDK-Swift.h</key>
 		<data>
-		0IEjTsGUZHKthQn/pvHlYOHaXHA=
+		f8v8C4xbv2nnczbjoU5cDtBVOTA=
 		</data>
 		<key>Headers/NestAdsSdk.h</key>
 		<data>
@@ -18,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IWeybemdqmNkHmSyGwP62c+rONE=
+		EnwatHZjt1jK/AGj1+AMGyi2JzY=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1a1y59OlsZ5G/88v8t03LnXpZ6Q=
+		5HrYgcTdNQX62hGYAq8jWWjoEt0=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iMeQ42DXgCzFo5dAc7IHm81E+LI=
+		C4Shd62Lw5f91bqWOkqVbGpgOt4=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +38,19 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iMeQ42DXgCzFo5dAc7IHm81E+LI=
+		C4Shd62Lw5f91bqWOkqVbGpgOt4=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VjLLoffN/rnxDSOMQYrGB86cI44=
+		hwJB85ChnBUMWt+3+WCLAe0V++0=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1a1y59OlsZ5G/88v8t03LnXpZ6Q=
+		5HrYgcTdNQX62hGYAq8jWWjoEt0=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TCQR68nHa57NtUsu7iiNcWDFXSk=
+		VZarZ9nuFmj6DgqYL6FsfnrGCUA=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,51 +58,64 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TCQR68nHa57NtUsu7iiNcWDFXSk=
+		VZarZ9nuFmj6DgqYL6FsfnrGCUA=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VivRJqHvvqmV1LZ6ijw+8x9GF8Q=
+		tzRkL9ug/11i+/9E9T6A0X7Sf5Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		dvOAmrohyqv8A/hUJFpLf3j5kyA=
 		</data>
-		<key>Pause.png</key>
+		<key>NestAdsResource.bundle/Root.plist</key>
 		<data>
-		Eqnwe/7SHjjgxUMQfeO/fVtWrHk=
+		jOhqEUF1/xyY+fuswiWT+ELC3dI=
 		</data>
-		<key>Play.png</key>
+		<key>NestAdsResource.bundle/en.lproj/Root.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t4KY9Gh4uIiOv7VnHtRrKEuPRY8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>NestAdsResource.bundle/more.png</key>
 		<data>
-		21q2PvMcfyLpEuOEiRAwItrNYW4=
+		3KC/DHeYdd3HlEqvUxIoZwj6X78=
+		</data>
+		<key>NestAdsResource.bundle/pause.png</key>
+		<data>
+		9dS4z6gN1aBK0j7tmC0N5GjyT8A=
+		</data>
+		<key>NestAdsResource.bundle/play.png</key>
+		<data>
+		er68cvtOKGUNFQpesUcN0QWVbbU=
+		</data>
+		<key>NestAdsResource.bundle/replay.png</key>
+		<data>
+		hR9aZWIyZ+rOMbbR9bTFGIXJX0c=
+		</data>
+		<key>NestAdsResource.bundle/skip.png</key>
+		<data>
+		fkKnQFd3XDGPu9d0X1v8vYmGMww=
+		</data>
+		<key>NestAdsResource.bundle/soundOff.png</key>
+		<data>
+		XmqP8Ll2XAz33bdp4PdFU449MaE=
+		</data>
+		<key>NestAdsResource.bundle/soundOn.png</key>
+		<data>
+		+FoA33igzCqEmpLOHHmbTOi6PAY=
+		</data>
+		<key>NestAdsResource.bundle/stop.png</key>
+		<data>
+		HXcKiAL8yliB1NGSuLzATBxTb1I=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		oUIzKGt4OjA8oycFMv6mPmUeclE=
-		</data>
-		<key>Replay.png</key>
-		<data>
-		0AyyrQktAzdplUgewGqmLwkvXwg=
-		</data>
-		<key>Soundoff.png</key>
-		<data>
-		rEsC3U+MOFEKXk/webAQ336MaoQ=
-		</data>
-		<key>Soundon.png</key>
-		<data>
-		StDk8uQkSFN8l+J31dQY/k+cO2U=
-		</data>
-		<key>more.png</key>
-		<data>
-		Jg07FhcyxVh0z4++2bCQqh7e90k=
-		</data>
-		<key>skip.png</key>
-		<data>
-		0aIraeKHhS7dR4PEJciBMHx3hsM=
-		</data>
-		<key>stop.png</key>
-		<data>
-		IS4nR4ImCd38hS3HMfUnGYBlZc0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -107,14 +124,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ygUOG3LE7InBY5URmzamQohjSrOE7AkxOR2m4fCzlvs=
+			v+zcu1z1Qk0jkbBkx2n3y3HzFn06xgyE9IlJ0ecDcAo=
+			</data>
+		</dict>
+		<key>.swiftlint.yml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ajudyTCgDk/5aBnuVi2mHAu1rR4mxl7cdBAHARr9Hzg=
 			</data>
 		</dict>
 		<key>Headers/NestAdsSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bTBuAKOvqK8bVLK/CJfMZXyno9q8hlbEK8/jrBzYY74=
+			Xozrm0tgsnjbCRSSdjFjPH10jI3StPths7KbmSC/mMM=
 			</data>
 		</dict>
 		<key>Headers/NestAdsSdk.h</key>
@@ -128,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fPBcq6GhZJhHcl8y5ZAjiPdMCXPLhHh45lCiYjRYF5U=
+			iHA5y/EC9MmebwZmcDhj0LnsqKHZHTa3dNK43PdSaD4=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8vtR0vcDCuu5NUmRqQj7ZjuR/uPBCMxn5Qanlu0YjYc=
+			pxuuUksm0i/sewlNsyLIWtDcvQW4dq4yYvl2ql1xUZ0=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -149,28 +173,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8vtR0vcDCuu5NUmRqQj7ZjuR/uPBCMxn5Qanlu0YjYc=
+			pxuuUksm0i/sewlNsyLIWtDcvQW4dq4yYvl2ql1xUZ0=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dyGo7HKw8lBhMUGLt//F2YwpV3DMSieBstpNqP7BF6o=
+			Z6cMYtYZq6XkokRIyCOhXUUHEFZ6aeEXV66ZviegI6M=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fPBcq6GhZJhHcl8y5ZAjiPdMCXPLhHh45lCiYjRYF5U=
+			iHA5y/EC9MmebwZmcDhj0LnsqKHZHTa3dNK43PdSaD4=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pB10g3uuR/iRP8fUmbig1hbczqFdUJ8PRMHNcdSEqjY=
+			ue7Q+NOCDFayOHdI1pA1EtT4uaTJIToft6hTse4pEGg=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -184,14 +208,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pB10g3uuR/iRP8fUmbig1hbczqFdUJ8PRMHNcdSEqjY=
+			ue7Q+NOCDFayOHdI1pA1EtT4uaTJIToft6hTse4pEGg=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SiV3gtwC8GnSu2lEZxJXgeG6lUhvMTVncI36lR2mtpE=
+			kn36AlSu/0mFwHW6MgnrCSxi+aCbPJXc6u/BMepesYk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -201,18 +225,76 @@
 			qlCDKgxI0zGQpCTsV8WOhqWKJTBxCWWvksvYB53zL0E=
 			</data>
 		</dict>
-		<key>Pause.png</key>
+		<key>NestAdsResource.bundle/Root.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/jrVr0Kj8jk3/Gusx4oGGN81/k5558dw7Di7vNwNUVc=
+			m26DmegPkB5jwUJkVEtLlObYALX8He100Ny0+NNJg/g=
 			</data>
 		</dict>
-		<key>Play.png</key>
+		<key>NestAdsResource.bundle/en.lproj/Root.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z59AEy54T+bJISpmDoHplbreR/QDby+K1SQ6nedPlm8=
+			xUzNd7J7w99oAnMIWGe1dAGArHMuEXwQqxSziDU5vLk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>NestAdsResource.bundle/more.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n0o6GmYuO6wu/1kTaswtVkBsv1j8+tiRFEbsngpGyBQ=
+			</data>
+		</dict>
+		<key>NestAdsResource.bundle/pause.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ilPZmdZSTpjcRiZSH+dje4wgmgt7lWyVwNTxpm2U6W0=
+			</data>
+		</dict>
+		<key>NestAdsResource.bundle/play.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q0Q313XRqFVS88pOD8SVFl9/BmPbb6ZkTqUQ34iUGAQ=
+			</data>
+		</dict>
+		<key>NestAdsResource.bundle/replay.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yb3/igqYlgYyRq64xkz8mJ9MHLYX04v5BrNg87USFeY=
+			</data>
+		</dict>
+		<key>NestAdsResource.bundle/skip.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A50LtrK0EGmtdsdk1ogSkoYaoWUTPyeo9ENauwDIHys=
+			</data>
+		</dict>
+		<key>NestAdsResource.bundle/soundOff.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FqTrpikjeJlk4BWJA+dD0+dSFmLLC6o4PbkIiT88Jgg=
+			</data>
+		</dict>
+		<key>NestAdsResource.bundle/soundOn.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sNS97iQS5bSnbgjrw74zQ+a7IDr6PYbbfiYIJtHUEig=
+			</data>
+		</dict>
+		<key>NestAdsResource.bundle/stop.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WmZgLyYVggfRVgZnDMmv8WUVzRDBim5l8s7RLQFir/M=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -220,48 +302,6 @@
 			<key>hash2</key>
 			<data>
 			snacHQzNX9CaSfpCQ8jN+nZk0GazWAPPoRxjW8YXq/M=
-			</data>
-		</dict>
-		<key>Replay.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7+hv3qsK88/63jSYltqKxvsP1rxlmvmDQcv3XFzSFjA=
-			</data>
-		</dict>
-		<key>Soundoff.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			H/pQHNvZunabTxnYjuCa8NxiiQ8dlUELbFjZT4qPuIM=
-			</data>
-		</dict>
-		<key>Soundon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7/hlZXDkToZ7zRRtAsrXX3iNq0oqEimpSXI23OLo9Bk=
-			</data>
-		</dict>
-		<key>more.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VVOpZXpa4gtNmuoHoBPv4XEKo1bD8En9iRwNFxwbJ/M=
-			</data>
-		</dict>
-		<key>skip.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BWWic8LVg1bFA/Yeokc3yOf8gs4/06mHkY8XWZEB8s8=
-			</data>
-		</dict>
-		<key>stop.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			80UaxGEwJwg0n7HugHktw9CfgZ+j6k1rO4lhJ0jteVE=
 			</data>
 		</dict>
 	</dict>

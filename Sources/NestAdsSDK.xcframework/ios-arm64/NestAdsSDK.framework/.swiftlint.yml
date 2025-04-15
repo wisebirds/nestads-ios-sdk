@@ -1,0 +1,14 @@
+whitelist_rules:
+  - function_body_length
+  - cyclomatic_complexity
+
+disabled_rules:
+  - identifier_name
+  
+function_body_length:
+  warning: 1
+  error: 1
+cyclomatic_complexity:
+  warning: 1
+  error: 1
+
