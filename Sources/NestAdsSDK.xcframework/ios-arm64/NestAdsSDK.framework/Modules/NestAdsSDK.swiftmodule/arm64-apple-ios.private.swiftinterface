@@ -478,7 +478,8 @@ open class NestAdsAdRequest {
   open var httpTimeout: Swift.Double
   open var customTargeting: [Swift.String : Swift.String]?
   open var appVersion: Swift.String?
-  public init(gender: Swift.Int? = 0, publisherProvidedID: Swift.String? = nil, age: Swift.Int? = -1, country: Swift.String? = nil, language: Swift.String? = nil, httpTimeout: Foundation.TimeInterval? = 1.0, customTargeting: [Swift.String : Swift.String]? = nil, appVersion: Swift.String? = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String)
+  open var audienceParameters: [Swift.String : Any]?
+  public init(gender: Swift.Int? = 0, publisherProvidedID: Swift.String? = nil, age: Swift.Int? = -1, country: Swift.String? = nil, language: Swift.String? = nil, httpTimeout: Foundation.TimeInterval? = 1.0, customTargeting: [Swift.String : Swift.String]? = nil, appVersion: Swift.String? = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, audienceParameters: [Swift.String : Any]? = nil)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers open class NestAdsMediaContent {
