@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lojwbelZ+tMnU84mYhYaleqs23U=
+		I+CaDycZPGIlt4HxmVw5GRkJyfQ=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4cvmQv1ccHUv1/+weGh24dtS4Lk=
+		CaJ1fc0xBGpBI96NmSQXJvGd+OY=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q2ni7E5DpMpqkHm3VxsIIvE1Xaw=
+		Xdpf7ai8IIML0PX6mANODqNC7aM=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4cvmQv1ccHUv1/+weGh24dtS4Lk=
+		CaJ1fc0xBGpBI96NmSQXJvGd+OY=
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F54HpmUA7YKbTlVkSU/T7PNVkCE=
+		+e5yFWUVd0+/GsMSXapmdbZ9f/4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lqe/jcUb3c1ydnV5hKpInwR+W0ux25CMIbxwGpeaJA0=
+			Ta+tq90vbICS3PN66h2vph0JQ1CgKx9A6hC6QIJH5EM=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -180,14 +180,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LiHqmI3kU6fwQfXNa6tPYLkewrOyreHXdli4A59d0II=
+			OOdhXb9Zd47MdNWZEXDvrB3EJn6V93uTtYghXM5c6V0=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lqe/jcUb3c1ydnV5hKpInwR+W0ux25CMIbxwGpeaJA0=
+			Ta+tq90vbICS3PN66h2vph0JQ1CgKx9A6hC6QIJH5EM=
 			</data>
 		</dict>
 		<key>Modules/NestAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6py/oCvH4XcUot858F1l9BqE1dX6Ui0WQeF+r/bOGHo=
+			XCMQ6i1fjMMMcG7rANRDr/CuByTpJPzj6zxiwHwu+cs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

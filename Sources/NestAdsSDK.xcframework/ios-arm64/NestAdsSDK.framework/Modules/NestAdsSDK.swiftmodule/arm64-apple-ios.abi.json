@@ -22531,28 +22531,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/parsers\/VastXMLParser.swift",
       "kind": "Array",
-      "offset": 1871,
+      "offset": 1911,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/parsers\/VastXMLParser.swift",
       "kind": "StringLiteral",
-      "offset": 2403,
+      "offset": 2443,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/parsers\/VastXMLParser.swift",
       "kind": "StringLiteral",
-      "offset": 2470,
+      "offset": 2510,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/parsers\/VastXMLParser.swift",
       "kind": "Dictionary",
-      "offset": 4212,
+      "offset": 4284,
       "length": 3,
       "value": "[]"
     },
@@ -22889,6 +22889,13 @@
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/TrackingCreative.swift",
       "kind": "BooleanLiteral",
       "offset": 531,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/utils\/TrackingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 224,
       "length": 5,
       "value": "false"
     },
@@ -23833,42 +23840,42 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 767,
+      "offset": 817,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 1131,
+      "offset": 1181,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1224,
+      "offset": 1274,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 1335,
+      "offset": 1385,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1369,
+      "offset": 1419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1456,
+      "offset": 1506,
       "length": 4,
       "value": "true"
     },
@@ -25366,28 +25373,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTrackerNonLinear.swift",
       "kind": "FloatLiteral",
-      "offset": 1321,
+      "offset": 1374,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTrackerNonLinear.swift",
       "kind": "BooleanLiteral",
-      "offset": 1351,
+      "offset": 1404,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTrackerNonLinear.swift",
       "kind": "BooleanLiteral",
-      "offset": 1443,
+      "offset": 1496,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTrackerNonLinear.swift",
       "kind": "BooleanLiteral",
-      "offset": 2171,
+      "offset": 2224,
       "length": 5,
       "value": "false"
     },
