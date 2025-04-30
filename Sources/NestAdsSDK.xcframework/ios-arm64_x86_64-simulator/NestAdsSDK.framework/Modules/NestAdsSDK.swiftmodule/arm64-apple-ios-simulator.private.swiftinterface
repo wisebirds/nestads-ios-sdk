@@ -54,6 +54,7 @@ public protocol NestAdsPremiumBannerAdViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo {
     get
   }
+  @_Concurrency.MainActor @preconcurrency open var layoutOptions: NestAdsSDK.NestAdsPremiumBannerLayoutOptions
   @_Concurrency.MainActor @preconcurrency open var defaultBannerOptions: NestAdsSDK.NestAdsPremiumAdDefaultBannerOptions
   @_Concurrency.MainActor @preconcurrency open var expandedBannerOptions: NestAdsSDK.NestAdsPremiumAdExpandedBannerOptions
   @_Concurrency.MainActor @preconcurrency open var expandedBannerVideoOptions: NestAdsSDK.NestAdsPremiumAdExpandedBannerVideoOptions
@@ -310,6 +311,11 @@ public struct NestAdsVersionNumber {
 }
 open class NestAdsPremiumBannerAdViewOptions {
   public init()
+  @objc deinit
+}
+open class NestAdsPremiumBannerLayoutOptions : NestAdsSDK.NestAdsPremiumBannerAdViewOptions {
+  open var cornerRadius: CoreFoundation.CGFloat
+  public init(cornerRadius: CoreFoundation.CGFloat? = nil)
   @objc deinit
 }
 open class NestAdsPremiumAdDefaultBannerOptions : NestAdsSDK.NestAdsPremiumBannerAdViewOptions {
