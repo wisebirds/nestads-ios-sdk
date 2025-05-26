@@ -2538,6 +2538,13 @@
       },
       {
         "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -10655,8 +10662,8 @@
           },
           {
             "kind": "Function",
-            "name": "layoutSubviews",
-            "printedName": "layoutSubviews()",
+            "name": "didMoveToWindow",
+            "printedName": "didMoveToWindow()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10665,12 +10672,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView(im)layoutSubviews",
-            "mangledName": "$s10NestAdsSDK0aB11PopupAdViewC14layoutSubviewsyyF",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView(im)didMoveToWindow",
+            "mangledName": "$s10NestAdsSDK0aB11PopupAdViewC15didMoveToWindowyyF",
             "moduleName": "NestAdsSDK",
             "overriding": true,
             "isOpen": true,
-            "objc_name": "layoutSubviews",
+            "objc_name": "didMoveToWindow",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -14799,6 +14806,34 @@
               "Override",
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didMoveToWindow",
+            "printedName": "didMoveToWindow()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsImageBannerAdView(im)didMoveToWindow",
+            "mangledName": "$s10NestAdsSDK0aB17ImageBannerAdViewC15didMoveToWindowyyF",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "didMoveToWindow",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -21336,56 +21371,63 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4889,
+      "offset": 4907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4942,
+      "offset": 4947,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4986,
+      "offset": 5000,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6575,
+      "offset": 6633,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 32599,
+      "offset": 32657,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 32855,
+      "offset": 32913,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 33115,
+      "offset": 33173,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPremiumBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 33391,
+      "offset": 33449,
       "length": 1,
       "value": "0"
     },
@@ -21462,317 +21504,324 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1172,
+      "offset": 1199,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1204,
+      "offset": 1231,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1366,
+      "offset": 1393,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1413,
+      "offset": 1440,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1668,
+      "offset": 1695,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1810,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2009,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2056,
+      "offset": 1726,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2174,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2322,
+      "offset": 1867,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2365,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2506,
+      "offset": 2066,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2549,
+      "offset": 2113,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2231,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2379,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2422,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2563,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2606,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2580,
+      "offset": 2637,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2737,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2795,
+      "offset": 2820,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3013,
+      "offset": 3038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3292,
+      "offset": 3317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 3606,
+      "offset": 3631,
       "length": 8,
       "value": "\"A0A0A0\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 3636,
+      "offset": 3661,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3702,
+      "offset": 3727,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4206,
+      "offset": 4231,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4301,
+      "offset": 4326,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4410,
+      "offset": 4435,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4422,
+      "offset": 4447,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4537,
+      "offset": 4562,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4549,
+      "offset": 4574,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4652,
+      "offset": 4677,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4748,
+      "offset": 4773,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4785,
+      "offset": 4810,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4841,
+      "offset": 4866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4905,
+      "offset": 4930,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4960,
+      "offset": 4985,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5014,
+      "offset": 5039,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 5328,
+      "offset": 5353,
       "length": 6,
       "value": "\"play\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 5407,
+      "offset": 5432,
       "length": 11,
       "value": "\"play.fill\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 5469,
+      "offset": 5494,
       "length": 9,
       "value": "\"soundOn\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 5579,
+      "offset": 5604,
       "length": 10,
       "value": "\"soundOff\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5664,
+      "offset": 5689,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5699,
+      "offset": 5724,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5757,
+      "offset": 5782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5789,
+      "offset": 5814,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "Array",
-      "offset": 5975,
+      "offset": 6000,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "Array",
-      "offset": 6014,
+      "offset": 6039,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
       "kind": "Array",
-      "offset": 6051,
+      "offset": 6076,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/PremiumAd\/PremiumExpandedVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6287,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/AVPlayerQueueManager.swift",
@@ -22267,35 +22316,14 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/NestAdsMediaView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1563,
+      "offset": 1571,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/NestAdsMediaView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1590,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/NestAdsMediaView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1682,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/NestAdsMediaView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1723,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/View\/NestAdsMediaView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1770,
+      "offset": 1612,
       "length": 5,
       "value": "false"
     },
@@ -22356,6 +22384,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2432,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsCustomNativeAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2461,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/VastCreativeParameter.swift",
       "kind": "StringLiteral",
       "offset": 402,
@@ -22396,13 +22438,6 @@
       "offset": 280,
       "length": 24,
       "value": "\"prepareToPlayDidFinish\""
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Utils\/Extension\/Notification+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 361,
-      "length": 23,
-      "value": "\"didPlayerStatusFailed\""
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Enums\/CacheType.swift",
@@ -23156,28 +23191,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/TrackingCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 466,
+      "offset": 465,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/TrackingCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 496,
+      "offset": 495,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/TrackingCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 531,
+      "offset": 530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/utils\/TrackingManager.swift",
       "kind": "Array",
-      "offset": 230,
+      "offset": 308,
       "length": 2,
       "value": "[]"
     },
@@ -23562,21 +23597,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4728,
+      "offset": 4734,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4778,
+      "offset": 4784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4822,
+      "offset": 4827,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4871,
       "length": 5,
       "value": "false"
     },
@@ -24073,7 +24115,14 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastTrackingEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 853,
+      "offset": 852,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastTrackingEvent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 941,
       "length": 5,
       "value": "false"
     },
@@ -24129,42 +24178,63 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 817,
+      "offset": 809,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 1181,
+      "offset": 1173,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
+      "kind": "Array",
+      "offset": 1286,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1274,
+      "offset": 1321,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1553,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 1385,
+      "offset": 1655,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1419,
+      "offset": 1689,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/VideoPlayer\/VastClient\/VastTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1506,
+      "offset": 1776,
       "length": 4,
       "value": "true"
     },
@@ -24241,35 +24311,49 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsImageBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2583,
+      "offset": 2591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsImageBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2716,
+      "offset": 2641,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsImageBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2766,
+      "offset": 2684,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsImageBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2806,
+      "offset": 2724,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsImageBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2859,
+      "offset": 2777,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsImageBannerAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3086,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsImageBannerAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3260,
       "length": 5,
       "value": "false"
     },
@@ -26423,6 +26507,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsSplashAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1901,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "IntegerLiteral",
       "offset": 1982,
@@ -26502,98 +26593,98 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3271,
+      "offset": 3109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3201,
+      "offset": 3039,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3327,
+      "offset": 3165,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3359,
+      "offset": 3197,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3393,
+      "offset": 3231,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3534,
+      "offset": 3372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3611,
+      "offset": 3449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3690,
+      "offset": 3528,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3763,
+      "offset": 3601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3836,
+      "offset": 3674,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "Array",
-      "offset": 3890,
+      "offset": 3728,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3943,
+      "offset": 3781,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "FloatLiteral",
-      "offset": 3990,
+      "offset": 3828,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Manager\/NestAdsVideoController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4418,
+      "offset": 4256,
       "length": 5,
       "value": "false"
     },
@@ -26748,6 +26839,27 @@
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
       "kind": "BooleanLiteral",
       "offset": 1340,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1687,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1731,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/AdData\/NestAdsMediaContent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1770,
       "length": 5,
       "value": "false"
     },

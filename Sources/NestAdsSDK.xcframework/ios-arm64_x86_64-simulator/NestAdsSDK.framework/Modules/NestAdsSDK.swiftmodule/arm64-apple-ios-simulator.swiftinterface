@@ -14,6 +14,7 @@ import Foundation
 import Network
 import SQLite3
 import Swift
+import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -297,7 +298,7 @@ public protocol NestAdsPopupAdViewDelegate : AnyObject {
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
   @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
   @_Concurrency.MainActor @preconcurrency open func show(in viewController: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency open func dismiss()
@@ -382,6 +383,7 @@ public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public init(size: NestAdsSDK.NestAdsAdSize)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
   @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
 }
 public func NestAdsGetStringFromVersionNumber(_ version: NestAdsSDK.NestAdsVersionNumber) -> Swift.String
