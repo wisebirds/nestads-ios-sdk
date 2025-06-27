@@ -10662,34 +10662,6 @@
           },
           {
             "kind": "Function",
-            "name": "didMoveToWindow",
-            "printedName": "didMoveToWindow()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView(im)didMoveToWindow",
-            "mangledName": "$s10NestAdsSDK0aB11PopupAdViewC15didMoveToWindowyyF",
-            "moduleName": "NestAdsSDK",
-            "overriding": true,
-            "isOpen": true,
-            "objc_name": "didMoveToWindow",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "load",
             "printedName": "load(_:)",
             "children": [
@@ -23590,35 +23562,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4596,
+      "offset": 4603,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4734,
+      "offset": 4653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4784,
+      "offset": 4696,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4827,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/Ad\/NestAdsPopupAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4871,
+      "offset": 4740,
       "length": 5,
       "value": "false"
     },

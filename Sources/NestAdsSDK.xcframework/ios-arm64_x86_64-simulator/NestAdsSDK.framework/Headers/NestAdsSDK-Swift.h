@@ -355,7 +355,6 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 @interface NestAdsPopupAdView : UIView
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -774,7 +773,6 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 @interface NestAdsPopupAdView : UIView
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
