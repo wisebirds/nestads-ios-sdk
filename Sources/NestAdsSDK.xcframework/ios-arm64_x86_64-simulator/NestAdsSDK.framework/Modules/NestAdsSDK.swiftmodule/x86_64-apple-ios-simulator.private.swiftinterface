@@ -306,8 +306,19 @@ public struct NestAdsVersionNumber {
   public var majorVersion: Swift.Int
   public var minorVersion: Swift.Int
   public var patchVersion: Swift.Int
+  public var suffix: Swift.String?
   public init()
   public init(majorVersion: Swift.Int, minorVersion: Swift.Int, patchVersion: Swift.Int)
+}
+public enum NestAdsPremiumBannerHintAssetSize {
+  case small
+  case medium
+  case large
+  public static func == (a: NestAdsSDK.NestAdsPremiumBannerHintAssetSize, b: NestAdsSDK.NestAdsPremiumBannerHintAssetSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 open class NestAdsPremiumBannerAdViewOptions {
   public init()
@@ -341,7 +352,8 @@ open class NestAdsPremiumBannerCtaButtonOptions : NestAdsSDK.NestAdsPremiumBanne
 open class NestAdsPremiumBannerHintAssetOptions : NestAdsSDK.NestAdsPremiumBannerAdViewOptions {
   open var primaryColor: UIKit.UIColor
   open var secondaryColor: UIKit.UIColor
-  public init(primaryColor: UIKit.UIColor? = nil, secondaryColor: UIKit.UIColor? = nil)
+  open var hintAssetSize: NestAdsSDK.NestAdsPremiumBannerHintAssetSize
+  public init(primaryColor: UIKit.UIColor? = nil, secondaryColor: UIKit.UIColor? = nil, hintAssetSize: NestAdsSDK.NestAdsPremiumBannerHintAssetSize? = nil)
   @objc deinit
 }
 open class NestAdsPremiumBannerAdvertiserOptions : NestAdsSDK.NestAdsPremiumBannerAdViewOptions {
@@ -529,3 +541,5 @@ open class NestAdsAdRequest {
 }
 extension NestAdsSDK.NestAdsPopupBackgroundArea : Swift.Equatable {}
 extension NestAdsSDK.NestAdsPopupBackgroundArea : Swift.Hashable {}
+extension NestAdsSDK.NestAdsPremiumBannerHintAssetSize : Swift.Equatable {}
+extension NestAdsSDK.NestAdsPremiumBannerHintAssetSize : Swift.Hashable {}
