@@ -15249,6 +15249,34 @@
           },
           {
             "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsImageBannerAdView(im)layoutSubviews",
+            "mangledName": "$s10NestAdsSDK0aB17ImageBannerAdViewC14layoutSubviewsyyF",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "didMoveToWindow",
             "printedName": "didMoveToWindow()",
             "children": [

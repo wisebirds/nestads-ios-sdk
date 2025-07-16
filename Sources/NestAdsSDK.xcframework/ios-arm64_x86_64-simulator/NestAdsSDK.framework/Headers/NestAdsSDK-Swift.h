@@ -333,6 +333,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK24NestAdsImageBannerAdView")
 @interface NestAdsImageBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToSuperview;
+- (void)layoutSubviews;
 - (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -751,6 +752,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK24NestAdsImageBannerAdView")
 @interface NestAdsImageBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToSuperview;
+- (void)layoutSubviews;
 - (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end

@@ -394,6 +394,7 @@ public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public init(size: NestAdsSDK.NestAdsAdSize)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
   @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
 }
