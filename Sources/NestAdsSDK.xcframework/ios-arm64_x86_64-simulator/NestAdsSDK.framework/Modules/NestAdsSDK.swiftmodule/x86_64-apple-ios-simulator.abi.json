@@ -19675,6 +19675,187 @@
           },
           {
             "kind": "Var",
+            "name": "customTargetingList",
+            "printedName": "customTargetingList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : [Swift.String]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.String]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvp",
+            "mangledName": "$s10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvp",
+            "moduleName": "NestAdsSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : [Swift.String]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : [Swift.String]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvg",
+                "mangledName": "$s10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : [Swift.String]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : [Swift.String]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvs",
+                "mangledName": "$s10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvs",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvM",
+                "mangledName": "$s10NestAdsSDK0aB9AdRequestC19customTargetingListSDySSSaySSGGSgvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "appVersion",
             "printedName": "appVersion",
             "children": [
@@ -19945,7 +20126,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(gender:publisherProvidedID:age:country:language:httpTimeout:customTargeting:appVersion:audienceParameters:)",
+            "printedName": "init(gender:publisherProvidedID:age:country:language:httpTimeout:customTargeting:customTargetingList:appVersion:audienceParameters:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20075,6 +20256,43 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "[Swift.String : [Swift.String]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.String]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
                   {
@@ -20117,8 +20335,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10NestAdsSDK0aB9AdRequestC6gender19publisherProvidedID3age7country8language11httpTimeout15customTargeting10appVersion18audienceParametersACSiSg_SSSgAm2NSdSgSDyS2SGSgANSDySSypGSgtcfc",
-            "mangledName": "$s10NestAdsSDK0aB9AdRequestC6gender19publisherProvidedID3age7country8language11httpTimeout15customTargeting10appVersion18audienceParametersACSiSg_SSSgAm2NSdSgSDyS2SGSgANSDySSypGSgtcfc",
+            "usr": "s:10NestAdsSDK0aB9AdRequestC6gender19publisherProvidedID3age7country8language11httpTimeout15customTargeting0oP4List10appVersion18audienceParametersACSiSg_SSSgAn2OSdSgSDyS2SGSgSDySSSaySSGGSgAOSDySSypGSgtcfc",
+            "mangledName": "$s10NestAdsSDK0aB9AdRequestC6gender19publisherProvidedID3age7country8language11httpTimeout15customTargeting0oP4List10appVersion18audienceParametersACSiSg_SSSgAn2OSdSgSDyS2SGSgSDySSSaySSGGSgAOSDySSypGSgtcfc",
             "moduleName": "NestAdsSDK",
             "declAttributes": [
               "AccessControl"
@@ -27213,28 +27431,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 877,
+      "offset": 1043,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 932,
+      "offset": 1098,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "FloatLiteral",
-      "offset": 1022,
+      "offset": 1188,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1345,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
