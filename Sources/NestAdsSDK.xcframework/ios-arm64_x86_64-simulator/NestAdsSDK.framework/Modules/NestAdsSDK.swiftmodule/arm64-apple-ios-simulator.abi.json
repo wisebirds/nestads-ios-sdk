@@ -27431,28 +27431,28 @@
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 1043,
+      "offset": 1163,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 1098,
+      "offset": 1218,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "FloatLiteral",
-      "offset": 1188,
+      "offset": 1308,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kangjuwon\/Documents\/NestAdsSampleApp-iOS\/nestads-sdk-ios\/NestAdsSDK\/Model\/NestAdsAdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1465,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },

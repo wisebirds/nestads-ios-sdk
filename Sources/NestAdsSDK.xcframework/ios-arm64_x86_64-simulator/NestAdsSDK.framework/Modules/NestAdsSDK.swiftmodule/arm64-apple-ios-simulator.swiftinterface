@@ -499,8 +499,14 @@ open class NestAdsAdRequest {
   open var country: Swift.String?
   open var language: Swift.String?
   open var httpTimeout: Swift.Double
-  open var customTargeting: [Swift.String : Swift.String]?
-  open var customTargetingList: [Swift.String : [Swift.String]]?
+  open var customTargeting: [Swift.String : Swift.String]? {
+    get
+    set
+  }
+  open var customTargetingList: [Swift.String : [Swift.String]]? {
+    get
+    set
+  }
   open var appVersion: Swift.String?
   open var audienceParameters: [Swift.String : Any]?
   public init(gender: Swift.Int? = 0, publisherProvidedID: Swift.String? = nil, age: Swift.Int? = -1, country: Swift.String? = nil, language: Swift.String? = nil, httpTimeout: Foundation.TimeInterval? = 1.0, customTargeting: [Swift.String : Swift.String]? = nil, customTargetingList: [Swift.String : [Swift.String]]? = nil, appVersion: Swift.String? = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, audienceParameters: [Swift.String : Any]? = nil)
