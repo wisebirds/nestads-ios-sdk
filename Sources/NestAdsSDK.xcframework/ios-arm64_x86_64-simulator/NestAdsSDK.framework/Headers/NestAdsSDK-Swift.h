@@ -306,6 +306,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+
+
 SWIFT_CLASS("_TtC10NestAdsSDK14NestAdsAdError")
 @interface NestAdsAdError : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -361,6 +363,24 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 
 
 
+
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+@class UIScrollView;
+
+@interface NestAdsPopupAdView (SWIFT_EXTENSION(NestAdsSDK)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)numberOfItemsInSection SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+@end
+
+
 SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsPremiumBannerAdView")
 @interface NestAdsPremiumBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -403,6 +423,9 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidFailToLoadVideo;
 - (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
 @end
+
+
+
 
 
 
@@ -725,6 +748,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+
+
 SWIFT_CLASS("_TtC10NestAdsSDK14NestAdsAdError")
 @interface NestAdsAdError : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -780,6 +805,24 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 
 
 
+
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+@class UIScrollView;
+
+@interface NestAdsPopupAdView (SWIFT_EXTENSION(NestAdsSDK)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)numberOfItemsInSection SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+@end
+
+
 SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsPremiumBannerAdView")
 @interface NestAdsPremiumBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -822,6 +865,9 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidFailToLoadVideo;
 - (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
 @end
+
+
+
 
 
 
