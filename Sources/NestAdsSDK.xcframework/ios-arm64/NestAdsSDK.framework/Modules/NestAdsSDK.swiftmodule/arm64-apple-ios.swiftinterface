@@ -9,13 +9,11 @@ import AppTrackingTransparency
 import CommonCrypto
 import Compression
 import CoreTelephony
-import DeveloperToolsSupport
 import Foundation
 @_exported import NestAdsSDK
 import Network
 import SQLite3
 import Swift
-import SwiftUI
 import SystemConfiguration
 import UIKit
 import _Concurrency
@@ -24,83 +22,6 @@ import _SwiftConcurrencyShims
 import os.log
 import os
 import zlib
-public enum NestAdsBackgroundArea {
-  case fullScreen
-  case fullScreenExceptBottom
-  case fullScreenExceptTop
-  case safeArea
-  public static func == (a: NestAdsSDK.NestAdsBackgroundArea, b: NestAdsSDK.NestAdsBackgroundArea) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum NestAdsMultipleAdIndicatorSize {
-  case small
-  case medium
-  public static func == (a: NestAdsSDK.NestAdsMultipleAdIndicatorSize, b: NestAdsSDK.NestAdsMultipleAdIndicatorSize) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-open class NestAdsMultipleAdOptions {
-  public init()
-  @objc deinit
-}
-open class NestAdsMultipleAdLoadOptions : NestAdsSDK.NestAdsMultipleAdOptions {
-  open var numberOfAds: Swift.Int {
-    get
-    set
-  }
-  public init(numberOfAds: Swift.Int? = 1)
-  @objc deinit
-}
-open class NestAdsCarouselOptions : NestAdsSDK.NestAdsMultipleAdOptions {
-  open var displayDuration: Swift.Double {
-    get
-    set
-  }
-  open var transitionDuration: Swift.Double {
-    get
-    set
-  }
-  open var indicator: NestAdsSDK.NestAdsIndicatorOptions
-  public init(displayDuration: Swift.Double? = nil, transitionDuration: Swift.Double? = nil, indicator: NestAdsSDK.NestAdsIndicatorOptions? = nil)
-  @objc deinit
-}
-open class NestAdsIndicatorOptions : NestAdsSDK.NestAdsMultipleAdOptions {
-  open var size: NestAdsSDK.NestAdsMultipleAdIndicatorSize
-  open var opacity: CoreFoundation.CGFloat
-  open var backgroundColor: UIKit.UIColor
-  open var font: UIKit.UIFont
-  open var fontColor: UIKit.UIColor
-  open var borderColor: UIKit.UIColor
-  open var borderWidth: CoreFoundation.CGFloat {
-    get
-    set
-  }
-  public init(size: NestAdsSDK.NestAdsMultipleAdIndicatorSize? = nil, opacity: CoreFoundation.CGFloat? = nil, backgroundColor: UIKit.UIColor? = nil, font: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, borderColor: UIKit.UIColor? = nil, borderWidth: CoreFoundation.CGFloat? = nil)
-  @objc deinit
-}
-open class NestAdsAdListOptions : NestAdsSDK.NestAdsMultipleAdOptions {
-  open var useCustomClickAction: Swift.Bool
-  open var adListViewOptions: NestAdsSDK.NestAdsListViewOptions
-  public init(useCustomClickAction: Swift.Bool? = nil, adListViewOptions: NestAdsSDK.NestAdsListViewOptions? = nil)
-  @objc deinit
-}
-open class NestAdsListViewOptions : NestAdsSDK.NestAdsMultipleAdOptions {
-  open var title: Swift.String
-  open var bannerInsets: UIKit.UIEdgeInsets
-  open var cornerRadius: CoreFoundation.CGFloat {
-    get
-    set
-  }
-  open var titleFont: UIKit.UIFont?
-  open var backgroundArea: NestAdsSDK.NestAdsBackgroundArea
-  public init(title: Swift.String? = nil, bannerInsets: UIKit.UIEdgeInsets? = nil, titleFont: UIKit.UIFont? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, backgroundArea: NestAdsSDK.NestAdsBackgroundArea? = nil)
-  @objc deinit
-}
 public protocol NestAdsPremiumBannerAdViewDelegate : AnyObject {
   func premiumAdViewDidReceiveAd(_ adView: NestAdsSDK.NestAdsPremiumBannerAdView)
   func premiumAdView(_ adView: NestAdsSDK.NestAdsPremiumBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
@@ -164,14 +85,6 @@ open class NestAdsBannerBackgroundOptions : NestAdsSDK.NestAdsImageBannerAdViewO
   open var backgroundColor: UIKit.UIColor?
   open var opacity: CoreFoundation.CGFloat
   public init(backgroundColor: UIKit.UIColor? = nil, opacity: CoreFoundation.CGFloat? = nil)
-  @objc deinit
-}
-open class NestAdsBannerLayoutOptions : NestAdsSDK.NestAdsImageBannerAdViewOptions {
-  open var cornerRadius: CoreFoundation.CGFloat {
-    get
-    set
-  }
-  public init(cornerRadius: CoreFoundation.CGFloat = 0)
   @objc deinit
 }
 extension CoreMedia.CMTime : Swift.CustomStringConvertible {
@@ -251,46 +164,25 @@ open class NestAdsPopupAdViewOptions {
   public init()
   @objc deinit
 }
-open class NestAdsMultiplePopupOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
-  open var loadOptions: NestAdsSDK.NestAdsMultipleAdLoadOptions
-  open var carousel: NestAdsSDK.NestAdsCarouselOptions
-  open var adList: NestAdsSDK.NestAdsAdListOptions
-  public init(loadOptions: NestAdsSDK.NestAdsMultipleAdLoadOptions? = nil, carousel: NestAdsSDK.NestAdsCarouselOptions? = nil, adList: NestAdsSDK.NestAdsAdListOptions? = nil)
-  @objc deinit
-}
 open class NestAdsPopupBackgroundOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
   open var backgroundArea: NestAdsSDK.NestAdsPopupBackgroundArea
   public init(backgroundArea: NestAdsSDK.NestAdsPopupBackgroundArea? = nil)
   @objc deinit
 }
 open class NestAdsPopupLeftButtonOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
-  @available(*, deprecated, message: "어드민의 팝업 광고 상품 - 레이아웃 설정 탭의 ‘버튼 문구 설정’으로 변경되었으며, 이에 따라 SDK 내 관련 설정 옵션은 삭제될 예정입니다.")
   open var text: Swift.String
   open var font: UIKit.UIFont
-  open var fontColor: UIKit.UIColor {
-    get
-    set
-  }
-  open var backgroundColor: UIKit.UIColor {
-    get
-    set
-  }
+  open var fontColor: UIKit.UIColor
+  open var backgroundColor: UIKit.UIColor
   open var borderColor: CoreGraphics.CGColor
   public init(text: Swift.String? = nil, font: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, borderColor: CoreGraphics.CGColor? = nil)
   @objc deinit
 }
 open class NestAdsPopupRightButtonOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
-  @available(*, deprecated, message: "어드민의 팝업 광고 상품 - 레이아웃 설정 탭의 ‘버튼 문구 설정’으로 변경되었으며, 이에 따라 SDK 내 관련 설정 옵션은 삭제될 예정입니다.")
   open var text: Swift.String
   open var font: UIKit.UIFont
-  open var fontColor: UIKit.UIColor {
-    get
-    set
-  }
-  open var backgroundColor: UIKit.UIColor {
-    get
-    set
-  }
+  open var fontColor: UIKit.UIColor
+  open var backgroundColor: UIKit.UIColor
   open var borderColor: CoreGraphics.CGColor
   public init(text: Swift.String? = nil, font: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, borderColor: CoreGraphics.CGColor? = nil)
   @objc deinit
@@ -308,14 +200,6 @@ open class NestAdsPopupLayoutConstraintsOptions : NestAdsSDK.NestAdsPopupAdViewO
   open var trailingInset: CoreFoundation.CGFloat
   open var bottomInset: CoreFoundation.CGFloat
   public init(topInset: CoreFoundation.CGFloat? = nil, leadingInset: CoreFoundation.CGFloat? = nil, trailingInset: CoreFoundation.CGFloat? = nil, bottomInset: CoreFoundation.CGFloat? = nil)
-  @objc deinit
-}
-open class NestAdsPopupLayoutOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
-  open var cornerRadius: CoreFoundation.CGFloat? {
-    get
-    set
-  }
-  public init(cornerRadius: CoreFoundation.CGFloat? = nil)
   @objc deinit
 }
 open class NestAdsAdLoaderOptions {
@@ -367,16 +251,6 @@ public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoader
   open var message: Swift.String
   @objc deinit
 }
-@_hasMissingDesignatedInitializers open class NestAdsPublicAdResponse {
-  open var adInfo: NestAdsSDK.NestAdsAdInfo
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers open class NestAdsPopupAdResponse : NestAdsSDK.NestAdsPublicAdResponse {
-  open var image: NestAdsSDK.NestAdsImageResponse
-  open var adBadge: NestAdsSDK.NestAdsAdBadgeResponse
-  open var impressionUrls: [Swift.String]?
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers open class NestAds {
   open class func sharedInstance() -> NestAdsSDK.NestAds
   open var versionNumber: NestAdsSDK.NestAdsVersionNumber {
@@ -388,8 +262,8 @@ public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoader
 public protocol NestAdsPopupAdViewDelegate : AnyObject {
   func popupAdViewDidReceiveAd(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdView(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
-  func popupAdViewDidRecordImpression(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adInfo: NestAdsSDK.NestAdsAdInfo)
-  func popupAdViewDidRecordClick(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adInfo: NestAdsSDK.NestAdsAdInfo)
+  func popupAdViewDidRecordImpression(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
+  func popupAdViewDidRecordClick(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewDidTappedLeftButton(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewDidTappedRightButton(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewDidShowAd(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
@@ -397,46 +271,37 @@ public protocol NestAdsPopupAdViewDelegate : AnyObject {
   func popupAdViewWillPresentScreen(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewWillDismissScreen(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewDidDismissScreen(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
-  func popupAdViewDidTapSeeAllButton(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adList: [NestAdsSDK.NestAdsPopupAdResponse])
-  func popupAdViewAdListViewControllerWillAppear()
-  func popupAdViewAdListViewControllerDidAppear()
-  func popupAdViewAdListViewControllerWillDisappear()
-  func popupAdViewAdListViewControllerDidDisappear()
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsPopupAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsPopupAdViewDelegate)?
   @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
-  @_Concurrency.MainActor @preconcurrency open var leftButtonOptions: NestAdsSDK.NestAdsPopupLeftButtonOptions
-  @_Concurrency.MainActor @preconcurrency open var rightButtonOptions: NestAdsSDK.NestAdsPopupRightButtonOptions
-  @_Concurrency.MainActor @preconcurrency open var imageOptions: NestAdsSDK.NestAdsPopupImageOptions
+  @_Concurrency.MainActor @preconcurrency open var leftButtonOptions: NestAdsSDK.NestAdsPopupLeftButtonOptions {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency open var rightButtonOptions: NestAdsSDK.NestAdsPopupRightButtonOptions {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency open var imageOptions: NestAdsSDK.NestAdsPopupImageOptions {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency open var layoutConstraintsOptions: NestAdsSDK.NestAdsPopupLayoutConstraintsOptions {
     get
     set
   }
   @_Concurrency.MainActor @preconcurrency open var backgroundOptions: NestAdsSDK.NestAdsPopupBackgroundOptions
-  @_Concurrency.MainActor @preconcurrency open var multiplePopupOptions: NestAdsSDK.NestAdsMultiplePopupOptions
-  @_Concurrency.MainActor @preconcurrency open var layoutOptions: NestAdsSDK.NestAdsPopupLayoutOptions
   @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency open var adInfos: [NestAdsSDK.NestAdsAdInfo] {
     get
   }
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
   @_Concurrency.MainActor @preconcurrency open func show(in viewController: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency open func dismiss()
-}
-extension NestAdsSDK.NestAdsPopupAdView : UIKit.UICollectionViewDelegateFlowLayout, UIKit.UICollectionViewDataSource {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection: Swift.Int) -> Swift.Int
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
 }
 public struct NestAdsVersionNumber {
   public var majorVersion: Swift.Int
@@ -445,16 +310,6 @@ public struct NestAdsVersionNumber {
   public var suffix: Swift.String?
   public init()
   public init(majorVersion: Swift.Int, minorVersion: Swift.Int, patchVersion: Swift.Int)
-}
-@_hasMissingDesignatedInitializers open class NestAdsImageResponse {
-  open var clickUrls: [Swift.String]?
-  open var landingUrl: Swift.String?
-  open var landingUrlType: Swift.String?
-  open var width: Swift.Int?
-  open var height: Swift.Int?
-  open var resourceUrl: Swift.String?
-  open var backgroundColor: UIKit.UIColor?
-  @objc deinit
 }
 public enum NestAdsPremiumBannerHintAssetSize {
   case small
@@ -520,10 +375,6 @@ open class NestAdsPremiumAdExpandedBannerVideoOptions : NestAdsSDK.NestAdsPremiu
   public init(videoOptions: NestAdsSDK.NestAdsVideoOptions? = nil, progressBarColor: UIKit.UIColor? = nil)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers open class NestAdsAdBadgeResponse {
-  open var value: Swift.String?
-  @objc deinit
-}
 public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
   func imageBannerAdViewDidReceiveAd(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdView(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
@@ -540,7 +391,6 @@ public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
     get
   }
   @_Concurrency.MainActor @preconcurrency open var backgroundOptions: NestAdsSDK.NestAdsBannerBackgroundOptions
-  @_Concurrency.MainActor @preconcurrency open var layoutOptions: NestAdsSDK.NestAdsBannerLayoutOptions
   @objc deinit
   @_Concurrency.MainActor @preconcurrency public init(size: NestAdsSDK.NestAdsAdSize)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -698,10 +548,6 @@ open class NestAdsAdRequest {
   open var landingURL: Swift.String?
   @objc deinit
 }
-extension NestAdsSDK.NestAdsBackgroundArea : Swift.Equatable {}
-extension NestAdsSDK.NestAdsBackgroundArea : Swift.Hashable {}
-extension NestAdsSDK.NestAdsMultipleAdIndicatorSize : Swift.Equatable {}
-extension NestAdsSDK.NestAdsMultipleAdIndicatorSize : Swift.Hashable {}
 extension NestAdsSDK.NestAdsPopupBackgroundArea : Swift.Equatable {}
 extension NestAdsSDK.NestAdsPopupBackgroundArea : Swift.Hashable {}
 extension NestAdsSDK.NestAdsPremiumBannerHintAssetSize : Swift.Equatable {}
