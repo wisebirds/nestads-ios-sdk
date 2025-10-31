@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NestAdsSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -22,6 +22,53 @@ import _SwiftConcurrencyShims
 import os.log
 import os
 import zlib
+extension NestAdsSDK.NestAds {
+  @objc public static let Offerwall: NestAdsSDK.NestAdsOfferwallBridge
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NestAdsOfferwallBridge : ObjectiveC.NSObject {
+  @objc public func initialize(application: UIKit.UIApplication, appKey: Swift.String, appSecret: Swift.String, environment: Swift.String = "production", timeoutMillis: Foundation.NSNumber? = nil)
+  public func login(userId: Swift.String, gender: Swift.Int = 0, birthYear: Swift.Int? = nil)
+  @objc public func login(userId: Swift.String, gender: Swift.Int = 0, birthYear: Foundation.NSNumber? = nil)
+  @objc public func logout()
+  @objc public func openOfferwall(from viewController: UIKit.UIViewController, placementCode: Swift.String, showNavigationBar: Swift.Bool = false, useNativeNavigationBar: Swift.Bool = false, delegate: Swift.AnyObject? = nil)
+  @objc public var isInitialized: Swift.Bool {
+    @objc get
+  }
+  @objc public var isLoggedIn: Swift.Bool {
+    @objc get
+  }
+  @objc public var currentUserId: Swift.String {
+    @objc get
+  }
+  @objc public var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public var adchainSDKVersion: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public protocol NestAdsOfferwallInterface : ObjectiveC.NSObjectProtocol {
+  @objc func initializeOfferwall(appKey: Swift.String, appSecret: Swift.String, environment: Swift.String, completion: ((Swift.Bool, Foundation.NSError?) -> Swift.Void)?)
+  @objc func loginOfferwall(userId: Swift.String, gender: Swift.String?, birthYear: Foundation.NSNumber?, delegate: (any ObjectiveC.NSObjectProtocol)?)
+  @objc func logoutOfferwall()
+  @objc func openOfferwall(from viewController: UIKit.UIViewController, placementId: Swift.String, delegate: (any ObjectiveC.NSObjectProtocol)?)
+  @objc func openOfferwallWithUrl(from viewController: UIKit.UIViewController, url: Swift.String, placementId: Swift.String, showNavigationBar: Swift.Bool, delegate: (any ObjectiveC.NSObjectProtocol)?)
+  @objc func openAdjoeOfferwall(from viewController: UIKit.UIViewController, placementId: Swift.String, delegate: (any ObjectiveC.NSObjectProtocol)?)
+  @objc var isOfferwallInitialized: Swift.Bool { get }
+  @objc var isOfferwallLoggedIn: Swift.Bool { get }
+  @objc var offerwallCurrentUserId: Swift.String? { get }
+  @objc var offerwallSDKVersion: Swift.String { get }
+  @objc var adchainSDKVersion: Swift.String { get }
+}
+public class OfferwallConfig {
+  final public let appKey: Swift.String
+  final public let appSecret: Swift.String
+  final public let application: UIKit.UIApplication
+  final public let timeoutMillis: Swift.Int64?
+  public init(application: UIKit.UIApplication, appKey: Swift.String, appSecret: Swift.String, timeoutMillis: Swift.Int64? = nil)
+  @objc deinit
+}
 public protocol NestAdsPremiumBannerAdViewDelegate : AnyObject {
   func premiumAdViewDidReceiveAd(_ adView: NestAdsSDK.NestAdsPremiumBannerAdView)
   func premiumAdView(_ adView: NestAdsSDK.NestAdsPremiumBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
@@ -256,7 +303,7 @@ public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoader
   open var versionNumber: NestAdsSDK.NestAdsVersionNumber {
     get
   }
-  open func start()
+  open func start(offerwallConfig: NestAdsSDK.OfferwallConfig? = nil)
   @objc deinit
 }
 public protocol NestAdsPopupAdViewDelegate : AnyObject {
