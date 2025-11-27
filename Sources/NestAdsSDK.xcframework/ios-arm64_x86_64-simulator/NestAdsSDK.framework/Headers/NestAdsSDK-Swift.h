@@ -351,6 +351,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 - (void)didMoveToSuperview;
 @end
 
+@class NestAdsOfferwallQuizFactory;
+@class NestAdsOfferwallMissionFactory;
 @class UIApplication;
 @class NSString;
 @class NSNumber;
@@ -360,6 +362,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 /// NestAdsOfferwallSDK를 런타임에 동적으로 로드하고 관리
 SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsOfferwallBridge")
 @interface NestAdsOfferwallBridge : NSObject
+/// Quiz 인스턴스 생성 Factory
+@property (nonatomic, strong) NestAdsOfferwallQuizFactory * _Nonnull quiz;
+/// Mission 인스턴스 생성 Factory
+@property (nonatomic, strong) NestAdsOfferwallMissionFactory * _Nonnull mission;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// 오퍼월 초기화
@@ -475,6 +481,76 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK25NestAdsOfferwallInterface_")
 @property (nonatomic, readonly, copy) NSString * _Nonnull offerwallSDKVersion;
 /// AdChain SDK 버전
 @property (nonatomic, readonly, copy) NSString * _Nonnull adchainSDKVersion;
+@end
+
+
+/// Wrapper for AdChain SDK’s AdchainMission
+/// Created by users via NestAds.Offerwall.Mission()
+SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsOfferwallMission")
+@interface NestAdsOfferwallMission : NSObject
+/// Load mission data via Delegate callback
+- (void)load;
+/// Click mission by mission ID
+/// \param missionId Mission ID
+///
+/// \param viewController View controller to display
+///
+- (void)clickMission:(NSString * _Nonnull)missionId from:(UIViewController * _Nonnull)viewController;
+/// Trigger reward button click event
+/// \param viewController View controller to present reward UI
+///
+- (void)triggerRewardButtonClickFrom:(UIViewController * _Nonnull)viewController;
+/// Refresh mission list
+/// \param unitId Unit ID (optional)
+///
+- (void)refreshMissionListWithUnitId:(NSString * _Nullable)unitId;
+/// Clean up mission resources
+- (void)destroy;
+/// Set mission event delegate
+/// \param delegate Object implementing NestAdsOfferwallMissionDelegate
+///
+- (void)setDelegate:(id _Nonnull)delegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Factory for creating Mission instances
+/// Uses @dynamicCallable to enable Mission() syntax
+SWIFT_CLASS("_TtC10NestAdsSDK30NestAdsOfferwallMissionFactory")
+@interface NestAdsOfferwallMissionFactory : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Wraps AdChain SDK’s AdchainQuiz
+/// Used by NestAds.Offerwall.Quiz()
+SWIFT_CLASS("_TtC10NestAdsSDK20NestAdsOfferwallQuiz")
+@interface NestAdsOfferwallQuiz : NSObject
+/// Load quiz data via Delegate callback
+- (void)load;
+/// Click quiz by quizId
+/// \param quizId Quiz ID
+///
+/// \param viewController View controller to display
+///
+- (void)clickQuiz:(NSString * _Nonnull)quizId from:(UIViewController * _Nonnull)viewController;
+/// Set quiz event delegate
+/// \param delegate Object implementing NestAdsOfferwallQuizDelegate
+///
+- (void)setDelegate:(id _Nonnull)delegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Factory for creating Quiz instances
+/// Uses @dynamicCallable to enable Quiz() syntax
+SWIFT_CLASS("_TtC10NestAdsSDK27NestAdsOfferwallQuizFactory")
+@interface NestAdsOfferwallQuizFactory : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -896,6 +972,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 - (void)didMoveToSuperview;
 @end
 
+@class NestAdsOfferwallQuizFactory;
+@class NestAdsOfferwallMissionFactory;
 @class UIApplication;
 @class NSString;
 @class NSNumber;
@@ -905,6 +983,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 /// NestAdsOfferwallSDK를 런타임에 동적으로 로드하고 관리
 SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsOfferwallBridge")
 @interface NestAdsOfferwallBridge : NSObject
+/// Quiz 인스턴스 생성 Factory
+@property (nonatomic, strong) NestAdsOfferwallQuizFactory * _Nonnull quiz;
+/// Mission 인스턴스 생성 Factory
+@property (nonatomic, strong) NestAdsOfferwallMissionFactory * _Nonnull mission;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// 오퍼월 초기화
@@ -1020,6 +1102,76 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK25NestAdsOfferwallInterface_")
 @property (nonatomic, readonly, copy) NSString * _Nonnull offerwallSDKVersion;
 /// AdChain SDK 버전
 @property (nonatomic, readonly, copy) NSString * _Nonnull adchainSDKVersion;
+@end
+
+
+/// Wrapper for AdChain SDK’s AdchainMission
+/// Created by users via NestAds.Offerwall.Mission()
+SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsOfferwallMission")
+@interface NestAdsOfferwallMission : NSObject
+/// Load mission data via Delegate callback
+- (void)load;
+/// Click mission by mission ID
+/// \param missionId Mission ID
+///
+/// \param viewController View controller to display
+///
+- (void)clickMission:(NSString * _Nonnull)missionId from:(UIViewController * _Nonnull)viewController;
+/// Trigger reward button click event
+/// \param viewController View controller to present reward UI
+///
+- (void)triggerRewardButtonClickFrom:(UIViewController * _Nonnull)viewController;
+/// Refresh mission list
+/// \param unitId Unit ID (optional)
+///
+- (void)refreshMissionListWithUnitId:(NSString * _Nullable)unitId;
+/// Clean up mission resources
+- (void)destroy;
+/// Set mission event delegate
+/// \param delegate Object implementing NestAdsOfferwallMissionDelegate
+///
+- (void)setDelegate:(id _Nonnull)delegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Factory for creating Mission instances
+/// Uses @dynamicCallable to enable Mission() syntax
+SWIFT_CLASS("_TtC10NestAdsSDK30NestAdsOfferwallMissionFactory")
+@interface NestAdsOfferwallMissionFactory : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Wraps AdChain SDK’s AdchainQuiz
+/// Used by NestAds.Offerwall.Quiz()
+SWIFT_CLASS("_TtC10NestAdsSDK20NestAdsOfferwallQuiz")
+@interface NestAdsOfferwallQuiz : NSObject
+/// Load quiz data via Delegate callback
+- (void)load;
+/// Click quiz by quizId
+/// \param quizId Quiz ID
+///
+/// \param viewController View controller to display
+///
+- (void)clickQuiz:(NSString * _Nonnull)quizId from:(UIViewController * _Nonnull)viewController;
+/// Set quiz event delegate
+/// \param delegate Object implementing NestAdsOfferwallQuizDelegate
+///
+- (void)setDelegate:(id _Nonnull)delegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Factory for creating Quiz instances
+/// Uses @dynamicCallable to enable Quiz() syntax
+SWIFT_CLASS("_TtC10NestAdsSDK27NestAdsOfferwallQuizFactory")
+@interface NestAdsOfferwallQuizFactory : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

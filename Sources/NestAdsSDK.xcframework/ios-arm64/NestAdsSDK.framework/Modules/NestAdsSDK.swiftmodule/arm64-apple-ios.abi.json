@@ -57,6 +57,190 @@
         "printedName": "NestAdsOfferwallBridge",
         "children": [
           {
+            "kind": "Var",
+            "name": "quiz",
+            "printedName": "quiz",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsOfferwallQuizFactory",
+                "printedName": "NestAdsSDK.NestAdsOfferwallQuizFactory",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuizFactory"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallBridge(py)quiz",
+            "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC4quizAA0abD11QuizFactoryCvp",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsOfferwallQuizFactory",
+                    "printedName": "NestAdsSDK.NestAdsOfferwallQuizFactory",
+                    "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuizFactory"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallBridge(im)quiz",
+                "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC4quizAA0abD11QuizFactoryCvg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsOfferwallQuizFactory",
+                    "printedName": "NestAdsSDK.NestAdsOfferwallQuizFactory",
+                    "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuizFactory"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallBridge(im)setQuiz:",
+                "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC4quizAA0abD11QuizFactoryCvs",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB15OfferwallBridgeC4quizAA0abD11QuizFactoryCvM",
+                "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC4quizAA0abD11QuizFactoryCvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mission",
+            "printedName": "mission",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsOfferwallMissionFactory",
+                "printedName": "NestAdsSDK.NestAdsOfferwallMissionFactory",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMissionFactory"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallBridge(py)mission",
+            "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC7missionAA0abD14MissionFactoryCvp",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsOfferwallMissionFactory",
+                    "printedName": "NestAdsSDK.NestAdsOfferwallMissionFactory",
+                    "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMissionFactory"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallBridge(im)mission",
+                "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC7missionAA0abD14MissionFactoryCvg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsOfferwallMissionFactory",
+                    "printedName": "NestAdsSDK.NestAdsOfferwallMissionFactory",
+                    "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMissionFactory"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallBridge(im)setMission:",
+                "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC7missionAA0abD14MissionFactoryCvs",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB15OfferwallBridgeC7missionAA0abD14MissionFactoryCvM",
+                "mangledName": "$s10NestAdsSDK0aB15OfferwallBridgeC7missionAA0abD14MissionFactoryCvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(application:appKey:appSecret:environment:timeoutMillis:)",
@@ -18672,6 +18856,904 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "NestAdsOfferwallMissionFactory",
+        "printedName": "NestAdsOfferwallMissionFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dynamicallyCall",
+            "printedName": "dynamicallyCall(withArguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NestAdsSDK.NestAdsOfferwallMission?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsOfferwallMission",
+                    "printedName": "NestAdsSDK.NestAdsOfferwallMission",
+                    "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB23OfferwallMissionFactoryC15dynamicallyCall13withArgumentsAA0abdE0CSgSayypG_tF",
+            "mangledName": "$s10NestAdsSDK0aB23OfferwallMissionFactoryC15dynamicallyCall13withArgumentsAA0abdE0CSgSayypG_tF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsOfferwallMissionFactory",
+                "printedName": "NestAdsSDK.NestAdsOfferwallMissionFactory",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMissionFactory"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMissionFactory(im)init",
+            "mangledName": "$s10NestAdsSDK0aB23OfferwallMissionFactoryCACycfc",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMissionFactory",
+        "mangledName": "$s10NestAdsSDK0aB23OfferwallMissionFactoryC",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "DynamicCallable",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NestAdsOfferwallQuiz",
+        "printedName": "NestAdsOfferwallQuiz",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuiz(im)load",
+            "mangledName": "$s10NestAdsSDK0aB13OfferwallQuizC4loadyyF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clickQuiz",
+            "printedName": "clickQuiz(_:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuiz(im)clickQuiz:from:",
+            "mangledName": "$s10NestAdsSDK0aB13OfferwallQuizC05clickE0_4fromySS_So16UIViewControllerCtF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuiz(im)setDelegate:",
+            "mangledName": "$s10NestAdsSDK0aB13OfferwallQuizC11setDelegateyyyXlF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsOfferwallQuiz",
+                "printedName": "NestAdsSDK.NestAdsOfferwallQuiz",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuiz"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuiz(im)init",
+            "mangledName": "$s10NestAdsSDK0aB13OfferwallQuizCACycfc",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuiz",
+        "mangledName": "$s10NestAdsSDK0aB13OfferwallQuizC",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NestAdsOfferwallMission",
+        "printedName": "NestAdsOfferwallMission",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rawMission",
+            "printedName": "rawMission",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK0aB16OfferwallMissionC03rawE0ypvp",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC03rawE0ypvp",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB16OfferwallMissionC03rawE0ypvg",
+                "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC03rawE0ypvg",
+                "moduleName": "NestAdsSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission(im)load",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC4loadyyF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clickMission",
+            "printedName": "clickMission(_:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission(im)clickMission:from:",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC05clickE0_4fromySS_So16UIViewControllerCtF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "triggerRewardButtonClick",
+            "printedName": "triggerRewardButtonClick(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission(im)triggerRewardButtonClickFrom:",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC24triggerRewardButtonClick4fromySo16UIViewControllerC_tF",
+            "moduleName": "NestAdsSDK",
+            "objc_name": "triggerRewardButtonClickFrom:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshMissionList",
+            "printedName": "refreshMissionList(unitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission(im)refreshMissionListWithUnitId:",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC07refreshE4List6unitIdySSSg_tF",
+            "moduleName": "NestAdsSDK",
+            "objc_name": "refreshMissionListWithUnitId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission(im)destroy",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC7destroyyyF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission(im)setDelegate:",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC11setDelegateyyyXlF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsOfferwallMission",
+                "printedName": "NestAdsSDK.NestAdsOfferwallMission",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission(im)init",
+            "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionCACycfc",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallMission",
+        "mangledName": "$s10NestAdsSDK0aB16OfferwallMissionC",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NestAdsOfferwallQuizFactory",
+        "printedName": "NestAdsOfferwallQuizFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "dynamicallyCall",
+            "printedName": "dynamicallyCall(withArguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NestAdsSDK.NestAdsOfferwallQuiz?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsOfferwallQuiz",
+                    "printedName": "NestAdsSDK.NestAdsOfferwallQuiz",
+                    "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuiz"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB20OfferwallQuizFactoryC15dynamicallyCall13withArgumentsAA0abdE0CSgSayypG_tF",
+            "mangledName": "$s10NestAdsSDK0aB20OfferwallQuizFactoryC15dynamicallyCall13withArgumentsAA0abdE0CSgSayypG_tF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsOfferwallQuizFactory",
+                "printedName": "NestAdsSDK.NestAdsOfferwallQuizFactory",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuizFactory"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuizFactory(im)init",
+            "mangledName": "$s10NestAdsSDK0aB20OfferwallQuizFactoryCACycfc",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsOfferwallQuizFactory",
+        "mangledName": "$s10NestAdsSDK0aB20OfferwallQuizFactoryC",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "DynamicCallable",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -23572,210 +24654,210 @@
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 2583,
+      "offset": 3040,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 2775,
+      "offset": 3232,
       "length": 55,
       "value": "\"initialize(application:appKey:appSecret:environment:)\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 3043,
+      "offset": 3509,
       "length": 71,
       "value": "\"initializeWithApplication:appKey:appSecret:environment:timeoutMillis:\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 3778,
+      "offset": 4244,
       "length": 61,
       "value": "\"Offerwall initialization error: Initialize method not found\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 3916,
+      "offset": 4382,
       "length": 31,
       "value": "\"initialize - method not found\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "IntegerLiteral",
-      "offset": 4307,
+      "offset": 4773,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "IntegerLiteral",
-      "offset": 4833,
+      "offset": 5299,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 4999,
+      "offset": 5465,
       "length": 33,
       "value": "\"login(userId:gender:birthYear:)\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 5139,
+      "offset": 5605,
       "length": 35,
       "value": "\"loginWithUserId:gender:birthYear:\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "IntegerLiteral",
-      "offset": 5811,
+      "offset": 6276,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 5904,
+      "offset": 6369,
       "length": 26,
       "value": "\"login - method not found\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "BooleanLiteral",
-      "offset": 7788,
+      "offset": 8255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "BooleanLiteral",
-      "offset": 7830,
+      "offset": 8297,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 7965,
+      "offset": 8441,
       "length": 86,
       "value": "\"openOfferwall(from:placementCode:showNavigationBar:useNativeNavigationBar:delegate:)\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 8158,
+      "offset": 8641,
       "length": 98,
       "value": "\"openOfferwallFromViewController:placementCode:showNavigationBar:useNativeNavigationBar:delegate:\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "BooleanLiteral",
-      "offset": 9055,
+      "offset": 9543,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 9152,
+      "offset": 9640,
       "length": 15,
       "value": "\"isInitialized\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "BooleanLiteral",
-      "offset": 9232,
+      "offset": 9720,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "BooleanLiteral",
-      "offset": 9387,
+      "offset": 9875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 9483,
+      "offset": 9971,
       "length": 12,
       "value": "\"isLoggedIn\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "BooleanLiteral",
-      "offset": 9562,
+      "offset": 10050,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 9715,
+      "offset": 10203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 9809,
+      "offset": 10297,
       "length": 15,
       "value": "\"currentUserId\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 9877,
+      "offset": 10365,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 10015,
+      "offset": 10503,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 10114,
+      "offset": 10602,
       "length": 12,
       "value": "\"sdkVersion\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 10180,
+      "offset": 10668,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 10340,
+      "offset": 10828,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 10446,
+      "offset": 10934,
       "length": 19,
       "value": "\"adchainSDKVersion\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAds+Offerwall.swift",
       "kind": "StringLiteral",
-      "offset": 10519,
+      "offset": 11007,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -28776,6 +29858,587 @@
       "offset": 1605,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 1090,
+      "length": 52,
+      "value": "\"loadQuiz:onSuccess:onFailure:shouldStoreCallbacks:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1742,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 2095,
+      "length": 56,
+      "value": "\"createAndRegisterQuizListenerAdapterWithQuiz:delegate:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 2169,
+      "length": 48,
+      "value": "\"createAndRegisterQuizListenerAdapter:delegate:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 2235,
+      "length": 53,
+      "value": "\"createAndRegisterQuizListenerAdapter:quiz:delegate:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2556,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2650,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 2828,
+      "length": 8,
+      "value": "\"create\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 2855,
+      "length": 6,
+      "value": "\"quiz\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 2880,
+      "length": 10,
+      "value": "\"listener\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 2921,
+      "length": 6,
+      "value": "\"Quiz\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 3995,
+      "length": 38,
+      "value": "\"clickQuiz:quizId:fromViewController:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4051,
+      "length": 24,
+      "value": "\"clickQuiz:quizId:from:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4093,
+      "length": 37,
+      "value": "\"clickQuizWithId:fromViewController:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4148,
+      "length": 37,
+      "value": "\"clickQuizWithQuizId:viewController:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4515,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4609,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4787,
+      "length": 7,
+      "value": "\"click\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4813,
+      "length": 7,
+      "value": "\"Click\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4839,
+      "length": 6,
+      "value": "\"quiz\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4876,
+      "length": 6,
+      "value": "\"Quiz\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4914,
+      "length": 36,
+      "value": "\"[NestAdsOfferwallQuiz]   - \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallQuiz.swift",
+      "kind": "StringLiteral",
+      "offset": 4949,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 1625,
+      "length": 55,
+      "value": "\"loadMission:onSuccess:onFailure:shouldStoreCallbacks:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2320,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 2689,
+      "length": 62,
+      "value": "\"createAndRegisterMissionListenerAdapterWithMission:delegate:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 2769,
+      "length": 51,
+      "value": "\"createAndRegisterMissionListenerAdapter:delegate:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 2838,
+      "length": 59,
+      "value": "\"createAndRegisterMissionListenerAdapter:mission:delegate:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4013,
+      "length": 30,
+      "value": "\"clickMission:missionId:from:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4061,
+      "length": 22,
+      "value": "\"clickMissionId:from:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4101,
+      "length": 44,
+      "value": "\"clickMission:missionId:fromViewController:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4163,
+      "length": 36,
+      "value": "\"clickMissionWithId:viewController:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4529,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4623,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4801,
+      "length": 7,
+      "value": "\"click\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4827,
+      "length": 7,
+      "value": "\"Click\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4853,
+      "length": 9,
+      "value": "\"mission\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4893,
+      "length": 9,
+      "value": "\"Mission\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4934,
+      "length": 39,
+      "value": "\"[NestAdsOfferwallMission]   - \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 4972,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 5848,
+      "length": 32,
+      "value": "\"triggerRewardButtonClick:from:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 5898,
+      "length": 29,
+      "value": "\"onRewardButtonClicked:from:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 5945,
+      "length": 31,
+      "value": "\"triggerRewardButtonClickFrom:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 5994,
+      "length": 28,
+      "value": "\"onRewardButtonClickedFrom:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 6214,
+      "length": 110,
+      "value": "\"[NestAdsOfferwallMission] ✅ Found selector for triggerRewardButtonClick: \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 6323,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 6485,
+      "length": 88,
+      "value": "\"[NestAdsOfferwallMission] ❌ No matching selector found for triggerRewardButtonClick!\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 6596,
+      "length": 104,
+      "value": "\"[NestAdsOfferwallMission] 🔍 Available methods containing 'reward', 'Reward', 'button', or 'Button':\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6735,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6829,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7007,
+      "length": 8,
+      "value": "\"reward\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7034,
+      "length": 8,
+      "value": "\"Reward\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7061,
+      "length": 8,
+      "value": "\"button\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7100,
+      "length": 8,
+      "value": "\"Button\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7140,
+      "length": 39,
+      "value": "\"[NestAdsOfferwallMission]   - \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7178,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7624,
+      "length": 76,
+      "value": "\"[NestAdsOfferwallMission] ✅ triggerRewardButtonClick called successfully\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7736,
+      "length": 106,
+      "value": "\"[NestAdsOfferwallMission] ❌ Method lookup failed for selector: \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 7841,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8192,
+      "length": 31,
+      "value": "\"refreshMissionListWithUnitId:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8241,
+      "length": 28,
+      "value": "\"refreshMissionList:unitId:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8287,
+      "length": 21,
+      "value": "\"refreshMissionList:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8326,
+      "length": 25,
+      "value": "\"refreshMissions:unitId:\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8543,
+      "length": 104,
+      "value": "\"[NestAdsOfferwallMission] ✅ Found selector for refreshMissionList: \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8646,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8809,
+      "length": 82,
+      "value": "\"[NestAdsOfferwallMission] ❌ No matching selector found for refreshMissionList!\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 8914,
+      "length": 108,
+      "value": "\"[NestAdsOfferwallMission] 🔍 Available methods containing 'refresh', 'Refresh', 'mission', or 'Mission':\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9057,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9151,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 9329,
+      "length": 9,
+      "value": "\"refresh\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 9357,
+      "length": 9,
+      "value": "\"Refresh\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 9385,
+      "length": 9,
+      "value": "\"mission\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 9425,
+      "length": 9,
+      "value": "\"Mission\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 9466,
+      "length": 39,
+      "value": "\"[NestAdsOfferwallMission]   - \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 9504,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9686,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 10017,
+      "length": 82,
+      "value": "\"[NestAdsOfferwallMission] ✅ refreshMissionList called successfully with unitId\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 10141,
+      "length": 107,
+      "value": "\"[NestAdsOfferwallMission] ❌ Method lookup failed for selector: \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 10247,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 10587,
+      "length": 70,
+      "value": "\"[NestAdsOfferwallMission] ✅ refreshMissionList called successfully\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 10699,
+      "length": 107,
+      "value": "\"[NestAdsOfferwallMission] ❌ Method lookup failed for selector: \""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 10805,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Offerwall\/NestAdsOfferwallMission.swift",
+      "kind": "StringLiteral",
+      "offset": 11013,
+      "length": 17,
+      "value": "\"destroyMission:\""
     },
     {
       "filePath": "\/Users\/jinyeong\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/VideoPlayer\/VastClient\/constants\/VMAPErrorCodes.swift",

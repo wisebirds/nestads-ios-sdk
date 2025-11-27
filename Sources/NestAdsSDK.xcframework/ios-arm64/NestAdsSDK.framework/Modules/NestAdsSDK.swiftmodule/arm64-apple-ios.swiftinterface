@@ -12,6 +12,7 @@ import CoreTelephony
 import Foundation
 @_exported import NestAdsSDK
 import Network
+import ObjectiveC
 import SQLite3
 import Swift
 import SystemConfiguration
@@ -26,6 +27,14 @@ extension NestAdsSDK.NestAds {
   @objc public static let Offerwall: NestAdsSDK.NestAdsOfferwallBridge
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NestAdsOfferwallBridge : ObjectiveC.NSObject {
+  @objc public var quiz: NestAdsSDK.NestAdsOfferwallQuizFactory {
+    @objc get
+    @objc set
+  }
+  @objc public var mission: NestAdsSDK.NestAdsOfferwallMissionFactory {
+    @objc get
+    @objc set
+  }
   @objc public func initialize(application: UIKit.UIApplication, appKey: Swift.String, appSecret: Swift.String, environment: Swift.String = "production", timeoutMillis: Foundation.NSNumber? = nil)
   public func login(userId: Swift.String, gender: Swift.Int = 0, birthYear: Swift.Int? = nil)
   @objc public func login(userId: Swift.String, gender: Swift.Int = 0, birthYear: Foundation.NSNumber? = nil)
@@ -489,6 +498,32 @@ public struct NestAdsAdLoaderAdType : Swift.Hashable, Swift.Equatable, @unchecke
   public var hashValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers @dynamicCallable @objc public class NestAdsOfferwallMissionFactory : ObjectiveC.NSObject {
+  public func dynamicallyCall(withArguments args: [Any]) -> NestAdsSDK.NestAdsOfferwallMission?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class NestAdsOfferwallQuiz : ObjectiveC.NSObject {
+  @objc public func load()
+  @objc public func clickQuiz(_ quizId: Swift.String, from viewController: UIKit.UIViewController)
+  @objc public func setDelegate(_ delegate: Swift.AnyObject)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class NestAdsOfferwallMission : ObjectiveC.NSObject {
+  public var rawMission: Any {
+    get
+  }
+  @objc public func load()
+  @objc public func clickMission(_ missionId: Swift.String, from viewController: UIKit.UIViewController)
+  @objc public func triggerRewardButtonClick(from viewController: UIKit.UIViewController)
+  @objc public func refreshMissionList(unitId: Swift.String? = nil)
+  @objc public func destroy()
+  @objc public func setDelegate(_ delegate: Swift.AnyObject)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @dynamicCallable @objc public class NestAdsOfferwallQuizFactory : ObjectiveC.NSObject {
+  public func dynamicallyCall(withArguments args: [Any]) -> NestAdsSDK.NestAdsOfferwallQuiz?
+  @objc deinit
 }
 public struct NestAdsAdSize {
   public var size: CoreFoundation.CGSize
