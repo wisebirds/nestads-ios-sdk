@@ -1,0 +1,18 @@
+//
+//  axz-dev.xcconfig
+//  NestAdsSDK
+//
+//  Created by wisebirds on 12/1/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+// MARK: - AXZ-DEV 전용 Build Configuration
+
+BASE_API_URL = deapi-dev.nestads.daum.net/api
+ENVIRONMENT = axz-dev
+ERRORLOG_API_URL = delog-dev.nestads.daum.net/api/v1/error-log
+
+SECRET_KEY = kXp5#qN@8mL!z(R
+LOG_SECRET_KEY = Hd&5jY*tB@7mPq#zK!
