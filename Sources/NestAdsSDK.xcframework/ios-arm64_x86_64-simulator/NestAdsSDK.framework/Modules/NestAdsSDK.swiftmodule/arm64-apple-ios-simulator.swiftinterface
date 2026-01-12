@@ -745,9 +745,15 @@ public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
   func imageBannerAdView(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
   func imageBannerAdViewDidRecordImpression(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdViewDidRecordClick(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
+  func imageBannerAdViewDidImpressWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
+  func imageBannerAdViewDidClickWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
   func imageBannerAdViewWillPresentScreen(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdViewWillDismissScreen(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdViewDidDismissScreen(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
+}
+extension NestAdsSDK.NestAdsImageBannerAdViewDelegate {
+  public func imageBannerAdViewDidImpressWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
+  public func imageBannerAdViewDidClickWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsImageBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsImageBannerAdViewDelegate)?
