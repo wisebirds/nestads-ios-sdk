@@ -351,12 +351,20 @@ SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 - (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
 @end
 
+SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsDynamicBannerAdView")
+@interface NestAdsDynamicBannerAdView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
 SWIFT_CLASS("_TtC10NestAdsSDK24NestAdsImageBannerAdView")
 @interface NestAdsImageBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToSuperview;
 - (void)layoutSubviews;
 - (void)didMoveToWindow;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -589,24 +597,21 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsPremiumBannerAdView")
 @interface NestAdsPremiumBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (void)layoutSubviews;
 - (void)didMoveToSuperview;
 - (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
-@interface NestAdsSplashAdView : UIView
+/// Rich Popup ad view supporting image and video creatives with countdown feature
+SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsRichPopupAdView")
+@interface NestAdsRichPopupAdView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
-@interface NestAdsVideoController : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
+@class NestAdsVideoController;
 SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 @protocol NestAdsVideoControllerDelegate
 @optional
@@ -619,6 +624,30 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
 - (void)videoControllerDidFailToLoadVideo;
 - (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
+@end
+
+@interface NestAdsRichPopupAdView (SWIFT_EXTENSION(NestAdsSDK)) <NestAdsVideoControllerDelegate>
+- (void)videoControllerDidCompletePreparation;
+- (void)videoControllerDidPlayVideo;
+- (void)videoControllerDidPauseVideo;
+- (void)videoControllerDidEndVideoPlayback;
+- (void)videoControllerDidMuteVideo:(NestAdsVideoController * _Nonnull)videoController;
+- (void)videoControllerDidUnmuteVideo:(NestAdsVideoController * _Nonnull)videoController;
+- (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
+- (void)videoControllerDidFailToLoadVideo;
+- (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
+@end
+
+SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
+@interface NestAdsSplashAdView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
+@interface NestAdsVideoController : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif
@@ -982,12 +1011,20 @@ SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 - (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
 @end
 
+SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsDynamicBannerAdView")
+@interface NestAdsDynamicBannerAdView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
 SWIFT_CLASS("_TtC10NestAdsSDK24NestAdsImageBannerAdView")
 @interface NestAdsImageBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToSuperview;
 - (void)layoutSubviews;
 - (void)didMoveToWindow;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1220,24 +1257,21 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsPremiumBannerAdView")
 @interface NestAdsPremiumBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (void)layoutSubviews;
 - (void)didMoveToSuperview;
 - (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
-@interface NestAdsSplashAdView : UIView
+/// Rich Popup ad view supporting image and video creatives with countdown feature
+SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsRichPopupAdView")
+@interface NestAdsRichPopupAdView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
-@interface NestAdsVideoController : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
+@class NestAdsVideoController;
 SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 @protocol NestAdsVideoControllerDelegate
 @optional
@@ -1250,6 +1284,30 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
 - (void)videoControllerDidFailToLoadVideo;
 - (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
+@end
+
+@interface NestAdsRichPopupAdView (SWIFT_EXTENSION(NestAdsSDK)) <NestAdsVideoControllerDelegate>
+- (void)videoControllerDidCompletePreparation;
+- (void)videoControllerDidPlayVideo;
+- (void)videoControllerDidPauseVideo;
+- (void)videoControllerDidEndVideoPlayback;
+- (void)videoControllerDidMuteVideo:(NestAdsVideoController * _Nonnull)videoController;
+- (void)videoControllerDidUnmuteVideo:(NestAdsVideoController * _Nonnull)videoController;
+- (void)videoControllerDidUpdateVideoProgressWithCurrent:(NSTimeInterval)current;
+- (void)videoControllerDidFailToLoadVideo;
+- (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
+@end
+
+SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
+@interface NestAdsSplashAdView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsVideoController")
+@interface NestAdsVideoController : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif
