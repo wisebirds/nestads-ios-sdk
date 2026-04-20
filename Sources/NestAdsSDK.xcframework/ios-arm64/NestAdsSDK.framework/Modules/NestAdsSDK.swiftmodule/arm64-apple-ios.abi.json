@@ -45131,6 +45131,48 @@
           },
           {
             "kind": "Function",
+            "name": "traitCollectionDidChange",
+            "printedName": "traitCollectionDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITraitCollection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITraitCollection",
+                    "printedName": "UIKit.UITraitCollection",
+                    "usr": "c:objc(cs)UITraitCollection"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsSplashAdView(im)traitCollectionDidChange:",
+            "mangledName": "$s10NestAdsSDK0aB12SplashAdViewC24traitCollectionDidChangeyySo07UITraitH0CSgF",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "traitCollectionDidChange:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "load",
             "printedName": "load(_:)",
             "children": [
@@ -45559,6 +45601,48 @@
             "overriding": true,
             "isOpen": true,
             "objc_name": "viewDidDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "traitCollectionDidChange",
+            "printedName": "traitCollectionDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITraitCollection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITraitCollection",
+                    "printedName": "UIKit.UITraitCollection",
+                    "usr": "c:objc(cs)UITraitCollection"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsSplashViewController(im)traitCollectionDidChange:",
+            "mangledName": "$s10NestAdsSDK0aB20SplashViewControllerC24traitCollectionDidChangeyySo07UITraitH0CSgF",
+            "moduleName": "NestAdsSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "traitCollectionDidChange:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -59696,14 +59780,21 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5837,
+      "offset": 5788,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6029,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "Array",
-      "offset": 6721,
+      "offset": 6913,
       "length": 2,
       "value": "[]"
     },
@@ -59879,6 +59970,13 @@
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashViewController\/NestAdsSplashViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 4321,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashViewController\/NestAdsSplashViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4764,
       "length": 5,
       "value": "false"
     },

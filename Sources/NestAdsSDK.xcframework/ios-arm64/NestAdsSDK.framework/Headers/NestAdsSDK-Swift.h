@@ -638,10 +638,12 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
 @end
 
+@class UITraitCollection;
 SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
 @interface NestAdsSplashAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -669,6 +671,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK27NestAdsSplashViewController")
 - (void)viewDidLayoutSubviews;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
