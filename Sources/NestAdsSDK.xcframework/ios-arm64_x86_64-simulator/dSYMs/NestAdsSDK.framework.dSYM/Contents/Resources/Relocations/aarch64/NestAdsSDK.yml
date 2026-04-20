@@ -2726,31 +2726,31 @@ relocations:
   - { offset: 0x1464C6, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB11TaskManagerC21getImageFromURLString10callerName9urlString10completionySS_SSSgySo7UIImageCSgctF04$s10ab90SDK0aB20SplashViewControllerC15loadBannerImage33_EE621BED36AAE2B625D94034B38C990BLLyyFySo7O7CSgcfU_AA0abstU0CSgXwz_XxTf1nncn_nTf4nnng_n', symObjAddr: 0xD114, symBinAddr: 0xAA628, symSize: 0xA4C }
   - { offset: 0x14684E, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB11TaskManagerC21getImageFromURLString10callerName9urlString10completionySS_SSSgySo7UIImageCSgctF04$s10ab93SDK0aB20SplashViewControllerC18loadThumbnailImage33_EE621BED36AAE2B625D94034B38C990BLLyyFySo7O7CSgcfU_AA0abstU0CSgXwz_XxTf1nncn_nTf4nnng_n', symObjAddr: 0xE13C, symBinAddr: 0xAB650, symSize: 0xA4C }
   - { offset: 0x146BC3, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB11TaskManagerC11getGIFImage10callerName3url4data5error10completionySS_SS10Foundation4DataVSgs5Error_pSgySo7UIImageCSgctF04$s10ab8SDK0aB11de70C21getImageFromURLString10callerName9urlString10completionySS_SSSgySo7q20CSgctFy10Foundation4o26VSg_So13NSURLResponseCSgs5P27_pSgtYbcfU0_yAKcfU_Tf0nsn_nACSgXwARIegg_Tf1nnnncn_nTf4nnnndng_n', symObjAddr: 0xF2D0, symBinAddr: 0xAC528, symSize: 0x5C8 }
-  - { offset: 0x147364, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvpZ', symObjAddr: 0x1830, symBinAddr: 0x21D800, symSize: 0x0 }
+  - { offset: 0x147364, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvpZ', symObjAddr: 0x1830, symBinAddr: 0x21D800, symSize: 0x0 }
   - { offset: 0x147423, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C8instance33_69616FD5BB66AA87E4EBDC83E78E866ELLACvpZ', symObjAddr: 0x1880, symBinAddr: 0x21D850, symSize: 0x0 }
-  - { offset: 0x147619, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C22globalExceptionHandlerAA06GlobaleF0CvpZ', symObjAddr: 0xAF00, symBinAddr: 0x2361B0, symSize: 0x0 }
-  - { offset: 0x14764A, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVSgWOc', symObjAddr: 0x31C, symBinAddr: 0xAEFA4, symSize: 0x50 }
-  - { offset: 0x14765E, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvpZACmTk', symObjAddr: 0x47C, symBinAddr: 0xAF0BC, symSize: 0xB4 }
+  - { offset: 0x147619, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C22globalExceptionHandlerAA06GlobaleF0CvpZ', symObjAddr: 0xAF28, symBinAddr: 0x2361B0, symSize: 0x0 }
+  - { offset: 0x14764A, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVSgWOc', symObjAddr: 0x31C, symBinAddr: 0xAEFA4, symSize: 0x50 }
+  - { offset: 0x14765E, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvpZACmTk', symObjAddr: 0x47C, symBinAddr: 0xAF0BC, symSize: 0xB4 }
   - { offset: 0x147694, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C8instance33_69616FD5BB66AA87E4EBDC83E78E866ELL_WZ', symObjAddr: 0x530, symBinAddr: 0xAF170, symSize: 0x5C }
   - { offset: 0x147708, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C22globalExceptionHandler_WZ', symObjAddr: 0x5D0, symBinAddr: 0xAF210, symSize: 0x30 }
   - { offset: 0x1477C2, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x1148, symBinAddr: 0xAFD54, symSize: 0x10 }
   - { offset: 0x1477D6, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x1158, symBinAddr: 0xAFD64, symSize: 0x8 }
-  - { offset: 0x1477EA, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVwxx', symObjAddr: 0x1360, symBinAddr: 0xAFDEC, symSize: 0x40 }
-  - { offset: 0x1477FE, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVwcp', symObjAddr: 0x13A0, symBinAddr: 0xAFE2C, symSize: 0x7C }
-  - { offset: 0x147812, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVwca', symObjAddr: 0x141C, symBinAddr: 0xAFEA8, symSize: 0xCC }
+  - { offset: 0x1477EA, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVwxx', symObjAddr: 0x1360, symBinAddr: 0xAFDEC, symSize: 0x40 }
+  - { offset: 0x1477FE, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVwcp', symObjAddr: 0x13A0, symBinAddr: 0xAFE2C, symSize: 0x7C }
+  - { offset: 0x147812, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVwca', symObjAddr: 0x141C, symBinAddr: 0xAFEA8, symSize: 0xCC }
   - { offset: 0x147826, size: 0x8, addend: 0x0, symName: ___swift_memcpy80_8, symObjAddr: 0x14E8, symBinAddr: 0xAFF74, symSize: 0x1C }
-  - { offset: 0x14783A, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVwta', symObjAddr: 0x1504, symBinAddr: 0xAFF90, symSize: 0x74 }
-  - { offset: 0x14784E, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVwet', symObjAddr: 0x1578, symBinAddr: 0xB0004, symSize: 0x48 }
-  - { offset: 0x147862, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVwst', symObjAddr: 0x15C0, symBinAddr: 0xB004C, symSize: 0x54 }
-  - { offset: 0x147876, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigVMa', symObjAddr: 0x1614, symBinAddr: 0xB00A0, symSize: 0x10 }
+  - { offset: 0x14783A, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVwta', symObjAddr: 0x1504, symBinAddr: 0xAFF90, symSize: 0x74 }
+  - { offset: 0x14784E, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVwet', symObjAddr: 0x1578, symBinAddr: 0xB0004, symSize: 0x48 }
+  - { offset: 0x147862, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVwst', symObjAddr: 0x15C0, symBinAddr: 0xB004C, symSize: 0x54 }
+  - { offset: 0x147876, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationVMa', symObjAddr: 0x1614, symBinAddr: 0xB00A0, symSize: 0x10 }
   - { offset: 0x14788A, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0CMa', symObjAddr: 0x1624, symBinAddr: 0xB00B0, symSize: 0x20 }
   - { offset: 0x147B23, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C14resourceBundleSo8NSBundleCvgZ', symObjAddr: 0x0, symBinAddr: 0xAED0C, symSize: 0x1A8 }
-  - { offset: 0x147BD2, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigV10baseAPIURLSSvg', symObjAddr: 0x1A8, symBinAddr: 0xAEEB4, symSize: 0x2C }
-  - { offset: 0x147BE6, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigV11environmentSSvg', symObjAddr: 0x258, symBinAddr: 0xAEEE0, symSize: 0x2C }
-  - { offset: 0x147C01, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK17EnvironmentConfigV10baseAPIURL08errorLogG09secretKey09logSecretK011environmentACSS_S4StcfC', symObjAddr: 0x284, symBinAddr: 0xAEF0C, symSize: 0x1C }
-  - { offset: 0x147C66, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvgZ', symObjAddr: 0x2A0, symBinAddr: 0xAEF28, symSize: 0x7C }
-  - { offset: 0x147C87, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvsZ', symObjAddr: 0x3B0, symBinAddr: 0xAEFF4, symSize: 0x88 }
-  - { offset: 0x147CB8, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvMZ', symObjAddr: 0x438, symBinAddr: 0xAF07C, symSize: 0x40 }
+  - { offset: 0x147BD2, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationV10baseAPIURLSSvg', symObjAddr: 0x1A8, symBinAddr: 0xAEEB4, symSize: 0x2C }
+  - { offset: 0x147BE6, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationV11environmentSSvg', symObjAddr: 0x258, symBinAddr: 0xAEEE0, symSize: 0x2C }
+  - { offset: 0x147C01, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK24EnvironmentConfigurationV10baseAPIURL08errorLogG09secretKey09logSecretK011environmentACSS_S4StcfC', symObjAddr: 0x284, symBinAddr: 0xAEF0C, symSize: 0x1C }
+  - { offset: 0x147C66, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvgZ', symObjAddr: 0x2A0, symBinAddr: 0xAEF28, symSize: 0x7C }
+  - { offset: 0x147C87, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvsZ', symObjAddr: 0x3B0, symBinAddr: 0xAEFF4, symSize: 0x88 }
+  - { offset: 0x147CB8, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvMZ', symObjAddr: 0x438, symBinAddr: 0xAF07C, symSize: 0x40 }
   - { offset: 0x147D17, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C14sharedInstanceACyFZ', symObjAddr: 0x58C, symBinAddr: 0xAF1CC, symSize: 0x40 }
   - { offset: 0x147D45, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C13versionNumberAA0ab7VersionE0Vvg', symObjAddr: 0x5CC, symBinAddr: 0xAF20C, symSize: 0x4 }
   - { offset: 0x147E92, size: 0x8, addend: 0x0, symName: '_$s10NestAdsSDK0aB0C5start15offerwallConfigyAA09OfferwallF0CSg_tF', symObjAddr: 0x600, symBinAddr: 0xAF240, symSize: 0x80C }

@@ -659,7 +659,7 @@ public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoader
   open var impressionUrls: [Swift.String]?
   @objc deinit
 }
-public struct EnvironmentConfig {
+public struct EnvironmentConfiguration {
   public let baseAPIURL: Swift.String
   public let errorLogAPIURL: Swift.String
   public let secretKey: Swift.String
@@ -668,7 +668,7 @@ public struct EnvironmentConfig {
   public init(baseAPIURL: Swift.String, errorLogAPIURL: Swift.String, secretKey: Swift.String, logSecretKey: Swift.String, environment: Swift.String)
 }
 @_hasMissingDesignatedInitializers open class NestAds {
-  public static var environmentOverride: NestAdsSDK.EnvironmentConfig?
+  public static var environment: NestAdsSDK.EnvironmentConfiguration?
   open class func sharedInstance() -> NestAdsSDK.NestAds
   open var versionNumber: NestAdsSDK.NestAdsVersionNumber {
     get

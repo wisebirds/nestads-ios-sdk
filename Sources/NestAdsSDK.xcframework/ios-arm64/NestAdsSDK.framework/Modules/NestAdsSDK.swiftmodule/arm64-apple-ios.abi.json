@@ -20407,8 +20407,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "EnvironmentConfig",
-        "printedName": "EnvironmentConfig",
+        "name": "EnvironmentConfiguration",
+        "printedName": "EnvironmentConfiguration",
         "children": [
           {
             "kind": "Var",
@@ -20423,8 +20423,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10NestAdsSDK17EnvironmentConfigV10baseAPIURLSSvp",
-            "mangledName": "$s10NestAdsSDK17EnvironmentConfigV10baseAPIURLSSvp",
+            "usr": "s:10NestAdsSDK24EnvironmentConfigurationV10baseAPIURLSSvp",
+            "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV10baseAPIURLSSvp",
             "moduleName": "NestAdsSDK",
             "declAttributes": [
               "HasStorage",
@@ -20446,8 +20446,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK17EnvironmentConfigV10baseAPIURLSSvg",
-                "mangledName": "$s10NestAdsSDK17EnvironmentConfigV10baseAPIURLSSvg",
+                "usr": "s:10NestAdsSDK24EnvironmentConfigurationV10baseAPIURLSSvg",
+                "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV10baseAPIURLSSvg",
                 "moduleName": "NestAdsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20467,8 +20467,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10NestAdsSDK17EnvironmentConfigV14errorLogAPIURLSSvp",
-            "mangledName": "$s10NestAdsSDK17EnvironmentConfigV14errorLogAPIURLSSvp",
+            "usr": "s:10NestAdsSDK24EnvironmentConfigurationV14errorLogAPIURLSSvp",
+            "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV14errorLogAPIURLSSvp",
             "moduleName": "NestAdsSDK",
             "declAttributes": [
               "HasStorage",
@@ -20490,8 +20490,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK17EnvironmentConfigV14errorLogAPIURLSSvg",
-                "mangledName": "$s10NestAdsSDK17EnvironmentConfigV14errorLogAPIURLSSvg",
+                "usr": "s:10NestAdsSDK24EnvironmentConfigurationV14errorLogAPIURLSSvg",
+                "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV14errorLogAPIURLSSvg",
                 "moduleName": "NestAdsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20511,8 +20511,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10NestAdsSDK17EnvironmentConfigV9secretKeySSvp",
-            "mangledName": "$s10NestAdsSDK17EnvironmentConfigV9secretKeySSvp",
+            "usr": "s:10NestAdsSDK24EnvironmentConfigurationV9secretKeySSvp",
+            "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV9secretKeySSvp",
             "moduleName": "NestAdsSDK",
             "declAttributes": [
               "HasStorage",
@@ -20534,8 +20534,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK17EnvironmentConfigV9secretKeySSvg",
-                "mangledName": "$s10NestAdsSDK17EnvironmentConfigV9secretKeySSvg",
+                "usr": "s:10NestAdsSDK24EnvironmentConfigurationV9secretKeySSvg",
+                "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV9secretKeySSvg",
                 "moduleName": "NestAdsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20555,8 +20555,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10NestAdsSDK17EnvironmentConfigV12logSecretKeySSvp",
-            "mangledName": "$s10NestAdsSDK17EnvironmentConfigV12logSecretKeySSvp",
+            "usr": "s:10NestAdsSDK24EnvironmentConfigurationV12logSecretKeySSvp",
+            "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV12logSecretKeySSvp",
             "moduleName": "NestAdsSDK",
             "declAttributes": [
               "HasStorage",
@@ -20578,8 +20578,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK17EnvironmentConfigV12logSecretKeySSvg",
-                "mangledName": "$s10NestAdsSDK17EnvironmentConfigV12logSecretKeySSvg",
+                "usr": "s:10NestAdsSDK24EnvironmentConfigurationV12logSecretKeySSvg",
+                "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV12logSecretKeySSvg",
                 "moduleName": "NestAdsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20599,8 +20599,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10NestAdsSDK17EnvironmentConfigV11environmentSSvp",
-            "mangledName": "$s10NestAdsSDK17EnvironmentConfigV11environmentSSvp",
+            "usr": "s:10NestAdsSDK24EnvironmentConfigurationV11environmentSSvp",
+            "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV11environmentSSvp",
             "moduleName": "NestAdsSDK",
             "declAttributes": [
               "HasStorage",
@@ -20622,8 +20622,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK17EnvironmentConfigV11environmentSSvg",
-                "mangledName": "$s10NestAdsSDK17EnvironmentConfigV11environmentSSvg",
+                "usr": "s:10NestAdsSDK24EnvironmentConfigurationV11environmentSSvg",
+                "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV11environmentSSvg",
                 "moduleName": "NestAdsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20637,9 +20637,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "EnvironmentConfig",
-                "printedName": "NestAdsSDK.EnvironmentConfig",
-                "usr": "s:10NestAdsSDK17EnvironmentConfigV"
+                "name": "EnvironmentConfiguration",
+                "printedName": "NestAdsSDK.EnvironmentConfiguration",
+                "usr": "s:10NestAdsSDK24EnvironmentConfigurationV"
               },
               {
                 "kind": "TypeNominal",
@@ -20673,8 +20673,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10NestAdsSDK17EnvironmentConfigV10baseAPIURL08errorLogG09secretKey09logSecretK011environmentACSS_S4Stcfc",
-            "mangledName": "$s10NestAdsSDK17EnvironmentConfigV10baseAPIURL08errorLogG09secretKey09logSecretK011environmentACSS_S4Stcfc",
+            "usr": "s:10NestAdsSDK24EnvironmentConfigurationV10baseAPIURL08errorLogG09secretKey09logSecretK011environmentACSS_S4Stcfc",
+            "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV10baseAPIURL08errorLogG09secretKey09logSecretK011environmentACSS_S4Stcfc",
             "moduleName": "NestAdsSDK",
             "declAttributes": [
               "AccessControl"
@@ -20683,8 +20683,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:10NestAdsSDK17EnvironmentConfigV",
-        "mangledName": "$s10NestAdsSDK17EnvironmentConfigV",
+        "usr": "s:10NestAdsSDK24EnvironmentConfigurationV",
+        "mangledName": "$s10NestAdsSDK24EnvironmentConfigurationV",
         "moduleName": "NestAdsSDK",
         "declAttributes": [
           "AccessControl"
@@ -20713,34 +20713,35 @@
         "children": [
           {
             "kind": "Var",
-            "name": "environmentOverride",
-            "printedName": "environmentOverride",
+            "name": "environment",
+            "printedName": "environment",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "NestAdsSDK.EnvironmentConfig?",
+                "printedName": "NestAdsSDK.EnvironmentConfiguration?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "EnvironmentConfig",
-                    "printedName": "NestAdsSDK.EnvironmentConfig",
-                    "usr": "s:10NestAdsSDK17EnvironmentConfigV"
+                    "name": "EnvironmentConfiguration",
+                    "printedName": "NestAdsSDK.EnvironmentConfiguration",
+                    "usr": "s:10NestAdsSDK24EnvironmentConfigurationV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvpZ",
-            "mangledName": "$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvpZ",
+            "usr": "s:10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvpZ",
+            "mangledName": "$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvpZ",
             "moduleName": "NestAdsSDK",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -20752,21 +20753,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "NestAdsSDK.EnvironmentConfig?",
+                    "printedName": "NestAdsSDK.EnvironmentConfiguration?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "EnvironmentConfig",
-                        "printedName": "NestAdsSDK.EnvironmentConfig",
-                        "usr": "s:10NestAdsSDK17EnvironmentConfigV"
+                        "name": "EnvironmentConfiguration",
+                        "printedName": "NestAdsSDK.EnvironmentConfiguration",
+                        "usr": "s:10NestAdsSDK24EnvironmentConfigurationV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvgZ",
-                "mangledName": "$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvgZ",
+                "usr": "s:10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvgZ",
+                "mangledName": "$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvgZ",
                 "moduleName": "NestAdsSDK",
                 "static": true,
                 "implicit": true,
@@ -20788,21 +20789,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "NestAdsSDK.EnvironmentConfig?",
+                    "printedName": "NestAdsSDK.EnvironmentConfiguration?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "EnvironmentConfig",
-                        "printedName": "NestAdsSDK.EnvironmentConfig",
-                        "usr": "s:10NestAdsSDK17EnvironmentConfigV"
+                        "name": "EnvironmentConfiguration",
+                        "printedName": "NestAdsSDK.EnvironmentConfiguration",
+                        "usr": "s:10NestAdsSDK24EnvironmentConfigurationV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvsZ",
-                "mangledName": "$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvsZ",
+                "usr": "s:10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvsZ",
+                "mangledName": "$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvsZ",
                 "moduleName": "NestAdsSDK",
                 "static": true,
                 "implicit": true,
@@ -20823,8 +20824,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvMZ",
-                "mangledName": "$s10NestAdsSDK0aB0C19environmentOverrideAA17EnvironmentConfigVSgvMZ",
+                "usr": "s:10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvMZ",
+                "mangledName": "$s10NestAdsSDK0aB0C11environmentAA24EnvironmentConfigurationVSgvMZ",
                 "moduleName": "NestAdsSDK",
                 "static": true,
                 "implicit": true,
@@ -53942,133 +53943,133 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 424,
       "length": 20,
       "value": "\"CFBundleIdentifier\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 552,
+      "offset": 544,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 661,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 1121,
+      "offset": 1113,
       "length": 6,
       "value": "1024.0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 1130,
+      "offset": 1122,
       "length": 6,
       "value": "1024.0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 1139,
+      "offset": 1131,
       "length": 6,
       "value": "1024.0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1177,
+      "offset": 1169,
       "length": 8,
       "value": "\"%.2fGB\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 1557,
+      "offset": 1549,
       "length": 6,
       "value": "1024.0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 1566,
+      "offset": 1558,
       "length": 6,
       "value": "1024.0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 1575,
+      "offset": 1567,
       "length": 6,
       "value": "1024.0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1617,
+      "offset": 1609,
       "length": 8,
       "value": "\"%.2fGB\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1678,
+      "offset": 1670,
       "length": 29,
       "value": "\"Error obtaining system size\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 1836,
+      "offset": 1828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2000,
+      "offset": 1992,
       "length": 79,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2026,
+      "offset": 2018,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2052,
+      "offset": 2044,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2078,
+      "offset": 2070,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2465,
+      "offset": 2457,
       "length": 10,
       "value": "\"wad_cuid\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Logging\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2628,
+      "offset": 2620,
       "length": 10,
       "value": "\"wad_cuid\""
     },
@@ -54411,7 +54412,7 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Model\/NestAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 1325,
+      "offset": 1473,
       "length": 5,
       "value": "false"
     },
@@ -58191,35 +58192,35 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1051,
+      "offset": 1043,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1073,
+      "offset": 1065,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1134,
+      "offset": 1126,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1179,
+      "offset": 1171,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Manager\/NestAdsNetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 1519,
+      "offset": 1511,
       "length": 3,
       "value": "[]"
     },
