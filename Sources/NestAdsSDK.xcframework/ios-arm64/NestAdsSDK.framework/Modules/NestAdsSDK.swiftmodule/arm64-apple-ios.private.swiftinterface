@@ -9,10 +9,8 @@ import AppTrackingTransparency
 import Combine
 import CommonCrypto
 import Compression
-import CoreGraphics
 import CoreTelephony
 import DeveloperToolsSupport
-import Dispatch
 import Foundation
 @_exported import NestAdsSDK
 import Network
@@ -275,9 +273,6 @@ public enum VideoPlayCondition {
   case autoStartOnWifi
   case manualStart
   case custom
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func from(_ value: Swift.String?) -> NestAdsSDK.VideoPlayCondition?
-  #endif
   public static func == (a: NestAdsSDK.VideoPlayCondition, b: NestAdsSDK.VideoPlayCondition) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -995,11 +990,6 @@ open class NestAdsMultipleCardBannerOptions : NestAdsSDK.NestAdsCardBannerAdView
   open var value: Swift.String?
   @objc deinit
 }
-public enum ContentSizeType {
-  case fluid
-  case fixed(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
-  case fill
-}
 public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
   func imageBannerAdViewDidReceiveAd(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdView(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
@@ -1275,55 +1265,19 @@ public struct NestAdsAdLoaderAdType : Swift.Hashable, Swift.Equatable, @unchecke
 }
 public struct NestAdsAdSize {
   public var size: CoreFoundation.CGSize
-  public var contentSizeType: NestAdsSDK.ContentSizeType
   public init()
   public init(size: CoreFoundation.CGSize)
-  public init(type: NestAdsSDK.ContentSizeType)
 }
 public protocol NestAdsSplashAdViewDelegate : AnyObject {
   func splashAdViewDidReceiveAd(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
   func splashAdView(_ splashAdView: NestAdsSDK.NestAdsSplashAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
   func splashAdViewDidRecordImpression(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  func splashAdViewDidRecordImpressionWithLogStatus(_ splashAdView: NestAdsSDK.NestAdsSplashAdView, isLogSent: Swift.Bool)
   func splashAdViewDidReachDuration(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  func splashAdViewDidStartVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  func splashAdViewDidPlayVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  func splashAdViewDidPauseVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  func splashAdViewDidCompleteVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  func splashAdViewDidSkipVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-}
-extension NestAdsSDK.NestAdsSplashAdViewDelegate {
-  public func splashAdViewDidRecordImpressionWithLogStatus(_ splashAdView: NestAdsSDK.NestAdsSplashAdView, isLogSent: Swift.Bool)
-  public func splashAdViewDidStartVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  public func splashAdViewDidPlayVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  public func splashAdViewDidPauseVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  public func splashAdViewDidCompleteVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-  public func splashAdViewDidSkipVideo(_ splashAdView: NestAdsSDK.NestAdsSplashAdView)
-}
-public enum SplashType {
-  case splash
-  case wideImage
-  case wideVideo
-  public static func == (a: NestAdsSDK.SplashType, b: NestAdsSDK.SplashType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsSplashAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsSplashAdViewDelegate)?
   @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
   @_Concurrency.MainActor @preconcurrency open var duration: Swift.Double
-  @_Concurrency.MainActor @preconcurrency open var splashType: NestAdsSDK.SplashType {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency open var backgroundDurationPolicy: NestAdsSDK.BackgroundBehavior
-  @_Concurrency.MainActor @preconcurrency open var videoPlayCondition: NestAdsSDK.VideoPlayCondition
-  @available(*, deprecated, message: "Video is always paused on background. Use backgroundDurationPolicy only.")
-  @_Concurrency.MainActor @preconcurrency open var backgroundVideoPolicy: NestAdsSDK.BackgroundBehavior
-  @_Concurrency.MainActor @preconcurrency open var contentSizeType: NestAdsSDK.ContentSizeType
-  @_Concurrency.MainActor @preconcurrency open var enableOverflow: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency open var fallbackLogoImage: UIKit.UIImage?
   @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo {
     get
   }
@@ -1337,49 +1291,6 @@ public enum SplashType {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency open func makeSplashViewController() -> NestAdsSDK.NestAdsSplashViewController?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency open func makeFallbackViewController() -> NestAdsSDK.NestAdsSplashFallbackViewController?
-  #endif
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class NestAdsSplashViewController : UIKit.UIViewController {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
-  @objc deinit
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLayoutSubviews()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
-}
-extension NestAdsSDK.NestAdsSplashViewController : NestAdsSDK.NestAdsVideoControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func videoControllerDidCompletePreparation()
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func videoControllerDidPlayVideo()
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func videoControllerDidPauseVideo()
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func videoControllerDidEndVideoPlayback()
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func videoControllerDidUpdateVideoProgress(current: Foundation.TimeInterval)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func videoControllerDidFailToLoadVideo()
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func videoControllerDidFailToLoadVideo(errorDescription: Swift.String)
-}
-public enum BackgroundBehavior {
-  case pause
-  case `continue`
-  public static func == (a: NestAdsSDK.BackgroundBehavior, b: NestAdsSDK.BackgroundBehavior) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc @_Concurrency.MainActor @preconcurrency open class NestAdsSplashFallbackViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public init(logoImage: UIKit.UIImage)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(*, unavailable)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-  @objc deinit
 }
 @objc public protocol NestAdsVideoControllerDelegate {
   @objc optional func videoControllerDidCompletePreparation()
@@ -1491,7 +1402,3 @@ extension NestAdsSDK.NestAdsDynamicBannerAdView.CurrentAdViewType : Swift.Equata
 extension NestAdsSDK.NestAdsDynamicBannerAdView.CurrentAdViewType : Swift.Hashable {}
 extension NestAdsSDK.NestAdsPremiumBannerHintAssetSize : Swift.Equatable {}
 extension NestAdsSDK.NestAdsPremiumBannerHintAssetSize : Swift.Hashable {}
-extension NestAdsSDK.SplashType : Swift.Equatable {}
-extension NestAdsSDK.SplashType : Swift.Hashable {}
-extension NestAdsSDK.BackgroundBehavior : Swift.Equatable {}
-extension NestAdsSDK.BackgroundBehavior : Swift.Hashable {}
