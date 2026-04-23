@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NestAdsSDK
+// swift-module-flags: -target x86_64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NestAdsSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import AVKit
@@ -1000,6 +1000,25 @@ public enum ContentSizeType {
   case fixed(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
   case fill
 }
+public enum ContentAreaAspectRatio {
+  case ratio1x1
+  case ratio16x9
+  case ratio9x16
+  public var name: Swift.String {
+    get
+  }
+  public var multiplier: CoreFoundation.CGFloat {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func from(_ value: Swift.String?) -> NestAdsSDK.ContentAreaAspectRatio?
+  #endif
+  public static func == (a: NestAdsSDK.ContentAreaAspectRatio, b: NestAdsSDK.ContentAreaAspectRatio) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
   func imageBannerAdViewDidReceiveAd(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdView(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
@@ -1475,6 +1494,36 @@ open class NestAdsAdRequest {
   open var landingURL: Swift.String?
   @objc deinit
 }
+public protocol NestAdsPartnerHandler : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func handlePartnerAd(units: [NestAdsSDK.NestAdsPartnerUnit], targeting: NestAdsSDK.NestAdsPartnerTargeting?, in container: UIKit.UIView, completion: @escaping (NestAdsSDK.NestAdsPartnerResult?) -> Swift.Void)
+  #endif
+}
+public struct NestAdsPartnerResult {
+  public let adView: UIKit.UIView
+  public init(adView: UIKit.UIView)
+}
+public struct NestAdsPartnerTargeting {
+  public let age: Swift.Int?
+  public let gender: Swift.Int?
+  public let idfa: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(age: Swift.Int?, gender: Swift.Int?, idfa: Swift.String?)
+  #endif
+}
+public struct NestAdsPartnerUnit {
+  public let adNetworkKey: Swift.String
+  public let priority: Swift.Int
+  public let unitIds: [Swift.String : Swift.String]
+  public let aspectRatio: NestAdsSDK.ContentAreaAspectRatio?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(adNetworkKey: Swift.String, priority: Swift.Int, unitIds: [Swift.String : Swift.String], aspectRatio: NestAdsSDK.ContentAreaAspectRatio? = nil)
+  #endif
+}
+@_hasMissingDesignatedInitializers final public class NestAdsPartnerManager {
+  public static let shared: NestAdsSDK.NestAdsPartnerManager
+  @objc deinit
+}
 extension NestAdsSDK.NestAdsBackgroundArea : Swift.Equatable {}
 extension NestAdsSDK.NestAdsBackgroundArea : Swift.Hashable {}
 extension NestAdsSDK.NestAdsMultipleAdIndicatorSize : Swift.Equatable {}
@@ -1497,6 +1546,8 @@ extension NestAdsSDK.NestAdsDynamicBannerAdView.CurrentAdViewType : Swift.Equata
 extension NestAdsSDK.NestAdsDynamicBannerAdView.CurrentAdViewType : Swift.Hashable {}
 extension NestAdsSDK.NestAdsPremiumBannerHintAssetSize : Swift.Equatable {}
 extension NestAdsSDK.NestAdsPremiumBannerHintAssetSize : Swift.Hashable {}
+extension NestAdsSDK.ContentAreaAspectRatio : Swift.Equatable {}
+extension NestAdsSDK.ContentAreaAspectRatio : Swift.Hashable {}
 extension NestAdsSDK.SplashType : Swift.Equatable {}
 extension NestAdsSDK.SplashType : Swift.Hashable {}
 extension NestAdsSDK.BackgroundBehavior : Swift.Equatable {}
