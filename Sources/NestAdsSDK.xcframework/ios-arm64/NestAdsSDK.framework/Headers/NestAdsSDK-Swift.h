@@ -319,6 +319,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK15NestAdsAdLoader")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// 모든 delegate 콜백은 메인 큐에서 호출됨이 보장됩니다.
 SWIFT_PROTOCOL("_TtP10NestAdsSDK23NestAdsAdLoaderDelegate_")
 @protocol NestAdsAdLoaderDelegate
 - (void)adLoader:(NestAdsAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NestAdsAdError * _Nonnull)error;
@@ -609,6 +610,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK22NestAdsRichPopupAdView")
 @interface NestAdsRichPopupAdView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)didMoveToWindow;
 @end
 
 @class NestAdsVideoController;
