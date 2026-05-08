@@ -20082,6 +20082,193 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NestAdsSizeType",
+        "printedName": "NestAdsSizeType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fluidContain",
+            "printedName": "fluidContain",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.NestAdsSizeType.Type) -> NestAdsSDK.NestAdsSizeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsSizeType",
+                    "printedName": "NestAdsSDK.NestAdsSizeType",
+                    "usr": "s:10NestAdsSDK0aB8SizeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.NestAdsSizeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NestAdsSizeType",
+                        "printedName": "NestAdsSDK.NestAdsSizeType",
+                        "usr": "s:10NestAdsSDK0aB8SizeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK0aB8SizeTypeO12fluidContainyA2CmF",
+            "mangledName": "$s10NestAdsSDK0aB8SizeTypeO12fluidContainyA2CmF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fixed",
+            "printedName": "fixed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.NestAdsSizeType.Type) -> (CoreGraphics.CGFloat, CoreGraphics.CGFloat) -> NestAdsSDK.NestAdsSizeType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat, CoreGraphics.CGFloat) -> NestAdsSDK.NestAdsSizeType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NestAdsSizeType",
+                        "printedName": "NestAdsSDK.NestAdsSizeType",
+                        "usr": "s:10NestAdsSDK0aB8SizeTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.NestAdsSizeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NestAdsSizeType",
+                        "printedName": "NestAdsSDK.NestAdsSizeType",
+                        "usr": "s:10NestAdsSDK0aB8SizeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK0aB8SizeTypeO5fixedyAC14CoreFoundation7CGFloatV_AGtcACmF",
+            "mangledName": "$s10NestAdsSDK0aB8SizeTypeO5fixedyAC12CoreGraphics7CGFloatV_AGtcACmF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fill",
+            "printedName": "fill",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NestAdsSDK.NestAdsSizeType.Type) -> NestAdsSDK.NestAdsSizeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NestAdsSizeType",
+                    "printedName": "NestAdsSDK.NestAdsSizeType",
+                    "usr": "s:10NestAdsSDK0aB8SizeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NestAdsSDK.NestAdsSizeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NestAdsSizeType",
+                        "printedName": "NestAdsSDK.NestAdsSizeType",
+                        "usr": "s:10NestAdsSDK0aB8SizeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NestAdsSDK0aB8SizeTypeO4fillyA2CmF",
+            "mangledName": "$s10NestAdsSDK0aB8SizeTypeO4fillyA2CmF",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NestAdsSDK0aB8SizeTypeO",
+        "mangledName": "$s10NestAdsSDK0aB8SizeTypeO",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -21480,6 +21667,36 @@
           },
           {
             "kind": "Function",
+            "name": "popupAdViewDidClose",
+            "printedName": "popupAdViewDidClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsPopupAdView",
+                "printedName": "NestAdsSDK.NestAdsPopupAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegateP05popupeF8DidCloseyyAA0abdeF0CF",
+            "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegateP05popupeF8DidCloseyyAA0abdeF0CF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "popupAdView",
             "printedName": "popupAdView(_:didFailToShowAdWithError:)",
             "children": [
@@ -21720,6 +21937,87 @@
           },
           {
             "kind": "Function",
+            "name": "popupAdViewDidImpressWithLogStatus",
+            "printedName": "popupAdViewDidImpressWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsPopupAdView",
+                "printedName": "NestAdsSDK.NestAdsPopupAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegateP05popupeF23DidImpressWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegateP05popupeF23DidImpressWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popupAdViewDidClickWithLogStatus",
+            "printedName": "popupAdViewDidClickWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsPopupAdView",
+                "printedName": "NestAdsSDK.NestAdsPopupAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegateP05popupeF21DidClickWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegateP05popupeF21DidClickWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "popupAdViewDidRecordImpression",
             "printedName": "popupAdViewDidRecordImpression(_:adId:)",
             "children": [
@@ -21776,6 +22074,32 @@
             "declKind": "Func",
             "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF14DidRecordClick_4adIdyAA0abdeF0C_SitF",
             "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF14DidRecordClick_4adIdyAA0abdeF0C_SitF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popupAdViewDidClose",
+            "printedName": "popupAdViewDidClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsPopupAdView",
+                "printedName": "NestAdsSDK.NestAdsPopupAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF8DidCloseyyAA0abdeF0CF",
+            "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF8DidCloseyyAA0abdeF0CF",
             "moduleName": "NestAdsSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
             "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
@@ -21882,6 +22206,82 @@
             "declKind": "Func",
             "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupefe4ListF22ControllerDidDisappearyyF",
             "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupefe4ListF22ControllerDidDisappearyyF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popupAdViewDidImpressWithLogStatus",
+            "printedName": "popupAdViewDidImpressWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsPopupAdView",
+                "printedName": "NestAdsSDK.NestAdsPopupAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF23DidImpressWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF23DidImpressWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popupAdViewDidClickWithLogStatus",
+            "printedName": "popupAdViewDidClickWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsPopupAdView",
+                "printedName": "NestAdsSDK.NestAdsPopupAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsPopupAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF21DidClickWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB19PopupAdViewDelegatePAAE05popupeF21DidClickWithLogStatus_4adId02isL4SentyAA0abdeF0C_SiSbtF",
             "moduleName": "NestAdsSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsPopupAdViewDelegate>",
             "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsPopupAdViewDelegate>",
@@ -35168,6 +35568,36 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(sizeType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsImageBannerAdView",
+                "printedName": "NestAdsSDK.NestAdsImageBannerAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsImageBannerAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsSizeType",
+                "printedName": "NestAdsSDK.NestAdsSizeType",
+                "usr": "s:10NestAdsSDK0aB8SizeTypeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NestAdsSDK0aB17ImageBannerAdViewC8sizeTypeAcA0ab4SizeI0O_tcfc",
+            "mangledName": "$s10NestAdsSDK0aB17ImageBannerAdViewC8sizeTypeAcA0ab4SizeI0O_tcfc",
+            "moduleName": "NestAdsSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(coder:)",
             "children": [
               {
@@ -39821,6 +40251,87 @@
           },
           {
             "kind": "Function",
+            "name": "cardBannerAdViewDidImpressWithLogStatus",
+            "printedName": "cardBannerAdViewDidImpressWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsCardBannerAdView",
+                "printedName": "NestAdsSDK.NestAdsCardBannerAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsCardBannerAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB24CardBannerAdViewDelegateP04cardefG23DidImpressWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB24CardBannerAdViewDelegateP04cardefG23DidImpressWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardBannerAdViewDidClickWithLogStatus",
+            "printedName": "cardBannerAdViewDidClickWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsCardBannerAdView",
+                "printedName": "NestAdsSDK.NestAdsCardBannerAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsCardBannerAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB24CardBannerAdViewDelegateP04cardefG21DidClickWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB24CardBannerAdViewDelegateP04cardefG21DidClickWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "cardBannerAdViewDidRecordImpression",
             "printedName": "cardBannerAdViewDidRecordImpression(_:adId:)",
             "children": [
@@ -39983,6 +40494,82 @@
             "declKind": "Func",
             "usr": "s:10NestAdsSDK0aB24CardBannerAdViewDelegatePAAE04cardefgf4ListG22ControllerDidDisappearyyF",
             "mangledName": "$s10NestAdsSDK0aB24CardBannerAdViewDelegatePAAE04cardefgf4ListG22ControllerDidDisappearyyF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardBannerAdViewDidImpressWithLogStatus",
+            "printedName": "cardBannerAdViewDidImpressWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsCardBannerAdView",
+                "printedName": "NestAdsSDK.NestAdsCardBannerAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsCardBannerAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB24CardBannerAdViewDelegatePAAE04cardefG23DidImpressWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB24CardBannerAdViewDelegatePAAE04cardefG23DidImpressWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
+            "moduleName": "NestAdsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardBannerAdViewDidClickWithLogStatus",
+            "printedName": "cardBannerAdViewDidClickWithLogStatus(_:adId:isLogSent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NestAdsCardBannerAdView",
+                "printedName": "NestAdsSDK.NestAdsCardBannerAdView",
+                "usr": "c:@M@NestAdsSDK@objc(cs)NestAdsCardBannerAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NestAdsSDK0aB24CardBannerAdViewDelegatePAAE04cardefG21DidClickWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
+            "mangledName": "$s10NestAdsSDK0aB24CardBannerAdViewDelegatePAAE04cardefG21DidClickWithLogStatus_4adId02isM4SentyAA0abdefG0C_SiSbtF",
             "moduleName": "NestAdsSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
             "sugared_genericSig": "<Self where Self : NestAdsSDK.NestAdsCardBannerAdViewDelegate>",
@@ -53246,14 +53833,14 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Impression\/Core\/Mediator.swift",
       "kind": "Array",
-      "offset": 1428,
+      "offset": 1913,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Impression\/Core\/Mediator.swift",
       "kind": "FloatLiteral",
-      "offset": 1631,
+      "offset": 2116,
       "length": 3,
       "value": "0.1"
     },
@@ -53330,14 +53917,14 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Impression\/Logging\/EventLogManager.swift",
       "kind": "Array",
-      "offset": 687,
+      "offset": 1435,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Utils\/Impression\/Logging\/EventLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 855,
+      "offset": 1603,
       "length": 29,
       "value": "\"com.nestads.eventlogmanager\""
     },
@@ -55717,14 +56304,14 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 840,
+      "offset": 1400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/CreativeView.swift",
       "kind": "FloatLiteral",
-      "offset": 944,
+      "offset": 1504,
       "length": 3,
       "value": "0.0"
     },
@@ -56095,336 +56682,329 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "StringLiteral",
-      "offset": 3447,
+      "offset": 4302,
       "length": 8,
       "value": "\"000000\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3464,
+      "offset": 4319,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3536,
+      "offset": 4391,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3749,
+      "offset": 4604,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3784,
+      "offset": 4639,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4003,
+      "offset": 4858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4038,
+      "offset": 4893,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4270,
+      "offset": 5125,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4313,
+      "offset": 5168,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5056,
+      "offset": 5911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5116,
+      "offset": 5971,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5178,
+      "offset": 6033,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5223,
+      "offset": 6078,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5278,
+      "offset": 6133,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5329,
+      "offset": 6184,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5661,
+      "offset": 6516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5698,
+      "offset": 6553,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5975,
+      "offset": 6830,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6012,
+      "offset": 6867,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6193,
+      "offset": 7048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6228,
+      "offset": 7083,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6412,
+      "offset": 7267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6447,
+      "offset": 7302,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6662,
+      "offset": 7517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "StringLiteral",
-      "offset": 7054,
+      "offset": 7909,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7819,
+      "offset": 8674,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8111,
+      "offset": 8966,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8126,
+      "offset": 8981,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8140,
+      "offset": 8995,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8149,
+      "offset": 9004,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "Array",
-      "offset": 8471,
+      "offset": 9326,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "Array",
-      "offset": 8519,
+      "offset": 9374,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8563,
+      "offset": 9418,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "Array",
-      "offset": 8898,
+      "offset": 9753,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "Array",
-      "offset": 8957,
+      "offset": 9812,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "Array",
-      "offset": 9126,
+      "offset": 9981,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9274,
+      "offset": 10129,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 9340,
+      "offset": 10195,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9469,
+      "offset": 10324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9683,
+      "offset": 10538,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9504,
+      "offset": 10359,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9753,
+      "offset": 10608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9907,
+      "offset": 10762,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10653,
+      "offset": 11508,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 10719,
+      "offset": 11574,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 11414,
+      "offset": 12269,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11534,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPopupAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 66442,
+      "offset": 12389,
       "length": 5,
       "value": "false"
     },
@@ -57152,112 +57732,112 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 623,
+      "offset": 1637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 794,
+      "offset": 1808,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 1938,
       "length": 14,
       "value": "\"모아보기\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 980,
+      "offset": 1994,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1080,
+      "offset": 2094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1249,
+      "offset": 2263,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1261,
+      "offset": 2275,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 2357,
       "length": 8,
       "value": "\"707070\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1422,
+      "offset": 2436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1590,
+      "offset": 2604,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1821,
+      "offset": 2835,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2313,
+      "offset": 3327,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2373,
+      "offset": 3387,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2435,
+      "offset": 3449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "Array",
-      "offset": 2930,
+      "offset": 3944,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/AdListViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3105,
+      "offset": 4119,
       "length": 1,
       "value": "0"
     },
@@ -57558,7 +58138,7 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsImageBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21408,
+      "offset": 23352,
       "length": 5,
       "value": "false"
     },
@@ -59455,266 +60035,266 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2360,
+      "offset": 3106,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2403,
+      "offset": 3149,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3461,
+      "offset": 4207,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3521,
+      "offset": 4267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3583,
+      "offset": 4329,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3628,
+      "offset": 4374,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3683,
+      "offset": 4429,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3734,
+      "offset": 4480,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3972,
+      "offset": 4718,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4007,
+      "offset": 4753,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4191,
+      "offset": 4937,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4226,
+      "offset": 4972,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4441,
+      "offset": 5187,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 5146,
+      "offset": 5892,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "Array",
-      "offset": 5263,
+      "offset": 6009,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "Array",
-      "offset": 5642,
+      "offset": 6388,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "Array",
-      "offset": 5682,
+      "offset": 6428,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "Array",
-      "offset": 5768,
+      "offset": 6514,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "Array",
-      "offset": 5881,
+      "offset": 6627,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5917,
+      "offset": 6663,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6373,
+      "offset": 7119,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6194,
+      "offset": 6940,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6440,
+      "offset": 7186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6594,
+      "offset": 7340,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7326,
+      "offset": 8072,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 7384,
+      "offset": 8130,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7515,
+      "offset": 8261,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 7582,
+      "offset": 8328,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7716,
+      "offset": 8462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7807,
+      "offset": 8553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7832,
+      "offset": 8578,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7952,
+      "offset": 8698,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8186,
+      "offset": 8932,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8397,
+      "offset": 9143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 9784,
+      "offset": 10530,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9179,
+      "offset": 9925,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 10890,
+      "offset": 11636,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11014,
+      "offset": 11760,
       "length": 5,
       "value": "false"
     },
@@ -60022,14 +60602,14 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/NestAdsAdBadgeLabel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1696,
+      "offset": 1858,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/NestAdsAdBadgeLabel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1741,
+      "offset": 1903,
       "length": 1,
       "value": "2"
     },
@@ -60867,13 +61447,6 @@
       "value": "1008"
     },
     {
-      "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsCardBannerAdView\/NestAdsCardBannerAdView+Log.swift",
-      "kind": "BooleanLiteral",
-      "offset": 207,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/VideoPlayer\/VastClient\/models\/XML schema\/VastViewableImpression.swift",
       "kind": "StringLiteral",
       "offset": 246,
@@ -61198,7 +61771,7 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Model\/NestAdsAdSize.swift",
       "kind": "BooleanLiteral",
-      "offset": 2137,
+      "offset": 2729,
       "length": 5,
       "value": "false"
     },

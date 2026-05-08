@@ -655,6 +655,11 @@ public protocol NestAdsCustomNativeAdLoaderDelegate : NestAdsSDK.NestAdsAdLoader
   open var adInfo: NestAdsSDK.NestAdsAdInfo
   @objc deinit
 }
+public enum NestAdsSizeType {
+  case fluidContain
+  case fixed(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
+  case fill
+}
 @_hasMissingDesignatedInitializers open class NestAdsPopupAdResponse : NestAdsSDK.NestAdsPublicAdResponse {
   open var image: NestAdsSDK.NestAdsImageResponse
   open var adBadge: NestAdsSDK.NestAdsAdBadgeResponse
@@ -688,6 +693,7 @@ public protocol NestAdsPopupAdViewDelegate : AnyObject {
   func popupAdViewDidTappedLeftButton(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewDidTappedRightButton(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewDidShowAd(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
+  func popupAdViewDidClose(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdView(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, didFailToShowAdWithError error: NestAdsSDK.NestAdsAdError)
   func popupAdViewWillPresentScreen(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   func popupAdViewWillDismissScreen(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
@@ -697,15 +703,20 @@ public protocol NestAdsPopupAdViewDelegate : AnyObject {
   func popupAdViewAdListViewControllerDidAppear()
   func popupAdViewAdListViewControllerWillDisappear()
   func popupAdViewAdListViewControllerDidDisappear()
+  func popupAdViewDidImpressWithLogStatus(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  func popupAdViewDidClickWithLogStatus(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adId: Swift.Int, isLogSent: Swift.Bool)
 }
 extension NestAdsSDK.NestAdsPopupAdViewDelegate {
   public func popupAdViewDidRecordImpression(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adId: Swift.Int)
   public func popupAdViewDidRecordClick(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adId: Swift.Int)
+  public func popupAdViewDidClose(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   public func popupAdViewDidTapSeeAllButton(_ popupAdView: NestAdsSDK.NestAdsPopupAdView)
   public func popupAdViewAdListViewControllerWillAppear()
   public func popupAdViewAdListViewControllerDidAppear()
   public func popupAdViewAdListViewControllerWillDisappear()
   public func popupAdViewAdListViewControllerDidDisappear()
+  public func popupAdViewDidImpressWithLogStatus(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  public func popupAdViewDidClickWithLogStatus(_ popupAdView: NestAdsSDK.NestAdsPopupAdView, adId: Swift.Int, isLogSent: Swift.Bool)
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsPopupAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsPopupAdViewDelegate)?
@@ -1047,6 +1058,7 @@ extension NestAdsSDK.NestAdsImageBannerAdViewDelegate {
   @_Concurrency.MainActor @preconcurrency open var enableOverflow: Swift.Bool
   @objc deinit
   @_Concurrency.MainActor @preconcurrency public init(size: NestAdsSDK.NestAdsAdSize)
+  @_Concurrency.MainActor @preconcurrency public init(sizeType: NestAdsSDK.NestAdsSizeType)
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   #endif
@@ -1191,6 +1203,8 @@ public protocol NestAdsCardBannerAdViewDelegate : AnyObject {
   func cardBannerAdViewAdListViewControllerDidAppear()
   func cardBannerAdViewAdListViewControllerWillDisappear()
   func cardBannerAdViewAdListViewControllerDidDisappear()
+  func cardBannerAdViewDidImpressWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  func cardBannerAdViewDidClickWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
 }
 extension NestAdsSDK.NestAdsCardBannerAdViewDelegate {
   public func cardBannerAdViewDidRecordImpression(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int)
@@ -1200,6 +1214,8 @@ extension NestAdsSDK.NestAdsCardBannerAdViewDelegate {
   public func cardBannerAdViewAdListViewControllerDidAppear()
   public func cardBannerAdViewAdListViewControllerWillDisappear()
   public func cardBannerAdViewAdListViewControllerDidDisappear()
+  public func cardBannerAdViewDidImpressWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  public func cardBannerAdViewDidClickWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsCardBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsCardBannerAdViewDelegate)?
