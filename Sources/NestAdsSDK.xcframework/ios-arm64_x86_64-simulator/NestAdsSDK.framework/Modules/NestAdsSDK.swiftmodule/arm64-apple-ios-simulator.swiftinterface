@@ -1356,6 +1356,7 @@ public enum SplashType {
   }
   @_Concurrency.MainActor @preconcurrency open var backgroundDurationPolicy: NestAdsSDK.BackgroundBehavior
   @_Concurrency.MainActor @preconcurrency open var videoPlayCondition: NestAdsSDK.VideoPlayCondition
+  @_Concurrency.MainActor @preconcurrency open var videoQuality: Swift.String
   @available(*, deprecated, message: "Video is always paused on background. Use backgroundDurationPolicy only.")
   @_Concurrency.MainActor @preconcurrency open var backgroundVideoPolicy: NestAdsSDK.BackgroundBehavior
   @_Concurrency.MainActor @preconcurrency open var contentSizeType: NestAdsSDK.ContentSizeType

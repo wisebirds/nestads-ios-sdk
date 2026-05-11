@@ -45713,6 +45713,99 @@
           },
           {
             "kind": "Var",
+            "name": "videoQuality",
+            "printedName": "videoQuality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvp",
+            "mangledName": "$s10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvp",
+            "moduleName": "NestAdsSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvg",
+                "mangledName": "$s10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvg",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvs",
+                "mangledName": "$s10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvs",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvM",
+                "mangledName": "$s10NestAdsSDK0aB12SplashAdViewC12videoQualitySSvM",
+                "moduleName": "NestAdsSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "backgroundVideoPolicy",
             "printedName": "backgroundVideoPolicy",
             "children": [
@@ -61806,98 +61899,98 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3944,
+      "offset": 4164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4472,
+      "offset": 4692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4487,
+      "offset": 4707,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4501,
+      "offset": 4721,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4510,
+      "offset": 4730,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4589,
+      "offset": 4809,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5181,
+      "offset": 5401,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5358,
+      "offset": 5578,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5542,
+      "offset": 5762,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5594,
+      "offset": 5814,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5639,
+      "offset": 5859,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5831,
+      "offset": 6051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6072,
+      "offset": 6292,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsSplashAdView\/NestAdsSplashAdView.swift",
       "kind": "Array",
-      "offset": 6956,
+      "offset": 7176,
       "length": 2,
       "value": "[]"
     },
