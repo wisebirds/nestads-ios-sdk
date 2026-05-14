@@ -328,11 +328,13 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK23NestAdsAdLoaderDelegate_")
 @end
 
 @class NSCoder;
+@class UITraitCollection;
 SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 @interface NestAdsCardBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (void)didMoveToWindow;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)didMoveToSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -365,6 +367,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK24NestAdsImageBannerAdView")
 - (void)didMoveToSuperview;
 - (void)layoutSubviews;
 - (void)didMoveToWindow;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -581,6 +584,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -602,6 +606,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsPremiumBannerAdView")
 - (void)layoutSubviews;
 - (void)didMoveToSuperview;
 - (void)didMoveToWindow;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -640,7 +645,6 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
 @end
 
-@class UITraitCollection;
 SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
 @interface NestAdsSplashAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -1030,11 +1034,13 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK23NestAdsAdLoaderDelegate_")
 @end
 
 @class NSCoder;
+@class UITraitCollection;
 SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 @interface NestAdsCardBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (void)didMoveToWindow;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)didMoveToSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -1067,6 +1073,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK24NestAdsImageBannerAdView")
 - (void)didMoveToSuperview;
 - (void)layoutSubviews;
 - (void)didMoveToWindow;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -1283,6 +1290,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1304,6 +1312,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsPremiumBannerAdView")
 - (void)layoutSubviews;
 - (void)didMoveToSuperview;
 - (void)didMoveToWindow;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1342,7 +1351,6 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK30NestAdsVideoControllerDelegate_")
 - (void)videoControllerDidFailToLoadVideoWithErrorDescription:(NSString * _Nonnull)errorDescription;
 @end
 
-@class UITraitCollection;
 SWIFT_CLASS("_TtC10NestAdsSDK19NestAdsSplashAdView")
 @interface NestAdsSplashAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
