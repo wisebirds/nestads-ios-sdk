@@ -12721,6 +12721,16 @@
       },
       {
         "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -53308,35 +53318,35 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/PremiumAd\/PremiumDefaultVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16645,
+      "offset": 17046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/PremiumAd\/PremiumDefaultVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17800,
+      "offset": 18201,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/PremiumAd\/PremiumDefaultVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26225,
+      "offset": 26626,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/PremiumAd\/PremiumDefaultVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26351,
+      "offset": 26752,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/PremiumAd\/PremiumDefaultVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26469,
+      "offset": 26870,
       "length": 2,
       "value": "12"
     },
@@ -60007,14 +60017,14 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPremiumBannerAdView\/NestAdsPremiumBannerAdView+DataInteraction.swift",
       "kind": "BooleanLiteral",
-      "offset": 47712,
+      "offset": 49058,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/View\/AdView\/NestAdsPremiumBannerAdView\/NestAdsPremiumBannerAdView+DataInteraction.swift",
       "kind": "StringLiteral",
-      "offset": 71425,
+      "offset": 72946,
       "length": 32,
       "value": "\"NestAdsPreviewVideoImpressions\""
     },
@@ -62163,7 +62173,7 @@
     {
       "filePath": "\/Users\/wisebirds\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Model\/NestAdsAdSize.swift",
       "kind": "BooleanLiteral",
-      "offset": 2729,
+      "offset": 3189,
       "length": 5,
       "value": "false"
     },
