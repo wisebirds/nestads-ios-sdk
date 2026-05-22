@@ -608,10 +608,6 @@ open class NestAdsAdLoaderOptions {
   open var playCondition: Swift.String
   open var customAudioSessionRequested: Swift.Bool
   open var quality: Swift.String
-  open var progressIntervalSeconds: Swift.Double {
-    get
-    set
-  }
   override public init()
   @objc deinit
 }
