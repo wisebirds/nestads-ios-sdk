@@ -1375,6 +1375,9 @@ open class NestAdsAdRequest {
 public protocol NestAdsPartnerHandler : AnyObject {
   func handlePartnerAd(units: [NestAdsSDK.NestAdsPartnerUnit], targeting: NestAdsSDK.NestAdsPartnerTargeting?, in container: UIKit.UIView, completion: @escaping (NestAdsSDK.NestAdsPartnerResult?) -> Swift.Void)
 }
+public protocol NestAdsPartnerDisplayHandling : NestAdsSDK.NestAdsPartnerHandler {
+  func handlePartnerAd(units: [NestAdsSDK.NestAdsPartnerUnit], targeting: NestAdsSDK.NestAdsPartnerTargeting?, display: NestAdsSDK.NestAdsPartnerDisplayOptions?, in container: UIKit.UIView, completion: @escaping (NestAdsSDK.NestAdsPartnerResult?) -> Swift.Void)
+}
 public struct NestAdsPartnerResult {
   public let adView: UIKit.UIView
   public init(adView: UIKit.UIView)
@@ -1384,6 +1387,10 @@ public struct NestAdsPartnerTargeting {
   public let gender: Swift.Int?
   public let idfa: Swift.String?
   public init(age: Swift.Int?, gender: Swift.Int?, idfa: Swift.String?)
+}
+public struct NestAdsPartnerDisplayOptions {
+  public let cornerRadius: CoreFoundation.CGFloat
+  public init(cornerRadius: CoreFoundation.CGFloat)
 }
 public struct NestAdsPartnerUnit {
   public let adNetworkKey: Swift.String
