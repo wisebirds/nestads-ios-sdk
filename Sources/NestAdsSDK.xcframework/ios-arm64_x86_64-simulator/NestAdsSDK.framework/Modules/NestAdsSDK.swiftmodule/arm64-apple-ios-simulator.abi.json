@@ -36182,7 +36182,11 @@
         "name": "SQLite3",
         "printedName": "SQLite3",
         "declKind": "Import",
-        "moduleName": "NestAdsSDK"
+        "moduleName": "NestAdsSDK",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -60227,14 +60231,14 @@
     {
       "filePath": "\/Users\/kangwook\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Manager\/Cache\/DBManager.swift",
       "kind": "StringLiteral",
-      "offset": 161,
+      "offset": 756,
       "length": 16,
       "value": "\"NestAdsCacheDB\""
     },
     {
       "filePath": "\/Users\/kangwook\/atlassian-bitbucket-pipelines-runner\/temp\/61c60515-3fbb-59db-8719-b3434770a64f\/build\/NestAdsSDK\/Manager\/Cache\/DBManager.swift",
       "kind": "StringLiteral",
-      "offset": 290,
+      "offset": 885,
       "length": 31,
       "value": "\"com.nestads.DBManager.DBQueue\""
     },

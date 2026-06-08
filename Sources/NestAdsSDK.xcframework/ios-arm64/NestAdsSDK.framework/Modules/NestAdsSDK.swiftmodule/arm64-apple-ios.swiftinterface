@@ -17,7 +17,6 @@ import Foundation
 @_exported import NestAdsSDK
 import Network
 import ObjectiveC
-import SQLite3
 import Swift
 import SwiftUI
 import SystemConfiguration
