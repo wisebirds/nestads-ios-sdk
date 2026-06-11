@@ -11,6 +11,7 @@ import CommonCrypto
 import Compression
 import CoreGraphics
 import CoreTelephony
+import CryptoKit
 import DeveloperToolsSupport
 import Dispatch
 import Foundation
@@ -418,6 +419,9 @@ public typealias NestAdsCustomClickHandler = (Swift.String) -> Swift.Void
   open var mediaContent: NestAdsSDK.NestAdsMediaContent {
     get
   }
+  open var vastXML: Swift.String? {
+    get
+  }
   open var customClickHandler: NestAdsSDK.NestAdsCustomClickHandler?
   @objc deinit
   open func image(withMediaSpecID mediaSpecID: Swift.String) -> NestAdsSDK.NestAdsAdImage?
@@ -519,6 +523,64 @@ open class NestAdsPopupLayoutOptions : NestAdsSDK.NestAdsPopupAdViewOptions {
   open var image: NestAdsSDK.NestAdsImageResponse
   open var adBadge: NestAdsSDK.NestAdsAdBadgeResponse
   open var impressionUrls: [Swift.String]?
+  @objc deinit
+}
+public typealias NestAdsHintAssetSize = NestAdsSDK.NestAdsPremiumBannerHintAssetSize
+open class NestAdsHintAssetOptions {
+  open var primaryColor: UIKit.UIColor {
+    get
+    set
+  }
+  open var secondaryColor: UIKit.UIColor {
+    get
+    set
+  }
+  open var hintAssetSize: NestAdsSDK.NestAdsHintAssetSize {
+    get
+    set
+  }
+  public init(primaryColor: UIKit.UIColor? = nil, secondaryColor: UIKit.UIColor? = nil, hintAssetSize: NestAdsSDK.NestAdsHintAssetSize? = nil)
+  @objc deinit
+}
+open class NestAdsCtaButtonOptions {
+  open var backgroundColor: UIKit.UIColor?
+  open var opacity: CoreFoundation.CGFloat? {
+    get
+    set
+  }
+  open var font: UIKit.UIFont? {
+    get
+    set
+  }
+  open var fontColor: UIKit.UIColor {
+    get
+    set
+  }
+  public init(backgroundColor: UIKit.UIColor? = nil, opacity: CoreFoundation.CGFloat? = nil, font: UIKit.UIFont? = nil, fontColor: UIKit.UIColor? = nil)
+  @objc deinit
+}
+open class NestAdsAdvertiserOptions {
+  open var font: UIKit.UIFont? {
+    get
+    set
+  }
+  open var textColor: UIKit.UIColor {
+    get
+    set
+  }
+  public init(font: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil)
+  @objc deinit
+}
+open class NestAdsAdTextOptions {
+  open var font: UIKit.UIFont? {
+    get
+    set
+  }
+  open var textColor: UIKit.UIColor {
+    get
+    set
+  }
+  public init(font: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil)
   @objc deinit
 }
 open class NestAdsAdLoaderOptions {
@@ -682,11 +744,12 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
   func dynamicBannerAdView(_ adView: NestAdsSDK.NestAdsDynamicBannerAdView, didReceiveAdWithType responseType: Swift.String)
   func dynamicBannerAdView(_ adView: NestAdsSDK.NestAdsDynamicBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
 }
-@objc @_Concurrency.MainActor @preconcurrency open class NestAdsDynamicBannerAdView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class NestAdsDynamicBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsDynamicBannerAdViewDelegate)?
   @_Concurrency.MainActor @preconcurrency weak open var imageBannerDelegate: (any NestAdsSDK.NestAdsImageBannerAdViewDelegate)?
   @_Concurrency.MainActor @preconcurrency weak open var premiumBannerDelegate: (any NestAdsSDK.NestAdsPremiumBannerAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak open var outstreamVideoDelegate: (any NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate)?
   @_Concurrency.MainActor @preconcurrency open var currentResponseType: Swift.String? {
     get
   }
@@ -694,6 +757,7 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
     case none
     case imageBanner
     case premiumBanner
+    case outstreamVideo
     public static func == (a: NestAdsSDK.NestAdsDynamicBannerAdView.CurrentAdViewType, b: NestAdsSDK.NestAdsDynamicBannerAdView.CurrentAdViewType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -714,11 +778,18 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency open var premiumCtaButtonOptions: NestAdsSDK.NestAdsPremiumBannerCtaButtonOptions
   @_Concurrency.MainActor @preconcurrency open var premiumAdvertiserOptions: NestAdsSDK.NestAdsPremiumBannerAdvertiserOptions
   @_Concurrency.MainActor @preconcurrency open var premiumAdTextOptions: NestAdsSDK.NestAdsPremiumBannerAdTextOptions
-  @_Concurrency.MainActor @preconcurrency public init(bannerSize: NestAdsSDK.NestAdsAdSize, premiumDefaultSize: NestAdsSDK.NestAdsAdSize, premiumExpandedSize: NestAdsSDK.NestAdsAdSize)
+  @_Concurrency.MainActor @preconcurrency open var outstreamVideoOptions: NestAdsSDK.NestAdsOutstreamVideoAdViewOptions
+  @_Concurrency.MainActor @preconcurrency open var bannerAdSize: NestAdsSDK.NestAdsAdSize
+  @_Concurrency.MainActor @preconcurrency open var premiumDefaultSize: NestAdsSDK.NestAdsAdSize
+  @_Concurrency.MainActor @preconcurrency open var premiumExpandedSize: NestAdsSDK.NestAdsAdSize
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc convenience dynamic public init()
+  @_Concurrency.MainActor @preconcurrency convenience public init(bannerSize: NestAdsSDK.NestAdsAdSize, premiumDefaultSize: NestAdsSDK.NestAdsAdSize, premiumExpandedSize: NestAdsSDK.NestAdsAdSize)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
   @objc deinit
 }
@@ -765,6 +836,27 @@ extension NestAdsSDK.NestAdsDynamicBannerAdView : NestAdsSDK.NestAdsPremiumBanne
   @_Concurrency.MainActor @preconcurrency public func premiumAdViewDidClickOnExpandedViewWithLogStatus(_ adView: NestAdsSDK.NestAdsPremiumBannerAdView, isLogSent: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func defaultVideoDidRecordImpressionWithLogStatus(isLogSent: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func defaultVideoDidPerformClickWithLogStatus(isLogSent: Swift.Bool)
+}
+extension NestAdsSDK.NestAdsDynamicBannerAdView : NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate {
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidReceiveAd(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdView(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidImpressOnVideo(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidImpressOnThumbnail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidClickOnVideo(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidClickOnThumbnail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidClickOnHintAsset(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool?)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidClickOnCtaButton(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidClickOnAdProfile(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidClickOnAdvertiser(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewWillPresentScreen(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewDidPresentScreen(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewVideoDidStart(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewVideoDidPlay(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewVideoDidPause(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewVideoDidComplete(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewVideoDidChangeMute(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, muted: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewVideoDidUpdateProgress(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, currentTime: Foundation.TimeInterval, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func outstreamVideoAdViewVideoDidFail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
 }
 public struct NestAdsVersionNumber {
   public var majorVersion: Swift.Int
@@ -853,13 +945,15 @@ open class NestAdsPremiumBannerAdTextOptions : NestAdsSDK.NestAdsPremiumBannerAd
 open class NestAdsPremiumAdExpandedBannerVideoOptions : NestAdsSDK.NestAdsPremiumBannerAdViewOptions {
   open var videoOptions: NestAdsSDK.NestAdsVideoOptions
   open var progressBarColor: UIKit.UIColor
-  public init(videoOptions: NestAdsSDK.NestAdsVideoOptions? = nil, progressBarColor: UIKit.UIColor? = nil)
+  open var isVideoControlsDimEnabled: Swift.Bool
+  public init(videoOptions: NestAdsSDK.NestAdsVideoOptions? = nil, progressBarColor: UIKit.UIColor? = nil, isVideoControlsDimEnabled: Swift.Bool? = nil)
   @objc deinit
 }
 open class NestAdsPremiumAdDefaultBannerVideoOptions : NestAdsSDK.NestAdsPremiumBannerAdViewOptions {
   open var videoOptions: NestAdsSDK.NestAdsVideoOptions
   open var progressBarColor: UIKit.UIColor
-  public init(videoOptions: NestAdsSDK.NestAdsVideoOptions? = nil, progressBarColor: UIKit.UIColor? = nil)
+  open var isPreviewVideoFadeEnabled: Swift.Bool
+  public init(videoOptions: NestAdsSDK.NestAdsVideoOptions? = nil, progressBarColor: UIKit.UIColor? = nil, isPreviewVideoFadeEnabled: Swift.Bool? = nil)
   @objc deinit
 }
 extension NestAdsSDK.NestAdsCardBannerAdView : UIKit.UICollectionViewDelegateFlowLayout, UIKit.UICollectionViewDataSource {
@@ -1114,6 +1208,9 @@ extension NestAdsSDK.NestAdsCardBannerAdViewDelegate {
   @objc deinit
   @_Concurrency.MainActor @preconcurrency public init(size: NestAdsSDK.NestAdsAdSize, rootViewController: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
@@ -1185,6 +1282,92 @@ public struct NestAdsAdLoaderAdType : Swift.Hashable, Swift.Equatable, @unchecke
 @_hasMissingDesignatedInitializers @dynamicCallable @objc public class NestAdsOfferwallQuizFactory : ObjectiveC.NSObject {
   public func dynamicallyCall(withArguments args: [Any]) -> NestAdsSDK.NestAdsOfferwallQuiz?
   @objc deinit
+}
+open class NestAdsOutstreamVideoAdViewOptions {
+  open var sizeType: NestAdsSDK.ContentSizeType
+  open var backgroundColor: UIKit.UIColor?
+  open var opacity: CoreFoundation.CGFloat?
+  open var videoOptions: NestAdsSDK.NestAdsOutstreamVideoOptions
+  open var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  open var isVideoControlsDimEnabled: Swift.Bool
+  open var progressBarColor: UIKit.UIColor
+  open var playButtonColor: UIKit.UIColor
+  open var pauseButtonColor: UIKit.UIColor
+  open var muteButtonColor: UIKit.UIColor
+  open var hintAssetOptions: NestAdsSDK.NestAdsHintAssetOptions
+  open var ctaButtonOptions: NestAdsSDK.NestAdsCtaButtonOptions
+  open var advertiserOptions: NestAdsSDK.NestAdsAdvertiserOptions
+  open var adTextOptions: NestAdsSDK.NestAdsAdTextOptions
+  public init()
+  @objc deinit
+}
+open class NestAdsOutstreamVideoOptions {
+  open var startMuted: Swift.Bool
+  open var quality: Swift.String
+  public init()
+  @objc deinit
+}
+public protocol NestAdsOutstreamVideoAdViewDelegate : AnyObject {
+  func outstreamVideoAdViewDidReceiveAd(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  func outstreamVideoAdView(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
+  func outstreamVideoAdViewDidImpressOnVideo(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewDidImpressOnThumbnail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewDidClickOnVideo(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewDidClickOnThumbnail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewDidClickOnHintAsset(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool?)
+  func outstreamVideoAdViewDidClickOnCtaButton(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewDidClickOnAdProfile(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewDidClickOnAdvertiser(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewWillPresentScreen(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  func outstreamVideoAdViewDidPresentScreen(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  func outstreamVideoAdViewVideoDidStart(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewVideoDidPlay(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  func outstreamVideoAdViewVideoDidPause(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  func outstreamVideoAdViewVideoDidComplete(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewVideoDidChangeMute(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, muted: Swift.Bool)
+  func outstreamVideoAdViewVideoDidUpdateProgress(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, currentTime: Foundation.TimeInterval, isLogSent: Swift.Bool)
+  func outstreamVideoAdViewVideoDidFail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+}
+extension NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate {
+  public func outstreamVideoAdViewDidReceiveAd(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  public func outstreamVideoAdView(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
+  public func outstreamVideoAdViewDidImpressOnVideo(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewDidImpressOnThumbnail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewDidClickOnVideo(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewDidClickOnThumbnail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewDidClickOnHintAsset(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool?)
+  public func outstreamVideoAdViewDidClickOnCtaButton(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewDidClickOnAdProfile(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewDidClickOnAdvertiser(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewWillPresentScreen(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  public func outstreamVideoAdViewDidPresentScreen(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  public func outstreamVideoAdViewVideoDidStart(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewVideoDidPlay(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  public func outstreamVideoAdViewVideoDidPause(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+  public func outstreamVideoAdViewVideoDidComplete(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewVideoDidChangeMute(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, muted: Swift.Bool)
+  public func outstreamVideoAdViewVideoDidUpdateProgress(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView, currentTime: Foundation.TimeInterval, isLogSent: Swift.Bool)
+  public func outstreamVideoAdViewVideoDidFail(_ adView: NestAdsSDK.NestAdsOutstreamVideoAdView)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class NestAdsOutstreamVideoAdView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
+  @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency open var options: NestAdsSDK.NestAdsOutstreamVideoAdViewOptions
+  @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo? {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
 }
 public struct NestAdsAdSize {
   public var size: CoreFoundation.CGSize

@@ -397,6 +397,8 @@ SWIFT_PROTOCOL("_TtP10NestAdsSDK23NestAdsAdLoaderDelegate_")
 SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 @interface NestAdsCardBannerAdView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// 셀/슬롯 wrapper 의 self-size 측정 chain 에 size 를 직접 노출 (ImageBanner / Premium Banner / Outstream 패턴 align).
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 - (void)layoutSubviews;
 - (void)didMoveToWindow;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
@@ -421,9 +423,17 @@ SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 
 SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsDynamicBannerAdView")
 @interface NestAdsDynamicBannerAdView : UIView
+/// 기본 init — 모든 사이즈는 fluid (image/premium = <code>NestAdsAdSizeFluid</code>,
+/// outstream = <code>outstreamVideoOptions.sizeType</code> 의 기본 <code>.fluid</code>).
+/// 필요 시 init 후 size property / options 를 직접 set.
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+/// 자식 광고 뷰가 비동기 size 결정 후 자기만 <code>invalidateIntrinsicContentSize()</code> 호출하는 경우,
+/// pass-through 하는 우리 자신의 캐시는 invalidate 안 되어 외부 self-sizing cell 이 stale 한
+/// 사이즈로 layout 되는 문제가 발생. 자식 size 변화를 감지해 우리도 함께 invalidate 한다.
+- (void)layoutSubviews;
 @end
 
 SWIFT_CLASS("_TtC10NestAdsSDK24NestAdsImageBannerAdView")
@@ -642,6 +652,50 @@ SWIFT_CLASS("_TtC10NestAdsSDK27NestAdsOfferwallQuizFactory")
 @interface NestAdsOfferwallQuizFactory : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 표준형 동영상 광고 (<code>VIDEO_OUTSTREAM</code>) 뷰. in-feed 임베드용.
+/// View hierarchy:
+/// <ul>
+///   <li>
+///     <code>videoAreaView</code>: 광고 영역 전체 컨테이너 (AdView 와 4-pin). 자식 = videoView + bottomBarView.
+///     <ul>
+///       <li>
+///         <code>videoView</code>: 비디오 layer. sizeType 따라 4-pin 또는 centerX + native size.
+///       </li>
+///       <li>
+///         <code>bottomBarView</code>: BOTTOMBANNER 시 video 바로 밑에 붙음 (top = videoView.bottom).
+///         OVERLAY 시 height=0 로 collapse.
+///       </li>
+///     </ul>
+///   </li>
+///   <li>
+///     <code>thumbnailImageView</code>: videoView 와 cross-parent 4-pin overlay.
+///   </li>
+///   <li>
+///     <code>contentView</code> (<code>OutstreamVideoContentView</code>): transparent UI overlay (badge / controls / 자산).
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC10NestAdsSDK27NestAdsOutstreamVideoAdView")
+@interface NestAdsOutstreamVideoAdView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)didMoveToWindow;
+/// 시스템 다크모드 토글 시 thumbnail 재바인딩 (Image/Premium Banner 패턴 동일).
+/// traitCollectionDidChange 는 main thread 에서 호출됨.
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+/// 셀/슬롯 wrapper 의 self-size 측정 chain 에 size 를 직접 노출 (ImageBanner / Premium Banner 패턴).
+/// <ul>
+///   <li>
+///     <code>.fixed(w, h)</code>: <code>(w, h)</code> 반환.
+///   </li>
+///   <li>
+///     <code>.fluid</code> / <code>.fill</code>: 컨테이너 width 기반 계산된 height 만 노출 (width 는 noIntrinsicMetric).
+///     슬롯 wrapper <code>NestAdsOutstreamVideoSlotView.intrinsicContentSize</code> 가 <code>adView.intrinsicContentSize.height > 0</code>
+///     분기를 먼저 잡아 stale <code>bounds.width</code> 기반 <code>systemLayoutSizeFitting</code> fallback 경로를 회피.
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 @end
 
 SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
