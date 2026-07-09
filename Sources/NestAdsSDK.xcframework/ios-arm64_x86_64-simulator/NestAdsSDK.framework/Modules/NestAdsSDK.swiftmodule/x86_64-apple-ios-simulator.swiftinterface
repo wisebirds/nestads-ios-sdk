@@ -665,7 +665,7 @@ public struct EnvironmentConfiguration {
   open var versionNumber: NestAdsSDK.NestAdsVersionNumber {
     get
   }
-  open func start(proxyHost: Swift.String? = nil, offerwallConfig: NestAdsSDK.OfferwallConfig? = nil)
+  open func start(proxyHost: Swift.String? = nil, offerwallConfig: NestAdsSDK.OfferwallConfig? = nil, partnerConfigs: [NestAdsSDK.NestAdsPartnerConfig] = [])
   @objc deinit
 }
 public protocol NestAdsPopupAdViewDelegate : AnyObject {
@@ -747,6 +747,7 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class NestAdsDynamicBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsDynamicBannerAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak open var partnerDelegate: (any NestAdsSDK.NestAdsPartnerAdDelegate)?
   @_Concurrency.MainActor @preconcurrency weak open var imageBannerDelegate: (any NestAdsSDK.NestAdsImageBannerAdViewDelegate)?
   @_Concurrency.MainActor @preconcurrency weak open var premiumBannerDelegate: (any NestAdsSDK.NestAdsPremiumBannerAdViewDelegate)?
   @_Concurrency.MainActor @preconcurrency weak open var outstreamVideoDelegate: (any NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate)?
@@ -795,6 +796,12 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency open func load(_ request: NestAdsSDK.NestAdsAdRequest?)
   @objc deinit
+}
+extension NestAdsSDK.NestAdsDynamicBannerAdView : NestAdsSDK.NestAdsPartnerAdDelegate {
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidFailed(error: NestAdsSDK.NestAdsAdError)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidImpress(isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidClick(isLogSent: Swift.Bool)
 }
 extension NestAdsSDK.NestAdsDynamicBannerAdView : NestAdsSDK.NestAdsImageBannerAdViewDelegate {
   @_Concurrency.MainActor @preconcurrency public func imageBannerAdViewDidReceiveAd(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
@@ -1056,6 +1063,7 @@ extension NestAdsSDK.NestAdsImageBannerAdViewDelegate {
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsImageBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsImageBannerAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak open var partnerDelegate: (any NestAdsSDK.NestAdsPartnerAdDelegate)?
   @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var partnerPlaybackControl: (any NestAdsSDK.NestAdsPartnerPlaybackControl)? {
     get
@@ -1078,6 +1086,18 @@ extension NestAdsSDK.NestAdsImageBannerAdViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
+}
+extension NestAdsSDK.NestAdsImageBannerAdView : NestAdsSDK.NestAdsPartnerAdDelegate {
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidFailed(error: NestAdsSDK.NestAdsAdError)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidImpress(isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidClick(isLogSent: Swift.Bool)
+}
+extension NestAdsSDK.NestAdsPremiumBannerAdView : NestAdsSDK.NestAdsPartnerAdDelegate {
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidFailed(error: NestAdsSDK.NestAdsAdError)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidImpress(isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidClick(isLogSent: Swift.Bool)
 }
 public protocol NestAdsPremiumBannerAdViewDelegate : AnyObject {
   func premiumAdViewDidReceiveAd(_ adView: NestAdsSDK.NestAdsPremiumBannerAdView)
@@ -1161,6 +1181,7 @@ extension NestAdsSDK.NestAdsPremiumBannerAdViewDelegate {
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsPremiumBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsPremiumBannerAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak open var partnerDelegate: (any NestAdsSDK.NestAdsPartnerAdDelegate)?
   @_Concurrency.MainActor @preconcurrency public var partnerPlaybackControl: (any NestAdsSDK.NestAdsPartnerPlaybackControl)? {
     get
   }
@@ -1227,6 +1248,7 @@ extension NestAdsSDK.NestAdsCardBannerAdViewDelegate {
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsCardBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsCardBannerAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak open var partnerDelegate: (any NestAdsSDK.NestAdsPartnerAdDelegate)?
   @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var partnerPlaybackControl: (any NestAdsSDK.NestAdsPartnerPlaybackControl)? {
     get
@@ -1387,6 +1409,7 @@ extension NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class NestAdsOutstreamVideoAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency open var placementCode: Swift.String?
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak open var partnerDelegate: (any NestAdsSDK.NestAdsPartnerAdDelegate)?
   @_Concurrency.MainActor @preconcurrency open var options: NestAdsSDK.NestAdsOutstreamVideoAdViewOptions
   @_Concurrency.MainActor @preconcurrency open var adInfo: NestAdsSDK.NestAdsAdInfo? {
     get
@@ -1403,6 +1426,12 @@ extension NestAdsSDK.NestAdsOutstreamVideoAdViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
+}
+extension NestAdsSDK.NestAdsOutstreamVideoAdView : NestAdsSDK.NestAdsPartnerAdDelegate {
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidFailed(error: NestAdsSDK.NestAdsAdError)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidImpress(isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidClick(isLogSent: Swift.Bool)
 }
 public struct NestAdsAdSize {
   public var size: CoreFoundation.CGSize
@@ -1503,6 +1532,12 @@ public enum BackgroundBehavior {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
   @objc deinit
 }
+extension NestAdsSDK.NestAdsCardBannerAdView : NestAdsSDK.NestAdsPartnerAdDelegate {
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidFailed(error: NestAdsSDK.NestAdsAdError)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidImpress(isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func partnerAdDidClick(isLogSent: Swift.Bool)
+}
 @objc public protocol NestAdsVideoControllerDelegate {
   @objc optional func videoControllerDidCompletePreparation()
   @objc optional func videoControllerDidPlayVideo()
@@ -1551,6 +1586,7 @@ open class NestAdsAdRequest {
   }
   open var appVersion: Swift.String?
   open var audienceParameters: [Swift.String : Any]?
+  open var rtbPartners: Swift.Set<NestAdsSDK.NestAdsPartner>
   public init(gender: Swift.Int? = 0, publisherProvidedID: Swift.String? = nil, age: Swift.Int? = -1, country: Swift.String? = nil, language: Swift.String? = nil, httpTimeout: Foundation.TimeInterval? = 1.0, customTargeting: [Swift.String : Swift.String]? = nil, customTargetingList: [Swift.String : [Swift.String]]? = nil, appVersion: Swift.String? = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, audienceParameters: [Swift.String : Any]? = nil)
   @objc deinit
 }
@@ -1589,11 +1625,19 @@ open class NestAdsAdRequest {
   open var landingURL: Swift.String?
   @objc deinit
 }
+@_hasMissingDesignatedInitializers final public class NestAdsPartnerManager {
+  public static let shared: NestAdsSDK.NestAdsPartnerManager
+  final public var didInitializeBidding: Swift.Bool {
+    get
+  }
+  final public func initializePartners(configs: [NestAdsSDK.NestAdsPartnerConfig])
+  @objc deinit
+}
 public protocol NestAdsPartnerHandler : AnyObject {
   func handlePartnerAd(units: [NestAdsSDK.NestAdsPartnerUnit], targeting: NestAdsSDK.NestAdsPartnerTargeting?, in container: UIKit.UIView, completion: @escaping (NestAdsSDK.NestAdsPartnerResult?) -> Swift.Void)
 }
 public protocol NestAdsPartnerDisplayHandling : NestAdsSDK.NestAdsPartnerHandler {
-  func handlePartnerAd(units: [NestAdsSDK.NestAdsPartnerUnit], targeting: NestAdsSDK.NestAdsPartnerTargeting?, display: NestAdsSDK.NestAdsPartnerDisplayOptions?, in container: UIKit.UIView, completion: @escaping (NestAdsSDK.NestAdsPartnerResult?) -> Swift.Void)
+  func handlePartnerAd(units: [NestAdsSDK.NestAdsPartnerUnit], targeting: NestAdsSDK.NestAdsPartnerTargeting?, display: NestAdsSDK.NestAdsPartnerDisplayOptions?, in container: UIKit.UIView, completion: @escaping (Swift.Result<NestAdsSDK.NestAdsPartnerResult, NestAdsSDK.NestAdsPartnerAdError>) -> Swift.Void)
 }
 public protocol NestAdsPartnerPlaybackControl : AnyObject {
   func play()
@@ -1602,9 +1646,37 @@ public protocol NestAdsPartnerPlaybackControl : AnyObject {
   func mute()
   func unmute()
 }
+public protocol NestAdsPartnerInitializable : AnyObject {
+  func initialize(configs: [NestAdsSDK.NestAdsPartnerConfig])
+}
+public protocol NestAdsPartnerBidTokenProvider : AnyObject {
+  func bidToken(completion: @escaping (_ tokens: [Swift.String : Swift.String], _ errors: [Swift.String : Swift.String]) -> Swift.Void)
+}
+public protocol NestAdsPartnerRtbRenderer : AnyObject {
+  func render(adNetworkKey: Swift.String, adUnitId: Swift.String, render: NestAdsSDK.NestAdsPartnerRtbCreative, display: NestAdsSDK.NestAdsPartnerDisplayOptions?, in container: UIKit.UIView, didClick: @escaping () -> Swift.Void, completion: @escaping (Swift.Result<NestAdsSDK.NestAdsPartnerResult, NestAdsSDK.NestAdsPartnerAdError>) -> Swift.Void)
+}
+public protocol NestAdsPartnerAdDelegate : AnyObject {
+  func partnerAdDidLoad()
+  func partnerAdDidFailed(error: NestAdsSDK.NestAdsAdError)
+  func partnerAdDidImpress(isLogSent: Swift.Bool)
+  func partnerAdDidClick(isLogSent: Swift.Bool)
+}
+extension NestAdsSDK.NestAdsPartnerAdDelegate {
+  public func partnerAdDidLoad()
+  public func partnerAdDidFailed(error: NestAdsSDK.NestAdsAdError)
+  public func partnerAdDidImpress(isLogSent: Swift.Bool)
+  public func partnerAdDidClick(isLogSent: Swift.Bool)
+}
+public protocol NestAdsPartnerLifecycle : AnyObject {
+  func resume()
+  func pause()
+  func destroy()
+}
 public struct NestAdsPartnerResult {
   public let adView: UIKit.UIView
+  public let lifecycle: (any NestAdsSDK.NestAdsPartnerLifecycle)?
   public init(adView: UIKit.UIView)
+  public init(adView: UIKit.UIView, lifecycle: (any NestAdsSDK.NestAdsPartnerLifecycle)?)
 }
 public struct NestAdsPartnerTargeting {
   public let age: Swift.Int?
@@ -1616,16 +1688,48 @@ public struct NestAdsPartnerDisplayOptions {
   public let cornerRadius: CoreFoundation.CGFloat
   public init(cornerRadius: CoreFoundation.CGFloat)
 }
+public struct NestAdsPartnerUnitTracking {
+  public let adNetworkRequestUrls: [Swift.String]
+  public let adNetworkResponseUrls: [Swift.String]
+  public init(adNetworkRequestUrls: [Swift.String], adNetworkResponseUrls: [Swift.String])
+}
 public struct NestAdsPartnerUnit {
   public let adNetworkKey: Swift.String
   public let priority: Swift.Int
   public let unitIds: [Swift.String : Swift.String]
   public let aspectRatio: NestAdsSDK.ContentAreaAspectRatio?
-  public init(adNetworkKey: Swift.String, priority: Swift.Int, unitIds: [Swift.String : Swift.String], aspectRatio: NestAdsSDK.ContentAreaAspectRatio? = nil)
+  public let tracking: NestAdsSDK.NestAdsPartnerUnitTracking?
+  public init(adNetworkKey: Swift.String, priority: Swift.Int, unitIds: [Swift.String : Swift.String], aspectRatio: NestAdsSDK.ContentAreaAspectRatio? = nil, tracking: NestAdsSDK.NestAdsPartnerUnitTracking? = nil)
 }
-@_hasMissingDesignatedInitializers final public class NestAdsPartnerManager {
-  public static let shared: NestAdsSDK.NestAdsPartnerManager
-  @objc deinit
+public enum NestAdsPartner : Swift.Hashable {
+  case moloco
+  public var name: Swift.String {
+    get
+  }
+  public static func from(_ value: Swift.String?) -> NestAdsSDK.NestAdsPartner?
+  public static func == (a: NestAdsSDK.NestAdsPartner, b: NestAdsSDK.NestAdsPartner) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct NestAdsPartnerConfig {
+  public let partner: NestAdsSDK.NestAdsPartner
+  public let config: [Swift.String : Swift.String]
+  public init(partner: NestAdsSDK.NestAdsPartner, config: [Swift.String : Swift.String])
+}
+public struct NestAdsPartnerRtbCreative {
+  public let adm: Swift.String
+  public let width: Swift.Int?
+  public let height: Swift.Int?
+  public init(adm: Swift.String, width: Swift.Int?, height: Swift.Int?)
+}
+public enum NestAdsPartnerAdError : Swift.Error {
+  case noFill
+  case loadFailed
+  case invalidCreative
+  case timeout
+  case sdkError(Swift.String)
 }
 extension NestAdsSDK.NestAdsBackgroundArea : Swift.Equatable {}
 extension NestAdsSDK.NestAdsBackgroundArea : Swift.Hashable {}
