@@ -787,6 +787,7 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
     get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
   @_Concurrency.MainActor @preconcurrency @objc convenience dynamic public init()
   @_Concurrency.MainActor @preconcurrency convenience public init(bannerSize: NestAdsSDK.NestAdsAdSize, premiumDefaultSize: NestAdsSDK.NestAdsAdSize, premiumExpandedSize: NestAdsSDK.NestAdsAdSize)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -813,6 +814,7 @@ extension NestAdsSDK.NestAdsDynamicBannerAdView : NestAdsSDK.NestAdsImageBannerA
   @_Concurrency.MainActor @preconcurrency public func imageBannerAdViewDidDismissScreen(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   @_Concurrency.MainActor @preconcurrency public func imageBannerAdViewDidImpressWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func imageBannerAdViewDidClickWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func imageBannerAdViewDidClick(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool, landingInfo: NestAdsSDK.NestAdsLandingInfo)
 }
 extension NestAdsSDK.NestAdsDynamicBannerAdView : NestAdsSDK.NestAdsPremiumBannerAdViewDelegate {
   @_Concurrency.MainActor @preconcurrency public func premiumAdViewDidReceiveAd(_ adView: NestAdsSDK.NestAdsPremiumBannerAdView)
@@ -1050,16 +1052,23 @@ public protocol NestAdsImageBannerAdViewDelegate : AnyObject {
   func imageBannerAdViewDidReceiveAd(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdView(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
   func imageBannerAdViewDidRecordImpression(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
+  @available(*, deprecated, renamed: "imageBannerAdViewDidClick(_:isLogSent:landingInfo:)", message: "Use imageBannerAdViewDidClick(_:isLogSent:landingInfo:) instead")
   func imageBannerAdViewDidRecordClick(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdViewDidImpressWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
+  @available(*, deprecated, renamed: "imageBannerAdViewDidClick(_:isLogSent:landingInfo:)", message: "Use imageBannerAdViewDidClick(_:isLogSent:landingInfo:) instead")
   func imageBannerAdViewDidClickWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
+  func imageBannerAdViewDidClick(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool, landingInfo: NestAdsSDK.NestAdsLandingInfo)
   func imageBannerAdViewWillPresentScreen(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdViewWillDismissScreen(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   func imageBannerAdViewDidDismissScreen(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
 }
 extension NestAdsSDK.NestAdsImageBannerAdViewDelegate {
+  @available(*, deprecated, renamed: "imageBannerAdViewDidClick(_:isLogSent:landingInfo:)", message: "Use imageBannerAdViewDidClick(_:isLogSent:landingInfo:) instead")
+  public func imageBannerAdViewDidRecordClick(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView)
   public func imageBannerAdViewDidImpressWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
+  @available(*, deprecated, renamed: "imageBannerAdViewDidClick(_:isLogSent:landingInfo:)", message: "Use imageBannerAdViewDidClick(_:isLogSent:landingInfo:) instead")
   public func imageBannerAdViewDidClickWithLogStatus(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool)
+  public func imageBannerAdViewDidClick(_ imageBannerAdView: NestAdsSDK.NestAdsImageBannerAdView, isLogSent: Swift.Bool, landingInfo: NestAdsSDK.NestAdsLandingInfo)
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsImageBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsImageBannerAdViewDelegate)?
@@ -1223,6 +1232,7 @@ public protocol NestAdsCardBannerAdViewDelegate : AnyObject {
   func cardBannerAdViewDidReceiveAd(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView)
   func cardBannerAdView(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, didFailToReceiveAdWithError error: NestAdsSDK.NestAdsAdError)
   func cardBannerAdViewDidRecordImpression(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int)
+  @available(*, deprecated, renamed: "cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:)", message: "Use cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:) instead")
   func cardBannerAdViewDidRecordClick(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int)
   func cardBannerAdViewWillPresentScreen(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView)
   func cardBannerAdViewWillDismissScreen(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView)
@@ -1233,10 +1243,13 @@ public protocol NestAdsCardBannerAdViewDelegate : AnyObject {
   func cardBannerAdViewAdListViewControllerWillDisappear()
   func cardBannerAdViewAdListViewControllerDidDisappear()
   func cardBannerAdViewDidImpressWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  @available(*, deprecated, renamed: "cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:)", message: "Use cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:) instead")
   func cardBannerAdViewDidClickWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  func cardBannerAdViewDidClick(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool, landingInfo: NestAdsSDK.NestAdsLandingInfo)
 }
 extension NestAdsSDK.NestAdsCardBannerAdViewDelegate {
   public func cardBannerAdViewDidRecordImpression(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int)
+  @available(*, deprecated, renamed: "cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:)", message: "Use cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:) instead")
   public func cardBannerAdViewDidRecordClick(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int)
   public func cardBannerAdViewDidTapSeeAllButton(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView)
   public func cardBannerAdViewAdListViewControllerWillAppear()
@@ -1244,7 +1257,9 @@ extension NestAdsSDK.NestAdsCardBannerAdViewDelegate {
   public func cardBannerAdViewAdListViewControllerWillDisappear()
   public func cardBannerAdViewAdListViewControllerDidDisappear()
   public func cardBannerAdViewDidImpressWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  @available(*, deprecated, renamed: "cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:)", message: "Use cardBannerAdViewDidClick(_:adId:isLogSent:landingInfo:) instead")
   public func cardBannerAdViewDidClickWithLogStatus(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool)
+  public func cardBannerAdViewDidClick(_ cardBannerAdView: NestAdsSDK.NestAdsCardBannerAdView, adId: Swift.Int, isLogSent: Swift.Bool, landingInfo: NestAdsSDK.NestAdsLandingInfo)
 }
 @objc @_Concurrency.MainActor @preconcurrency open class NestAdsCardBannerAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak open var delegate: (any NestAdsSDK.NestAdsCardBannerAdViewDelegate)?
@@ -1289,6 +1304,23 @@ extension NestAdsSDK.NestAdsCardBannerAdViewDelegate {
     set
   }
   @objc deinit
+}
+public enum NestAdsLandingUrlType {
+  case inlink
+  case outlink
+  case custom
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: NestAdsSDK.NestAdsLandingUrlType, b: NestAdsSDK.NestAdsLandingUrlType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct NestAdsLandingInfo {
+  public let landingUrl: Swift.String?
+  public let landingUrlType: NestAdsSDK.NestAdsLandingUrlType
 }
 public let NestAdsCustomNativeAdVideoMediaSpecID: Swift.String
 public let NestAdsGenderUnknown: Swift.Int
@@ -1757,6 +1789,8 @@ extension NestAdsSDK.NestAdsGradationMode : Swift.Equatable {}
 extension NestAdsSDK.NestAdsGradationMode : Swift.Hashable {}
 extension NestAdsSDK.ContentAreaAspectRatio : Swift.Equatable {}
 extension NestAdsSDK.ContentAreaAspectRatio : Swift.Hashable {}
+extension NestAdsSDK.NestAdsLandingUrlType : Swift.Equatable {}
+extension NestAdsSDK.NestAdsLandingUrlType : Swift.Hashable {}
 extension NestAdsSDK.SplashType : Swift.Equatable {}
 extension NestAdsSDK.SplashType : Swift.Hashable {}
 extension NestAdsSDK.BackgroundBehavior : Swift.Equatable {}

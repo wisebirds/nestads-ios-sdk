@@ -427,6 +427,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsDynamicBannerAdView")
 /// outstream = <code>outstreamVideoOptions.sizeType</code> 의 기본 <code>.fluid</code>).
 /// 필요 시 init 후 size property / options 를 직접 set.
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)didMoveToWindow;
 - (nonnull instancetype)init;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
@@ -1252,6 +1253,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsDynamicBannerAdView")
 /// outstream = <code>outstreamVideoOptions.sizeType</code> 의 기본 <code>.fluid</code>).
 /// 필요 시 init 후 size property / options 를 직접 set.
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)didMoveToWindow;
 - (nonnull instancetype)init;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
