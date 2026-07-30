@@ -423,9 +423,8 @@ SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 
 SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsDynamicBannerAdView")
 @interface NestAdsDynamicBannerAdView : UIView
-/// 기본 init — 모든 사이즈는 fluid (image/premium = <code>NestAdsAdSizeFluid</code>,
-/// outstream = <code>outstreamVideoOptions.sizeType</code> 의 기본 <code>.fluid</code>).
-/// 필요 시 init 후 size property / options 를 직접 set.
+/// 기본 init — 지면 사이즈 정책(<code>bannerAdSize</code>)은 기본 fluid.
+/// 필요 시 init 후 <code>bannerAdSize</code> / options 를 직접 set (전 응답 타입에 일괄 적용).
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
 - (nonnull instancetype)init;
@@ -1249,9 +1248,8 @@ SWIFT_CLASS("_TtC10NestAdsSDK23NestAdsCardBannerAdView")
 
 SWIFT_CLASS("_TtC10NestAdsSDK26NestAdsDynamicBannerAdView")
 @interface NestAdsDynamicBannerAdView : UIView
-/// 기본 init — 모든 사이즈는 fluid (image/premium = <code>NestAdsAdSizeFluid</code>,
-/// outstream = <code>outstreamVideoOptions.sizeType</code> 의 기본 <code>.fluid</code>).
-/// 필요 시 init 후 size property / options 를 직접 set.
+/// 기본 init — 지면 사이즈 정책(<code>bannerAdSize</code>)은 기본 fluid.
+/// 필요 시 init 후 <code>bannerAdSize</code> / options 를 직접 set (전 응답 타입에 일괄 적용).
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
 - (nonnull instancetype)init;

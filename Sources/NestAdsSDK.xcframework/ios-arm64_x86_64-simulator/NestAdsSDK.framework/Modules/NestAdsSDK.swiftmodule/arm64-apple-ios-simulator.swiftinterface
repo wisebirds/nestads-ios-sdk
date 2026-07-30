@@ -22,6 +22,7 @@ import Swift
 import SwiftUI
 import SystemConfiguration
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -780,7 +781,9 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency open var premiumAdvertiserOptions: NestAdsSDK.NestAdsPremiumBannerAdvertiserOptions
   @_Concurrency.MainActor @preconcurrency open var premiumAdTextOptions: NestAdsSDK.NestAdsPremiumBannerAdTextOptions
   @_Concurrency.MainActor @preconcurrency open var outstreamVideoOptions: NestAdsSDK.NestAdsOutstreamVideoAdViewOptions
+  @_Concurrency.MainActor @preconcurrency open var partnerAdOptions: NestAdsSDK.NestAdsPartnerAdOptions
   @_Concurrency.MainActor @preconcurrency open var bannerAdSize: NestAdsSDK.NestAdsAdSize
+  @available(*, deprecated, message: "무시됩니다. bannerAdSize 가 premium default 사이즈에도 적용됩니다.")
   @_Concurrency.MainActor @preconcurrency open var premiumDefaultSize: NestAdsSDK.NestAdsAdSize
   @_Concurrency.MainActor @preconcurrency open var premiumExpandedSize: NestAdsSDK.NestAdsAdSize
   @_Concurrency.MainActor @preconcurrency public var partnerPlaybackControl: (any NestAdsSDK.NestAdsPartnerPlaybackControl)? {
@@ -789,6 +792,7 @@ public protocol NestAdsDynamicBannerAdViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
   @_Concurrency.MainActor @preconcurrency @objc convenience dynamic public init()
+  @available(*, deprecated, message: "init() 후 bannerAdSize / premiumExpandedSize 를 설정하세요. premiumDefaultSize 는 무시됩니다.")
   @_Concurrency.MainActor @preconcurrency convenience public init(bannerSize: NestAdsSDK.NestAdsAdSize, premiumDefaultSize: NestAdsSDK.NestAdsAdSize, premiumExpandedSize: NestAdsSDK.NestAdsAdSize)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
@@ -1387,6 +1391,15 @@ open class NestAdsOutstreamVideoAdViewOptions {
   open var ctaButtonOptions: NestAdsSDK.NestAdsCtaButtonOptions
   open var advertiserOptions: NestAdsSDK.NestAdsAdvertiserOptions
   open var adTextOptions: NestAdsSDK.NestAdsAdTextOptions
+  public init()
+  @objc deinit
+}
+open class NestAdsPartnerAdOptions {
+  open var backgroundColor: UIKit.UIColor?
+  open var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
   public init()
   @objc deinit
 }
