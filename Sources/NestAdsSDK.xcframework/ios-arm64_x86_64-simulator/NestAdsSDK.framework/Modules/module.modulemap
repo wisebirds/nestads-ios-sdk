@@ -7,4 +7,5 @@ framework module NestAdsSDK {
 
 module NestAdsSDK.Swift {
   header "NestAdsSDK-Swift.h"
+  requires objc
 }
