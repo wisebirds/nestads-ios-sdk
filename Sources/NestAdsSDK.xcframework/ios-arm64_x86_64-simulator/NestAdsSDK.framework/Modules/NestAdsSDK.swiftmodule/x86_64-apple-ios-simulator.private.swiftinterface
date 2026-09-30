@@ -756,15 +756,26 @@ public struct EnvironmentConfiguration {
   public let secretKey: Swift.String
   public let logSecretKey: Swift.String
   public let environment: Swift.String
-  public init(baseAPIURL: Swift.String, errorLogAPIURL: Swift.String, secretKey: Swift.String, logSecretKey: Swift.String, environment: Swift.String)
+  public let sdkInitAPIURL: Swift.String
+  public init(baseAPIURL: Swift.String, errorLogAPIURL: Swift.String, secretKey: Swift.String, logSecretKey: Swift.String, environment: Swift.String, sdkInitAPIURL: Swift.String = "")
 }
 @_hasMissingDesignatedInitializers open class NestAds {
   public static var environment: NestAdsSDK.EnvironmentConfiguration?
+  public static let shared: NestAdsSDK.NestAds
+  @available(*, deprecated, renamed: "shared")
   open class func sharedInstance() -> NestAdsSDK.NestAds
+  public func refreshBlockID(screenType: NestAdsSDK.NestAdsRoadBlockScreenType = .standard)
+  public var roadBlockStatus: NestAdsSDK.NestAdsRoadBlockStatus {
+    get
+  }
   open var versionNumber: NestAdsSDK.NestAdsVersionNumber {
     get
   }
   #if compiler(>=5.3) && $NonescapableTypes
+  open func initialize(proxyHost: Swift.String? = nil, offerwallConfig: NestAdsSDK.OfferwallConfig? = nil, partnerConfigs: [NestAdsSDK.NestAdsPartnerConfig] = [], completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, renamed: "initialize(proxyHost:offerwallConfig:partnerConfigs:completion:)")
   open func start(proxyHost: Swift.String? = nil, offerwallConfig: NestAdsSDK.OfferwallConfig? = nil, partnerConfigs: [NestAdsSDK.NestAdsPartnerConfig] = [])
   #endif
   @objc deinit
@@ -2079,6 +2090,19 @@ public enum NestAdsPartnerAdError : Swift.Error {
   case timeout
   case sdkError(Swift.String)
 }
+public enum NestAdsRoadBlockScreenType {
+  case standard
+  case singleOnly
+  public static func == (a: NestAdsSDK.NestAdsRoadBlockScreenType, b: NestAdsSDK.NestAdsRoadBlockScreenType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct NestAdsRoadBlockStatus {
+  public let blockID: Swift.String?
+  public let linkedMainPlacementCode: Swift.String?
+}
 extension NestAdsSDK.NestAdsBackgroundArea : Swift.Equatable {}
 extension NestAdsSDK.NestAdsBackgroundArea : Swift.Hashable {}
 extension NestAdsSDK.NestAdsMultipleAdIndicatorSize : Swift.Equatable {}
@@ -2111,3 +2135,5 @@ extension NestAdsSDK.SplashType : Swift.Equatable {}
 extension NestAdsSDK.SplashType : Swift.Hashable {}
 extension NestAdsSDK.BackgroundBehavior : Swift.Equatable {}
 extension NestAdsSDK.BackgroundBehavior : Swift.Hashable {}
+extension NestAdsSDK.NestAdsRoadBlockScreenType : Swift.Equatable {}
+extension NestAdsSDK.NestAdsRoadBlockScreenType : Swift.Hashable {}
