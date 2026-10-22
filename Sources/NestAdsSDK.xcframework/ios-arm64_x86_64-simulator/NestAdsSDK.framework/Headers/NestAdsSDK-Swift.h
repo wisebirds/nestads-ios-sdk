@@ -616,6 +616,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK27NestAdsOutstreamVideoAdView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
+- (void)layoutSubviews;
 /// 시스템 다크모드 토글 시 thumbnail 재바인딩 (Image/Premium Banner 패턴 동일).
 /// traitCollectionDidChange 는 main thread 에서 호출됨.
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
@@ -649,10 +650,15 @@ SWIFT_PROTOCOL_NAMED("NestAdsPartnerLifecycleBridge")
 
 /// mediation 워터폴 위임 (COVI · AdFit).
 /// units: NestAdsPartnerUnit.toDictionary() 출력 = 서버 wire(snake_case) 스키마 그대로.
-/// options: targeting(age/gender/idfa) · display(cornerRadius) · environment(“prod”/“dev”).
-/// completion: 성공 payload { adView: UIView, lifecycle?: LifecycleBridge, sizing?: dict } / 실패 NSError
-/// (domain “com.nestads.partner.bridge”, code 1=noFill · 2=sdkError, userInfo[“adNetworkKey”]=실패 유닛 키).
+/// options: targeting(age/gender/idfa) · display(cornerRadius, backgroundColor?: UIColor) · environment(“prod”/“dev”).
+/// completion: 성공 payload { adView: UIView, lifecycle?: LifecycleBridge, sizing?: dict, supersededErrors?: [dict] }
+/// / 실패 NSError (domain “com.nestads.partner.bridge”, code 1=noFill · 2=sdkError,
+/// userInfo[“adNetworkKey”]=실패 유닛 키, userInfo[“supersededErrors”]?: [dict]).
 /// 스레드 무보장 — 호출측(메인)이 main hop.
+/// <em>supersededErrors 키</em> — 워터폴 중 다음 유닛 시도 · 성공으로 대체된 ERROR 목록
+/// <code>[{ "adNetworkKey": String, "reason": String("[code] message") }]</code>. no-fill · 어댑터 미설치는 넣지 않는다.
+/// 최종 실패는 넣지 않는다(completion 의 NSError 로 1회). 대체된 것이 없으면 키 생략.
+/// 수신측(메인)은 각 건을 서버 에러로그로만 보낸다. 구 메인은 키를 무시한다.
 /// <em>completion 은 정확히 1회 호출한다.</em> 양 레포 모두 중복 호출 방어가 없어(선재) 두 번 부르면
 /// 매체 delegate 가 이중 통지된다. 파트너는 once-guard 로 단일 관문을 유지할 것.
 /// <em>sizing 키 스키마</em> — 키 <em>존재</em>로 판별하며 두 형태는 <em>상호 배타</em>다. 단위는 모두
@@ -694,6 +700,23 @@ SWIFT_PROTOCOL_NAMED("NestAdsPartnerRtbBridge")
 - (void)nestads_initialize:(NSArray<NSDictionary<NSString *, id> *> * _Nonnull)configs;
 - (void)nestads_bidTokenWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull, NSDictionary<NSString *, NSString *> * _Nonnull))completion;
 - (void)nestads_render:(NSDictionary<NSString *, id> * _Nonnull)creative options:(NSDictionary<NSString *, id> * _Nonnull)options container:(UIView * _Nonnull)container didClick:(void (^ _Nonnull)(void))didClick completion:(void (^ _Nonnull)(NSDictionary * _Nullable, NSError * _Nullable))completion;
+@end
+
+/// mediation 성공 payload 의 adView 가 선택적으로 채택한다 — 폭이 바뀌면 높이를 다시 잴 수 있는 소재
+/// (AdFit 네이티브: 배지 · 여백 · 제목 줄 수 때문에 높이가 폭에 비례하지 않는다).
+/// 채택 시 메인은 회전 · 폭 변경 재파생에서 sizing 비율식 대신 이 값을 쓴다. 미채택 · 구 메인이면 기존 sizing 경로.
+/// <ul>
+///   <li>
+///     width: 지면(host) 폭(pt). 반환: 그 폭에서의 콘텐츠 높이(pt). 확대 금지 상한은 구현측 책임.
+///     0 이하 · 비유한 값은 측정 불가로 보고 메인이 비율식으로 폴백한다.
+///   </li>
+///   <li>
+///     main 스레드에서 동기 호출된다. 뷰 상태를 바꾸지 않는 측정이어야 한다.
+///   </li>
+/// </ul>
+SWIFT_PROTOCOL_NAMED("NestAdsPartnerSelfSizingBridge")
+@protocol NestAdsPartnerSelfSizingBridge
+- (CGFloat)nestads_contentHeightForWidth:(CGFloat)width SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
@@ -1439,6 +1462,7 @@ SWIFT_CLASS("_TtC10NestAdsSDK27NestAdsOutstreamVideoAdView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
+- (void)layoutSubviews;
 /// 시스템 다크모드 토글 시 thumbnail 재바인딩 (Image/Premium Banner 패턴 동일).
 /// traitCollectionDidChange 는 main thread 에서 호출됨.
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
@@ -1472,10 +1496,15 @@ SWIFT_PROTOCOL_NAMED("NestAdsPartnerLifecycleBridge")
 
 /// mediation 워터폴 위임 (COVI · AdFit).
 /// units: NestAdsPartnerUnit.toDictionary() 출력 = 서버 wire(snake_case) 스키마 그대로.
-/// options: targeting(age/gender/idfa) · display(cornerRadius) · environment(“prod”/“dev”).
-/// completion: 성공 payload { adView: UIView, lifecycle?: LifecycleBridge, sizing?: dict } / 실패 NSError
-/// (domain “com.nestads.partner.bridge”, code 1=noFill · 2=sdkError, userInfo[“adNetworkKey”]=실패 유닛 키).
+/// options: targeting(age/gender/idfa) · display(cornerRadius, backgroundColor?: UIColor) · environment(“prod”/“dev”).
+/// completion: 성공 payload { adView: UIView, lifecycle?: LifecycleBridge, sizing?: dict, supersededErrors?: [dict] }
+/// / 실패 NSError (domain “com.nestads.partner.bridge”, code 1=noFill · 2=sdkError,
+/// userInfo[“adNetworkKey”]=실패 유닛 키, userInfo[“supersededErrors”]?: [dict]).
 /// 스레드 무보장 — 호출측(메인)이 main hop.
+/// <em>supersededErrors 키</em> — 워터폴 중 다음 유닛 시도 · 성공으로 대체된 ERROR 목록
+/// <code>[{ "adNetworkKey": String, "reason": String("[code] message") }]</code>. no-fill · 어댑터 미설치는 넣지 않는다.
+/// 최종 실패는 넣지 않는다(completion 의 NSError 로 1회). 대체된 것이 없으면 키 생략.
+/// 수신측(메인)은 각 건을 서버 에러로그로만 보낸다. 구 메인은 키를 무시한다.
 /// <em>completion 은 정확히 1회 호출한다.</em> 양 레포 모두 중복 호출 방어가 없어(선재) 두 번 부르면
 /// 매체 delegate 가 이중 통지된다. 파트너는 once-guard 로 단일 관문을 유지할 것.
 /// <em>sizing 키 스키마</em> — 키 <em>존재</em>로 판별하며 두 형태는 <em>상호 배타</em>다. 단위는 모두
@@ -1517,6 +1546,23 @@ SWIFT_PROTOCOL_NAMED("NestAdsPartnerRtbBridge")
 - (void)nestads_initialize:(NSArray<NSDictionary<NSString *, id> *> * _Nonnull)configs;
 - (void)nestads_bidTokenWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull, NSDictionary<NSString *, NSString *> * _Nonnull))completion;
 - (void)nestads_render:(NSDictionary<NSString *, id> * _Nonnull)creative options:(NSDictionary<NSString *, id> * _Nonnull)options container:(UIView * _Nonnull)container didClick:(void (^ _Nonnull)(void))didClick completion:(void (^ _Nonnull)(NSDictionary * _Nullable, NSError * _Nullable))completion;
+@end
+
+/// mediation 성공 payload 의 adView 가 선택적으로 채택한다 — 폭이 바뀌면 높이를 다시 잴 수 있는 소재
+/// (AdFit 네이티브: 배지 · 여백 · 제목 줄 수 때문에 높이가 폭에 비례하지 않는다).
+/// 채택 시 메인은 회전 · 폭 변경 재파생에서 sizing 비율식 대신 이 값을 쓴다. 미채택 · 구 메인이면 기존 sizing 경로.
+/// <ul>
+///   <li>
+///     width: 지면(host) 폭(pt). 반환: 그 폭에서의 콘텐츠 높이(pt). 확대 금지 상한은 구현측 책임.
+///     0 이하 · 비유한 값은 측정 불가로 보고 메인이 비율식으로 폴백한다.
+///   </li>
+///   <li>
+///     main 스레드에서 동기 호출된다. 뷰 상태를 바꾸지 않는 측정이어야 한다.
+///   </li>
+/// </ul>
+SWIFT_PROTOCOL_NAMED("NestAdsPartnerSelfSizingBridge")
+@protocol NestAdsPartnerSelfSizingBridge
+- (CGFloat)nestads_contentHeightForWidth:(CGFloat)width SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC10NestAdsSDK18NestAdsPopupAdView")
